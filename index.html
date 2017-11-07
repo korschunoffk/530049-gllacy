@@ -9,25 +9,26 @@
     <header class="container">
         <nav class="main-navigation">
             <ul class="main-navigation_list">
-                <li class="main-navigation_item"><a href="#">Каталог</a></li>
-                    <ul class="sub-menu_list">
+                <li class="main-navigation_item"><a href="#">Каталог</a>
+                     <ul class="sub-menu_list">
                         <li class="sub-menu_item"><a href="#">Новинки</a></li>
                         <li class="sub-menu_item"><a href="#">Сливочное</a></li>
                         <li class="sub-menu_item"><a href="#">Щербеты</a></li>
                         <li class="sub-menu_item"><a href="#">Фруктовый лёд</a></li>
                         <li class="sub-menu_item"><a href="#">Мелорин</a></li>
                     </ul>
+                    </li>
                 <li class="main-navigation_item"><a href="#">Доставка и оплата</a></li>
                 <li class="main-navigation_item"> <a href="#">О Компании</a></li>
             </ul>
         </nav> 
         <a class="main-navigation_logo">
-            <img class="company-logo" src="img/Logo.svg" height="50"width="100" alt="Логотип магазина Глейси">
+            <img class="company-logo" src="img/Logo.svg" height="50" width="100" alt="Логотип магазина Глейси">
         </a>
         <ul class="user-navigation">
-            <li class="user-navigation_search">Поиск</li>
-            <li class="user-navigation_login">Вход</li>
-            <li class="user-navigation_cart">Корзина</li>
+            <li class="user-navigation_item user-navigation_item--search"><a href="#">Поиск</a></li>
+            <li class="user-navigation_item user-navigation_item--login"><a href="#">Вход</a></li>
+            <li class="user-navigation_item user-navigation_item--search--cart"><a href="#">Корзина</a></li>
         </ul>
         <p class="work-time-header">C 10 до 20, ежедневно</p>
         <p class="phone-header">8 812 450-25-25</p>     
@@ -83,13 +84,12 @@
             
         </section>
         <section class="popular-icecream">
-                <article class="icecream-item">
-                    <div class="icecream-item_popular">
+                <article class="icecream-item icecream-item_popular">
                         <div class=icecream-item_pic>
-                            <img class = "creamy-orange" src="img/creamy-orange.png" width="180" height="180">
+                            <img class = "creamy-orange" src="img/creamy-orange.png" width="180" height="180" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой">
                             <p class="cost">
                                 <span class="digital-cost">310</span>
-                                <span clas="image-cost"><img src="img/rouble.png" heght="20" width="20"></span>
+                                <span class="image-cost"><img src="img/rouble.png" height="20" width="20" alt="Р"></span>
                                 <span class="kg-cost">/КГ</span>
                             </p>
                         </div>
@@ -97,47 +97,41 @@
                         Сливочное с апельсиновым <br>джемом и цитрусовой стружкой
                         </p>
                         <a class="button icecream-button" href="#">Быстрый просмотр</a> 
-                    </div>
                 </article>
-                <article class="icecream-item ">
-                    <div class="icecream-item_popular">
+                <article class="icecream-item icecream-item_popular">
                         <div class=icecream-item_pic>
-                            <img class="creamy-coffee"src="img/creamy-coffee.png" width="150" height="150">
+                            <img class="creamy-coffee" src="img/creamy-coffee.png" width="150" height="150" alt="Сливочно-кофейное с кусочками шоколада">
                             <p class="cost">
                                 <span class="digital-cost">380</span>
-                                <span clas="image-cost" ><img src="img/rouble.png" heght="20" width="20"></span>
+                                <span class="image-cost" ><img src="img/rouble.png" height="20" width="20" alt="Р"></span>
                                 <span class="kg-cost">/КГ</span>
                             </p>
                         </div>
                         <p class="icecream-item_description">
                             Сливочно-кофейное с кусочками<br>шоколада
                         </p>
-                        <a class="button icecream-button" href="#">Быстрый просмотр</a> 
-                    </div>
+                        <a class="button icecream-button" href="#">Быстрый просмотр</a>  
                 </article>
-                <article class="icecream-item ">
-                    <div class="icecream-item_popular">
+                <article class="icecream-item icecream-item_popular">
                         <div class=icecream-item_pic>
-                            <img class="creamy-strawberry" src="img/creamy-strawberry.png" width="150" height="150">
+                            <img class="creamy-strawberry" src="img/creamy-strawberry.png" width="150" height="150" alt="Сливочно-клубничное с присыпкой из белого шоколада">
                             <p class="cost">
                                 <span class="digital-cost">355</span>
-                                <span clas="image-cost"><img src="img/rouble.png" heght="20" width="20"></span>
+                                <span class="image-cost"><img src="img/rouble.png" height="20" width="20" alt="Р"></span>
                                 <span class="kg-cost">/КГ</span>
                             </p>
                         </div>
                         <p class="popular-item-description">
-                            Сливочно-клубничное с присыпкой из белого шоколада
+                            Сливочно-клубничное с <br> присыпкой из белого шоколада
                         </p>
                         <a class="button icecream-button" href="#">Быстрый просмотр</a> 
-                    </div>
                 </article>
-                <article class="icecream-item ">
-                    <div class="icecream-item_popular">
+                <article class="icecream-item icecream-item_popular">
                         <div class=icecream-item_pic>
-                            <img class="creamy-caramel" src="img/creamy-caramel.png" width="150" height="150">
+                            <img class="creamy-caramel" src="img/creamy-caramel.png" width="150" height="150" alt="Сливочное крем-брюле с карамельной подливкой">
                             <p class="cost">
                                 <span class="digital-cost">415</span>
-                                <span clas="image-cost"><img src="img/rouble.png" heght="20" width="20"></span>
+                                <span class="image-cost"><img src="img/rouble.png" height="20" width="20" alt="Р"></span>
                                 <span class="kg-cost">/КГ</span>
                             </p>
                         </div>
@@ -145,7 +139,6 @@
                             Сливочное крем-брюле с<br>карамельной подливкой
                         </p>
                         <a class="button icecream-button" href="#">Быстрый просмотр</a> 
-                    </div>
                 </article>   
         </section>
         <section class="features">
