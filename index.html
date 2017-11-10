@@ -188,22 +188,57 @@
             <p class="about-us-link"> Сделано в<a href="#" > HTML Academy</a> с 2017 </p>
         </div>
     </footer>
+    
+    
     <section class="login">
         <h2 class="hidden-content">Личный Кабинет</h2>
-        <!-- Здесь будет форма-->
-        <a href="#" class="login-support">Забыли пароль?</a>
-        <a href="#" class="login-support">новая регистрация</a>
+        <form class="login-form" method="post"
+          action="https://echo.htmlacademy.ru">
+            <p>
+                <label for="login-form-email"></label>
+                <input id="login-form-email" type="text" name="email" placeholder="Электронная почта" alt="Электронная почта">
+            </p>
+            <p>
+                <label for="login-form-password"></label>
+                <input id="login-form-password" type="text" name="password" placeholder="Пароль" alt="Пароль">
+            </p>
+            <p>
+                
+                <button type="submit"class="login-form-submit">Войти</button>
+            </p>
+            <p>
+                <a href="#" class="login-support">Забыли пароль?</a>
+                <a href="#" class="login-support">новая регистрация</a>
+            </p>
+        </form> 
     </section>
+    
     <section class="searching">
         <h2 class="hidden-content">Поиск</h2>
-        <!-- Здесь будет форма-->
+        <p>
+            <label for="search"></label>
+            <input id="search" type="text" class="searching-field" placeholder="Что ищем" alt="Поиск по сайту">
+        </p>
     </section>
+    
     <section class="feedback">
         <h2 class="hidden-content">Форма обратной связи</h2>
-        <p>Мы обязательно вам ответим!</p>
-        <!-- Здесь будет форма-->
-        <span class="feedback-close">x</span>
-        
+        <p class="feedback-caption">Мы обязательно вам ответим!</p>
+        <button class="feedback-close">x</button>
+        <form class="feedback-form" method="post" action="https://echo.htmlacademy.ru">
+            <p>
+                <label for="feedback-name"></label>
+                <input id="feedback-name" type="text" name="name" placeholder="Как вас зовут ?" alt="Как вас зовут ?">
+            </p>
+            <p>
+                <label for="feedback-email"></label>
+                <input id="feedback-email" type="text" name="email" placeholder="Ваша почта для ответа" alt="Как вас зовут ?">
+            </p>
+            <p>
+                <textarea name="feedback-text" placeholder="Напишите что нибудь..." alt="Напишите что нибудь" ></textarea>
+            </p>
+         <button type="submit"class="feedback-submit">Отправить</button>
+        </form>
     </section>
 </body>
 </html>
