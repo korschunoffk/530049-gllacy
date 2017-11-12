@@ -154,8 +154,16 @@
                 <a href="#" class="blog-promo-link">10 способов сервировки фруктовых щербетов к столу</a>
             </article>
             <article class="promo-bottom_subscribe">
+                <h3 class="hidden-content">Оформить подписку</h3>
                 <p class="subscribe-description">Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусног,чтоу нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)</p>
-                <!-- Здесь будет форма-->
+                <form class="subscribe-form" method="post" action="https://echo.htmlacademy.ru">
+                    <p>
+                    <input type="text" placeholder="Электронная почта" name="email" alt="введите адрес электронный почты">
+                    </p>
+                    <p>
+                        <button type="submit" class="submit-button">Отправить</button>
+                    </p>
+                </form>
             </article>
         </section>
         <section class="contacts">
@@ -207,7 +215,7 @@
                 <button type="submit"class="login-form-submit">Войти</button>
             </p>
             <p>
-                <a href="#" class="login-support">Забыли пароль?</a>
+                <a href="#" class="login-support">Забыли пароль?</a> <br>
                 <a href="#" class="login-support">новая регистрация</a>
             </p>
         </form> 
@@ -237,7 +245,9 @@
             <p>
                 <textarea name="feedback-text" placeholder="Напишите что нибудь..." alt="Напишите что нибудь" ></textarea>
             </p>
-         <button type="submit"class="feedback-submit">Отправить</button>
+            <p>
+                <button type="submit"class="feedback-submit">Отправить</button>
+            </p>
         </form>
     </section>
 </body>

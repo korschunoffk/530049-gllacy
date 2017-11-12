@@ -36,22 +36,56 @@
     <main class="container">
         <p class="filter-nav-path"><a href="index.html">Главная</a>>><a href="catalog.html">Каталог </a> >> Сливочное</p>
         <h1 class="catalog-caption">Сливочное мороженое</h1>
-        <form class="filter" method="post">
-            <ul>
-                <li>
+        <form class="filter" method="post" action="https://echo.htmlacademy.ru">
+            <ul class="sort-list">
+                <li class="sort-list-item">
                     <fieldset>
-                        <legend>Сортировка</legend>
-                        <select>
-                            <option>По популярности</option>
-                            <option>Пункт 2</option>
-                        </select>
+                        <legend class="fieldset-legend">Сортировка</legend>
+                        <select  name = "name[]">
+                            <option value="popular">По популярности</option>
+                            <option value="budget">Сначала недорогие</option>
+                            <option value="premium">Сначала дорогие</option>
+                            <option value="fat-quantity">По жирности</option>
+                            </select>
                     </fieldset>
                 </li>
-                <li><fieldset></fieldset> </li>
-                <li><fieldset></fieldset> </li>
-                <li><fieldset></fieldset> </li>
-                <li><fieldset></fieldset> </li>
-            
+                <li class="sort-list-item">
+                    <fieldset>
+                        <legend class="fieldset-legend">Цена: 100 руб.- 500 руб.</legend>
+                        <input type="range" min="100" max="500" step="5" value="100" name="price-range">
+                    </fieldset>
+                </li>
+                <li class="sort-list-item">
+                    <fieldset>
+                        <legend class="fieldset-legend">Жирность</legend>
+                        <input type="radio" id="radio-item-1" value="fat-zero" name="fat-radio" alt="ноль процентов">
+                        <label for="radio-item-1">0%</label>
+                        <input type="radio" id="radio-item-1" value="fat-ten" name="fat-radio" alt="десять процентов" checked>
+                        <label for="radio-item-1">10%</label>
+                        <input type="radio" id="radio-item-1" value="fat-under-thirty" name="fat-radio" alt="до тридцати процентов">
+                        <label for="radio-item-1">до 30%</label>
+                        <input type="radio" id="radio-item-1" value="fat-over-thirty" name="fat-radio" alt="выше 30 процентов">
+                        <label for="radio-item-1">выше 30%</label>
+                    </fieldset> 
+                </li>
+                <li class="sort-list-item">
+                    <fieldset>
+                        <legend class="fieldset-legend">Наполнители</legend>
+                        <input type="checkbox" id="checkbox-item-1" name="filler-choco" alt="Шоколадные" checked>
+                        <label for="checkbox-item-1">шоколадные</label>
+                        <input type="checkbox" id="checkbox-item-1" name="filler-sugar" alt="сахарные присыпки" checked>
+                        <label for="checkbox-item-1">сахарные присыпки</label>
+                        <input type="checkbox" id="checkbox-item-1" name="filler-fruit" alt="фрукты">
+                        <label for="checkbox-item-1">фрукты</label>
+                        <input type="checkbox" id="checkbox-item-1" name="filler-syrup" alt="сиропы">
+                        <label for="checkbox-item-1">сиропы</label>
+                        <input type="checkbox" id="checkbox-item-1" name="filler-jam" alt="джемы">
+                        <label for="checkbox-item-1">джемы</label>
+                    </fieldset> 
+                </li>
+                <li class="sort-list-item">
+                   <button type="submit">применить</button>
+                </li>
             </ul>
         </form>
         
