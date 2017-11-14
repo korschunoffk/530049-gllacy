@@ -28,49 +28,50 @@
         </nav> 
        
         <ul class="user-navigation">
-            <li class="user-navigation_item user-navigation_item--search"><a href="#">Поиск</a></li>
-            <li class="user-navigation_item user-navigation_item--login"><a href="#">Вход</a></li>
-            <li class="user-navigation_item user-navigation_item--cart"><a href="#">Корзина</a></li>
+            <li class="user-navigation_item user-navigation_item--search">
+                <a href="#">Поиск</a>
+                <!-- -------------------- Форма поиска ---------------------->  
+                <section class="searching">
+                <p class="hidden-content">Поиск</p>
+                <p>
+                    <label for="search"></label>
+                    <input id="search" type="text" class="searching-field" placeholder="Что ищем">
+                </p>
+                </section>
+            </li>
+            <li class="user-navigation_item user-navigation_item--login">
+                <a href="#">Вход</a>
+                <!-- -------------------- Форма Входа ---------------------->  
+                <section class="login">
+                    <p class="hidden-content">Личный Кабинет</p>
+                    <form class="login-form" method="post" action="https://echo.htmlacademy.ru">
+                        <p>
+                            <label for="login-form-email"></label>
+                            <input id="login-form-email" type="text" name="email" placeholder="Электронная почта">
+                        </p>
+                        <p>
+                            <label for="login-form-password"></label>
+                            <input id="login-form-password" type="text" name="password" placeholder="Пароль">
+                        </p>
+                        <div class="login-form-bottom">
+                            <p>  
+                                <button type="submit"class="login-form-submit">Войти</button>
+                            </p>
+                            <p>
+                                <a href="#" class="login-support">Забыли пароль?</a> <br>
+                                <a href="#" class="login-support">новая регистрация</a>
+                            </p>
+                        </div>
+                     </form> 
+                </section>
+            </li>
+            <li class="user-navigation_item user-navigation_item--cart">
+                <a href="#">Корзина</a>
+            </li>
         </ul>
         <p class="work-time-header">C 10 до 20, ежедневно</p>
         <p class="phone-header">8 812 450-25-25</p> 
         
-        <!-- -------------------- Форма Входа ---------------------->  
-        
-            <section class="login">
-        <h2 class="hidden-content">Личный Кабинет</h2>
-        <form class="login-form" method="post"
-          action="https://echo.htmlacademy.ru">
-            <p>
-                <label for="login-form-email"></label>
-                <input id="login-form-email" type="text" name="email" placeholder="Электронная почта">
-            </p>
-            <p>
-                <label for="login-form-password"></label>
-                <input id="login-form-password" type="text" name="password" placeholder="Пароль">
-            </p>
-            <div class="login-form-bottom">
-                <p>  
-                    <button type="submit"class="login-form-submit">Войти</button>
-                </p>
-                <p>
-                    <a href="#" class="login-support">Забыли пароль?</a> <br>
-                    <a href="#" class="login-support">новая регистрация</a>
-                </p>
-            </div>
-        </form> 
-    </section>
-        
-    <!-- -------------------- Форма поиска ---------------------->  
-        
-    <section class="searching">
-        <h2 class="hidden-content">Поиск</h2>
-        <p>
-            <label for="search"></label>
-            <input id="search" type="text" class="searching-field" placeholder="Что ищем">
-        </p>
-    </section>
-    
     </header>
         
    
