@@ -7,7 +7,11 @@
 </head>
 <body>
     <header class="container">
+        
         <nav class="main-navigation">
+            <a class="main-navigation_logo" href="index.html">
+                <img class="company-logo" src="img/svg-gllacy/logo.svg" height="50" width="100" alt="Логотип магазина Глейси">
+            </a>
             <ul class="main-navigation_list">
                 <li class="main-navigation_item"><a href="catalog.html">Каталог</a>
                      <ul class="sub-menu_list">
@@ -22,16 +26,51 @@
                 <li class="main-navigation_item"> <a href="#">О Компании</a></li>
             </ul>
         </nav> 
-        <a class="main-navigation_logo" href="index.html">
-            <img class="company-logo" src="img/svg-gllacy/logo.svg" height="50" width="100" alt="Логотип магазина Глейси">
-        </a>
+       
         <ul class="user-navigation">
             <li class="user-navigation_item user-navigation_item--search"><a href="#">Поиск</a></li>
             <li class="user-navigation_item user-navigation_item--login"><a href="#">Вход</a></li>
             <li class="user-navigation_item user-navigation_item--cart"><a href="#">Корзина</a></li>
         </ul>
         <p class="work-time-header">C 10 до 20, ежедневно</p>
-        <p class="phone-header">8 812 450-25-25</p>     
+        <p class="phone-header">8 812 450-25-25</p> 
+        
+        <!-- -------------------- Форма Входа ---------------------->  
+        
+            <section class="login">
+        <h2 class="hidden-content">Личный Кабинет</h2>
+        <form class="login-form" method="post"
+          action="https://echo.htmlacademy.ru">
+            <p>
+                <label for="login-form-email"></label>
+                <input id="login-form-email" type="text" name="email" placeholder="Электронная почта">
+            </p>
+            <p>
+                <label for="login-form-password"></label>
+                <input id="login-form-password" type="text" name="password" placeholder="Пароль">
+            </p>
+            <div class="login-form-bottom">
+                <p>  
+                    <button type="submit"class="login-form-submit">Войти</button>
+                </p>
+                <p>
+                    <a href="#" class="login-support">Забыли пароль?</a> <br>
+                    <a href="#" class="login-support">новая регистрация</a>
+                </p>
+            </div>
+        </form> 
+    </section>
+        
+    <!-- -------------------- Форма поиска ---------------------->  
+        
+    <section class="searching">
+        <h2 class="hidden-content">Поиск</h2>
+        <p>
+            <label for="search"></label>
+            <input id="search" type="text" class="searching-field" placeholder="Что ищем">
+        </p>
+    </section>
+    
     </header>
         
    
@@ -141,6 +180,7 @@
                         <a class="button icecream-button" href="#">Быстрый просмотр</a> 
                 </article>   
         </section>
+        
         <section class="features">
             <h2 class="features-caption">Магазин Глейси - это онлайн-магазин по продаже мороженого собственного производства на развес</h2>
             <p class="features-item features-item-img1">Всё наше мороженое изготавливается на собственном производстве, с использованием современного оборудованя и проверенных временем технологий.</p>
@@ -198,37 +238,7 @@
     </footer>
     
     
-    <section class="login">
-        <h2 class="hidden-content">Личный Кабинет</h2>
-        <form class="login-form" method="post"
-          action="https://echo.htmlacademy.ru">
-            <p>
-                <label for="login-form-email"></label>
-                <input id="login-form-email" type="text" name="email" placeholder="Электронная почта" alt="Электронная почта">
-            </p>
-            <p>
-                <label for="login-form-password"></label>
-                <input id="login-form-password" type="text" name="password" placeholder="Пароль" alt="Пароль">
-            </p>
-            <p>
-                
-                <button type="submit"class="login-form-submit">Войти</button>
-            </p>
-            <p>
-                <a href="#" class="login-support">Забыли пароль?</a> <br>
-                <a href="#" class="login-support">новая регистрация</a>
-            </p>
-        </form> 
-    </section>
-    
-    <section class="searching">
-        <h2 class="hidden-content">Поиск</h2>
-        <p>
-            <label for="search"></label>
-            <input id="search" type="text" class="searching-field" placeholder="Что ищем" alt="Поиск по сайту">
-        </p>
-    </section>
-    
+
     <section class="feedback">
         <h2 class="hidden-content">Форма обратной связи</h2>
         <p class="feedback-caption">Мы обязательно вам ответим!</p>
@@ -236,14 +246,14 @@
         <form class="feedback-form" method="post" action="https://echo.htmlacademy.ru">
             <p>
                 <label for="feedback-name"></label>
-                <input id="feedback-name" type="text" name="name" placeholder="Как вас зовут ?" alt="Как вас зовут ?">
+                <input id="feedback-name" type="text" name="name" placeholder="Как вас зовут ?" >
             </p>
             <p>
                 <label for="feedback-email"></label>
-                <input id="feedback-email" type="text" name="email" placeholder="Ваша почта для ответа" alt="Как вас зовут ?">
+                <input id="feedback-email" type="text" name="email" placeholder="Ваша почта для ответа" >
             </p>
             <p>
-                <textarea name="feedback-text" placeholder="Напишите что нибудь..." alt="Напишите что нибудь" ></textarea>
+                <textarea name="feedback-text" placeholder="Напишите что нибудь..." ></textarea>
             </p>
             <p>
                 <button type="submit"class="feedback-submit">Отправить</button>
