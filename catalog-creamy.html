@@ -113,7 +113,19 @@
                 <div class="filter-price">
                     <fieldset>
                         <legend class="fieldset-legend">Цена: 100 руб.- 500 руб.</legend>
-                        <input type="range" min="100" max="500" step="5" value="100" name="price-range">
+                            <div class="range-filter">
+                                <p class="price-controls">
+                                    <label class="min-price">Цена: <input name="min-price" type="text" value="100"> руб. -</label>
+                                    <label class="max-price"><input name="max-price" type="text" value="500"> руб.</label>
+                                </p>
+                                <div class="range-controls">
+                                        <p class="scale">
+                                            <span class="bar"></span>
+                                            <span class="toggle toggle-min"></span>
+                                            <span class="toggle toggle-max"></span>
+                                        </p>
+                                </div>
+                            </div>
                     </fieldset>
                 </div>
                 <div class="filter-fat">
