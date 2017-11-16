@@ -13,5 +13,124 @@ body {
     background-image: url("../img/main-backround-1.png");
     background-position: top center;
     background-repeat: no-repeat;
+    
+}
+/*------------------Основная навигация-----------------*/
+.main-navigation_list{
+    list-style: none;
+    font-family: 'Roboto', Arial , sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+    line-height:18px;
+    display: flex;
+}
+
+.main-navigation_item a{
+    color:white;
+    text-decoration:none;  
+}
+.main-navigation_sublist{
+    position: absolute;
+    top:90px;
+    left:000px;
+    list-style: none;
+    font-family: 'Roboto', Arial , sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+    line-height:16px;
+    display: none;
+    
+}
+.sub-menu_item{
+    background-color: white;
+}
+
+.sub-menu_item a{
+    font-weight: 500;
+    color:black;
+    
+}
+
+.sub-menu_item:nth-child(1) a{
+    font-weight: 700;
+    color:black;
+}
+/*------------------Интерактивные элементы---------------------*/
+.main-navigation_item:hover{
+   background-color: white;
+}
+.main-navigation_item:nth-child(1):hover .main-navigation_sublist{
+    display:inline-block;
+}
+.main-navigation_item:hover a{
+    color:black;
+}
+.main-navigation_item:hover .sub-menu_item:hover{
+    background-color: #fbded7;
+}
+.main-navigation_item:hover .sub-menu_item:active{
+    background-color: #f6b5a5;
+}
+/*------------------Пользовательская навигация-----------------*/
+
+.user-navigation{
+    list-style: none;
+    font-family: 'Roboto', Arial , sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+    line-height:16px;
+    display: flex;
+}
+.user-navigation_item a{
+    color:white;
+    text-decoration: none;
+}
+    
+}
+/*------------------Интерактивные элементы---------------------*/
+.user-navigation_item:hover{
+    background-color:white;
+}
+.user-navigation_item:hover a{
+    color:black;
+}
+
+/*------------------Форма входа---------------------*/
+.login{ 
+    
+    background-color: #f8f7f4;
+    width:277px;
+    position: absolute;
+    display:none;
+
+}
+.user-navigation_item:hover .login{
+    display: inline-block;
+}
+
+.login_row{
+    display: flex;
+}
+#login-form-email,#login-form-password,#search{
+    font-family: 'Roboto', Arial , sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height:24px;
+    color:#999999;
+}
+.login-form-submit{
+    font-family: 'Roboto', Arial , sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+    line-height:24px;
+    color:white;
+    background-color:#f27452;
+}
+.login_support{
+    font-family: 'Roboto', Arial , sans-serif;
+    font-weight: 400;
+    font-size: 13px;
+    line-height:24px;
+    color:black;
 }
 
