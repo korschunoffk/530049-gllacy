@@ -80,35 +80,30 @@ body {
     font-size: 14px;
     line-height:16px;
     display: flex;
+    
+}
+.user-navigation_item:hover{
+    background-color: white;
 }
 .user-navigation_item a{
     color:white;
     text-decoration: none;
 }
-    
-}
-/*------------------Интерактивные элементы---------------------*/
-.user-navigation_item:hover{
-    background-color:white;
-}
 .user-navigation_item:hover a{
-    color:black;
+    color:black;  
+
+
+
 }
+
+
 
 /*------------------Форма входа---------------------*/
 .login{ 
-    
-    background-color: #f8f7f4;
+  background-color: #f8f7f4;
     width:277px;
-    position: absolute;
-    display:none;
-
 }
-.user-navigation_item:hover .login{
-    display: inline-block;
-}
-
-.login_row{
+.login_row:nth-child(3){
     display: flex;
 }
 #login-form-email,#login-form-password,#search{
@@ -133,4 +128,269 @@ body {
     line-height:24px;
     color:black;
 }
+/*-----------------Форма поиска-------------*/
+.searching{
+    width:341px;
+    background-color:#f8f7f4;
+}
+/*--------Главный слайдер------------*/
+.slide{
+    font-family: 'Roboto', Arial , sans-serif;
+    font-weight: 700;
+    font-size: 60px;
+    line-height:60.25px;
+    color:white;
+}
+.slide--one{
+    background-color: #849d8f;
+    background-image: url("../img/main-backround-1.png");
+    background-position: top center;
+    background-repeat: no-repeat;
+    
+}
+.slide--two{
+    background-color: #8996a6;
+    background-image: url("../img/main-background-2.png");
+    background-position: top center;
+    background-repeat: no-repeat;
+}
+.slide--three{
+    background-color: #9d8b84;
+    background-image: url("../img/main-background-3.png");
+    background-position: top center;
+    background-repeat: no-repeat;
+}
 
+.slide_button{
+    font-family: 'Roboto', Arial , sans-serif;
+    font-weight: 700;
+    font-size: 32px;
+    line-height:44px;
+}
+
+/*-----------Промо------------------*/
+.promo{
+    display: flex;
+    justify-content: space-around;
+}
+.promo_item{
+    width:560px;
+    height:230px;
+    border-radius:20px;
+}
+.promo_item--raspberry{
+    background-color: #610d1d;
+    background-image: url("../img/raspberries-background.jpg");
+    background-position:center;
+    background-repeat: no-repeat; 
+}
+.promo_item--chocolate{
+    background-color: #43271b;
+    background-image: url("../img/chocolate-background.jpg");
+    background-position:center;
+    background-repeat: no-repeat; 
+}
+.promo_caption{
+    font-family: 'Roboto', Arial , sans-serif;
+    font-weight: 700;
+    font-size: 35px;
+    line-height:41px;
+   
+}
+ .promo_text{
+    font-family: 'Roboto', Arial , sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+    line-height:22px;
+}
+.promo_button{
+    font-family: 'Roboto', Arial , sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+    line-height:24px;
+}
+
+/*-----------Популярное--------------*/
+.catalog{
+    display: flex;
+    justify-content: space-around;
+    margin:0;
+}
+.icecream-item{
+    padding: 0;
+    margin:0;
+    width:300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+.cost_text{
+    font-family: 'Roboto', Arial , sans-serif;
+    font-weight: 700;
+    font-size: 45px;
+    line-height:45px;
+}
+.cost_measure{
+    font-family: 'Roboto', Arial , sans-serif;
+    font-weight: 700;
+    font-size: 40px;
+    line-height:45px;
+}
+.cost_image{
+    position: relative;
+    top:3px;
+}
+.icecream-item_cost{
+    padding: 0px;
+    margin:0px;
+    position: relative;
+    bottom: 65px;
+    right:50px;
+}
+.icecream-item_description{
+    font-family: 'Roboto', Arial , sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    line-height:22x;
+}
+.icecream-item_button{
+    display:none;
+    font-family: 'Roboto', Arial , sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+    line-height:24x;
+    
+}
+.icecream-item:hover{
+    background-color: #9bafa3;
+    border-radius:5px;
+}
+.icecream-item:hover .icecream-item_button{
+    display: block;
+    
+}
+/*-----------преимущества------------------*/
+.features{
+    
+    margin:0 auto;
+    background-color:#e9dcbf;
+    background-image:url(../img/wafer-background.jpg);
+    width: 1146px;
+    border-radius:10px;
+}
+.features_caption{
+    font-family: 'Roboto', Arial , sans-serif;
+    font-weight: 500;
+    font-size: 24px;
+    line-height:30px;
+    color:#323232;
+    padding: 22px;
+}
+.features_item{
+    font-family: 'Roboto', Arial , sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height:22px;
+    color:#323232;
+}
+/*-----------промо и подписка--------------*/
+.promo_article--blog{
+    height:220px;
+    background-image: url(../img/strawberry-background.jpg);
+}
+.promo_article--subscribe{
+    height: 220px;
+    background-image:url(../img/subscribe-background.png);
+}
+.promo_title{
+    font-family: 'Roboto', Arial , sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    line-height:22px;
+    color:#323232;
+}
+.promo_blog-announce{
+    font-family: 'Roboto', Arial , sans-serif;
+    font-weight: 500;
+    font-size: 24px;
+    line-height:30px;
+    color:#323232;
+}
+.promo-article-align{
+    padding-left:20px;
+    width:300px;
+}
+.promo_subscribe-description{
+    font-family: 'Roboto', Arial , sans-serif;
+    font-weight: 400;
+    font-size: 16x;
+    line-height:22px;
+    color:#5a5a5a;
+}
+.promo_subscribe-form{
+    font-family: 'Roboto', Arial , sans-serif;
+    font-weight: 400;
+    font-size: 16x;
+    line-height:24px;
+    color:#999999;
+}
+.promo_button{
+    font-family: 'Roboto', Arial , sans-serif;
+    font-weight: 400;
+    font-size: 18x;
+    line-height:24px;
+    color:white;
+}
+/*-----------Контакты-----------------------*/
+.contacts{
+    height: 430px;
+    background-color:#ebe6d0;
+    background-image: url(../img/map-background.jpg);
+}
+.contacts_inner{
+    background-color:white;
+    height:306px;
+    width:302px;
+    position: relative;
+    left:700px;
+}
+.contacts_text{
+    font-family: 'Roboto', Arial , sans-serif;
+    font-weight: 400;
+    font-size: 14x;
+    line-height:20px;
+    color:black;
+}
+.contacts_address ,.contacts_mobile{
+    font-family: 'Roboto', Arial , sans-serif;
+    font-weight: 700;
+    font-size: 18x;
+    line-height:24px;
+    color:black;
+}
+.contacts_mobile{
+    text-decoration: none;
+}
+.contacts_button{
+    font-family: 'Roboto', Arial , sans-serif;
+    font-weight: 700;
+    font-size: 18x;
+    line-height:24px;
+    
+}
+/*-----------Кнопки------------------------*/
+
+
+.button{
+    background-color:#f27452;
+    border-radius: 50px;
+    color:white;
+    text-decoration: none;  
+}
+
+/*--------контейнер центровщик------------*/
+.container{
+    width:1200px;
+    margin:0 auto;
+}
