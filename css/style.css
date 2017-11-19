@@ -15,6 +15,25 @@ body {
     background-repeat: no-repeat;
     
 }
+/*-----------Кнопки------------------------*/
+
+.button{
+    background-color:#f27452;
+    border-radius: 50px;
+    color:white;
+    text-decoration: none;  
+}
+.button:hover{
+    background-color:#e0806d;
+}
+.button:active{
+    background-color:#f27452;
+}
+/*--------контейнер центровщик------------*/
+.container{
+    width:1200px;
+    margin:0 auto;
+}
 /*------------------Основная навигация-----------------*/
 .main-navigation_list{
     list-style: none;
@@ -32,7 +51,7 @@ body {
 .main-navigation_sublist{
     position: absolute;
     top:90px;
-    left:000px;
+    left:200px;
     list-style: none;
     font-family: 'Roboto', Arial , sans-serif;
     font-weight: 500;
@@ -44,17 +63,18 @@ body {
 .sub-menu_item{
     background-color: white;
 }
-
-.sub-menu_item a{
-    font-weight: 500;
-    color:black;
-    
+.onpage{
+    background-color: #d07058;
 }
-
+sub-menu_item a{
+    font-weight: 500;
+    color:black; 
+}
 .sub-menu_item:nth-child(1) a{
     font-weight: 700;
     color:black;
 }
+
 /*------------------Интерактивные элементы---------------------*/
 .main-navigation_item:hover{
    background-color: white;
@@ -62,8 +82,15 @@ body {
 .main-navigation_item:nth-child(1):hover .main-navigation_sublist{
     display:inline-block;
 }
+
 .main-navigation_item:hover a{
     color:black;
+}
+.main-navigation_item:nth-child(1):hover .onpage a{
+    color:white;
+}
+.onpage a{
+    color:white;
 }
 .main-navigation_item:hover .sub-menu_item:hover{
     background-color: #fbded7;
@@ -71,6 +98,8 @@ body {
 .main-navigation_item:hover .sub-menu_item:active{
     background-color: #f6b5a5;
 }
+
+
 /*------------------Пользовательская навигация-----------------*/
 
 .user-navigation{
@@ -82,6 +111,12 @@ body {
     display: flex;
     
 }
+.user-navigation_item{
+    background-color: rgba(255,255,255,0.25);
+    border-radius: 50px;
+    height: 33px;
+}
+
 .user-navigation_item:hover{
     background-color: white;
 }
@@ -91,20 +126,71 @@ body {
 }
 .user-navigation_item:hover a{
     color:black;  
-
-
-
 }
+.subnav__item{
+    font-family: 'Roboto', Arial , sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height:16px;
+    color:white;
+}
+.user-navigation_item--search{
+    background-image: url(../img/svg-gllacy/loupe.svg);
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    height: 33px;
+    width:33px;
+}
+.user-navigation_item--login{ 
+    background-image: url(../img/svg-gllacy/entrance.svg);
+    background-repeat: no-repeat;
+    background-position: 10% 50%;
+    padding-left: 33px;
+}
+.user-navigation_item--cart {
+    background-image: url(../img/svg-gllacy/basket.svg);
+    background-repeat: no-repeat;
+    background-position: 10% 50%;
+    padding-left: 33px;
+    padding
+}
+.user-navigation_item--fullcart {  
+    background-image: url(../img/svg-gllacy/basket-red.svg);
+    background-repeat: no-repeat;
+    background-position: 10% 50%;
+    padding-left: 33px;
+}
+.user-navigation_item--login:hover{
+    background-image: url(../img/svg-gllacy/entrance.svg);
+    background-repeat: no-repeat;
+    padding-left: 33px;
+}
+/*-------------время работы и телефон---------------*/
 
-
+.main-navigation__info{
+    font-family: 'Roboto', Arial , sans-serif;
+    font-weight: 700;
+    font-size: 14px;
+    line-height:16px;   
+}
+.main-navigation__info--tel{
+    font-size: 22pt;
+    line-height:24pt;
+    text-decoration: none;
+    color:white;
+}
 
 /*------------------Форма входа---------------------*/
 .login{ 
   background-color: #f8f7f4;
     width:277px;
+    border-radius: 5px;
 }
 .login_row:nth-child(3){
+    padding:0;
+    margin:0;
     display: flex;
+    justify-content: space-around;
 }
 #login-form-email,#login-form-password,#search{
     font-family: 'Roboto', Arial , sans-serif;
@@ -121,14 +207,37 @@ body {
     color:white;
     background-color:#f27452;
 }
+.login_column{
+    padding:0;
+    margin:0;
+}
+
 .login_support{
     font-family: 'Roboto', Arial , sans-serif;
     font-weight: 400;
     font-size: 13px;
     line-height:24px;
     color:black;
+    
+}
+.login-form-submit{
+    border-radius: 50px;
+    width:101px;
+    height:44px;
 }
 /*-----------------Форма поиска-------------*/
+.catalog_caption{
+    font-family: 'Roboto', Arial , sans-serif;
+    font-weight: 700;
+    font-size: 35px;
+    line-height:41px;
+}
+.catalog_filter-title{
+    font-family: 'Roboto', Arial , sans-serif;
+    font-weight: 700;
+    font-size: 35px;
+    line-height:41px;
+}
 .searching{
     width:341px;
     background-color:#f8f7f4;
@@ -166,6 +275,41 @@ body {
     font-weight: 700;
     font-size: 32px;
     line-height:44px;
+}
+/*-----------Фильтр каталога--------*/
+.catalog_filter{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.catalog_filter-item{
+    margin:0;
+    padding 0;
+}
+.filter-item-sub{
+    margin:0;
+    padding 0;
+    color:white;
+    background-color: rgba(255,255,255,0.25);
+    border-radius: 50px;
+}
+.catalog_filter-title{
+    font-family: 'Roboto', Arial , sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+    line-height:16px;
+}
+.filter-price_row,#radio-item-1,#radio-item-2,#radio-item-3,#radio-item-4,#checkbox-item-1,#checkbox-item-2,#checkbox-item-3,#checkbox-item-4,.catalog_filter-button{
+    font-family: 'Roboto', Arial , sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    line-height:18px;
+}
+.catalog_filter-button{
+    color:white;
+    background-color: rgba(255,255,255,0.25);
+    border:2px solid white;
+    border-radius: 50px;
 }
 
 /*-----------Промо------------------*/
@@ -210,16 +354,18 @@ body {
     line-height:24px;
 }
 
-/*-----------Популярное--------------*/
+/*-----------Карточка товара--------------*/
 .catalog{
     display: flex;
     justify-content: space-around;
     margin:0;
+    flex-wrap:wrap;
 }
 .icecream-item{
     padding: 0;
     margin:0;
-    width:300px;
+    width:290px;
+    height:405px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -253,6 +399,8 @@ body {
     font-weight: 500;
     font-size: 16px;
     line-height:22x;
+    position: relative;
+    bottom: 40px;
 }
 .icecream-item_button{
     display:none;
@@ -260,6 +408,8 @@ body {
     font-weight: 700;
     font-size: 18px;
     line-height:24x;
+    position: relative;
+    bottom: 40px;
     
 }
 .icecream-item:hover{
@@ -316,6 +466,12 @@ body {
     font-size: 24px;
     line-height:30px;
     color:#323232;
+}
+.promo_blog-announce:hover{
+    color:#e84d37;
+}
+..promo_blog-announce:active{
+    color:#e84d37;
 }
 .promo-article-align{
     padding-left:20px;
@@ -379,18 +535,129 @@ body {
     line-height:24px;
     
 }
-/*-----------Кнопки------------------------*/
-
-
-.button{
-    background-color:#f27452;
-    border-radius: 50px;
+/*-----------Пагинатор------------------------*/
+.pagination_list{
+    list-style:none;
+    display: flex;
+}
+.pagination_item{
+    width:25px;
+    height: 25px;
+    border-radius:50px;
+    text-align: center;
+}
+.pagination_item a {
+    font-family: 'Roboto', Arial , sans-serif;
+    font-weight: 500;
+    font-size: 16x;
+    line-height:25px;
     color:white;
-    text-decoration: none;  
+    text-decoration: none;
+}
+.pagination_item:nth-child(2){
+    background-color: white;
+}
+.pagination_item:nth-child(1) a{
+    color: #9bafa4;
+}
+.pagination_item:nth-child(2) a{
+    color: black;
+}
+/*-----------Подвал------------------------*/
+.footer-flex{
+    display: flex;
+    justify-content: space-between;
+}
+.social_button{
+    font-family: 'Roboto', Arial , sans-serif;
+    font-weight: 400;
+    font-size: 13x;
+    line-height:18px;
+    color:white;
+    text-decoration: none;
+}
+.about-us_link{
+    font-family: 'Roboto', Arial , sans-serif;
+    font-weight: 400;
+    font-size: 13x;
+    line-height:18px;
+    color:white;
+    text-decoration: none;
+}
+.about-us_link--heart{
+    padding-left:17px;
+    font-weight: 700;
+    background-image: url(../img/svg-gllacy/heart.svg) ;
+    background-repeat: no-repeat;
+    background-position: 0% 50%;
+    
+}
+.about-us_link:hover , .developers_link:hover a{
+    color:#ffbc9e;
+}
+.developers_link{
+    font-family: 'Roboto', Arial , sans-serif;
+    font-weight: 400;
+    font-size: 12x;
+    line-height:18px;
+    
+    }
+.developers_link a{
+    color:white;
+    text-decoration: none;
+}
+/*-----------обратная связь------------------------*/
+.feedback{
+    width:478px;
+    height:443px;
+    background-color: #f8f7f4;
+}
+#feedback-name,#feedback-email,#feedback-text{
+    font-family: 'Roboto', Arial , sans-serif;
+    font-weight: 400;
+    font-size: 16x;
+    line-height:24px;
+    color: #999999;
+}
+.feedback_caption{
+    font-family: 'Roboto', Arial , sans-serif;
+    font-weight: 500;
+    font-size: 24x;
+    line-height:28px;
+    color: #323232;
+}
+.feedback_button{
+    font-family: 'Roboto', Arial , sans-serif;
+    font-weight: 700;
+    font-size: 18x;
+    line-height:24px;
+}
+/*-----------Товары в корзине--------------*/
+
+.cart-goods{
+    background-color: white;
+}
+.cart-goods-table-row{
+     font-family: 'Roboto', Arial , sans-serif;
+    font-weight: 400;
+    font-size: 13x;
+    line-height:16px;
+    color:#323232;
+}
+.cost-one-kg{
+    color:#999999;
+}
+.total-cost{
+    font-family: 'Roboto', Arial , sans-serif;
+    font-weight: 700;
+    font-size: 15x;
+    line-height:18px;
+    color:#323232;
+}
+.order-button{
+    font-family: 'Roboto', Arial , sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+    line-height:24px;
 }
 
-/*--------контейнер центровщик------------*/
-.container{
-    width:1200px;
-    margin:0 auto;
-}
