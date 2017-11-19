@@ -182,7 +182,11 @@ sub-menu_item a{
 
 /*------------------Форма входа---------------------*/
 .login{ 
-  background-color: #f8f7f4;
+    visibility:hidden;
+    position: absolute;
+    top:100px;
+    right:100px;
+    background-color: #f8f7f4;
     width:277px;
     border-radius: 5px;
 }
@@ -225,6 +229,7 @@ sub-menu_item a{
     width:101px;
     height:44px;
 }
+.user-navigation_item--login:hover .login{visibility: visible;}
 /*-----------------Форма поиска-------------*/
 .catalog_caption{
     font-family: 'Roboto', Arial , sans-serif;
@@ -241,6 +246,13 @@ sub-menu_item a{
 .searching{
     width:341px;
     background-color:#f8f7f4;
+    position: absolute;
+    top:100px;
+    right:200px;
+    visibility: hidden;
+}
+.user-navigation_item--search:hover .searching{
+    visibility: visible;
 }
 /*--------Главный слайдер------------*/
 .slide{
@@ -361,15 +373,23 @@ sub-menu_item a{
     margin:0;
     flex-wrap:wrap;
 }
+
 .icecream-item{
     padding: 0;
-    margin:0;
     width:290px;
-    height:405px;
+    height:320px;
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
+    
+}
+.icecream-item:before{
+    width:290px;
+    height:380px;
+    background-color: white;
+    border-radius: 10px;
+    visibility: hidden;
 }
 .cost_text{
     font-family: 'Roboto', Arial , sans-serif;
@@ -403,7 +423,7 @@ sub-menu_item a{
     bottom: 40px;
 }
 .icecream-item_button{
-    display:none;
+    visibility:hidden; 
     font-family: 'Roboto', Arial , sans-serif;
     font-weight: 700;
     font-size: 18px;
@@ -412,12 +432,9 @@ sub-menu_item a{
     bottom: 40px;
     
 }
-.icecream-item:hover{
-    background-color: #9bafa3;
-    border-radius:5px;
-}
+
 .icecream-item:hover .icecream-item_button{
-    display: block;
+    visibility: visible;
     
 }
 /*-----------преимущества------------------*/
@@ -636,6 +653,11 @@ sub-menu_item a{
 
 .cart-goods{
     background-color: white;
+    visibility: hidden;
+    position: absolute;
+    top:100px;
+    right:300px;
+    border-radius:10px;
 }
 .cart-goods-table-row{
      font-family: 'Roboto', Arial , sans-serif;
@@ -659,5 +681,11 @@ sub-menu_item a{
     font-weight: 700;
     font-size: 18px;
     line-height:24px;
+   
 }
-
+.user-navigation_item--fullcart:hover .cart-goods{
+    visibility: visible;
+}
+.user-navigation_item--fullcart:hover .order-button{
+     color:white;
+}

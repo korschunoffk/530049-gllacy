@@ -28,46 +28,74 @@
             </ul>
     </nav> 
     <ul class="user-navigation">
-            <li class="user-navigation_item user-navigation_item--search"><a href="#"></a></li>
-            <li class="user-navigation_item user-navigation_item--login"><a href="#">Вход</a></li>
-            <li class="user-navigation_item user-navigation_item--fullcart"><a href="#">2 товара</a></li>
+            <li class="user-navigation_item user-navigation_item--search">
+                <a href="#"></a>
+                <!-- -------------------- Форма поиска ---------------------->  
+                <section class="searching">
+                    <p class="search_title hidden-content">Поиск</p>
+                    <p class="search_row">
+                        <label for="search"></label>
+                        <input id="search" type="text" placeholder="Что ищем?">
+                    </p>
+                </section>
+            </li>
+            <li class="user-navigation_item user-navigation_item--login">
+                <a href="#">Вход</a>
+                <!-- -------------------- Форма Входа ---------------------->  
+                <section class="login">
+                    <p class="login_title hidden-content">Личный Кабинет</p>
+                    <form class="login_form" method="post" action="https://echo.htmlacademy.ru">
+                        <p class="login_row">
+                            <label for="login-form-email"></label>
+                            <input id="login-form-email" type="text" name="email" placeholder="Электронная почта">
+                        </p>
+                        <p class="login_row">
+                            <label for="login-form-password"></label>
+                            <input id="login-form-password" type="text" name="password" placeholder="Пароль">
+                        </p>
+                        <div class="login_row">
+                            <button type="submit" class="login-form-submit">Войти</button>
+                            <p class="login_column">
+                                <a href="#" class="login_support">Забыли пароль?</a> <br>
+                                <a href="#" class="login_support">новая регистрация</a>
+                            </p>
+                        </div>
+                    </form> 
+                </section>
+        
+            </li>
+            <li class="user-navigation_item user-navigation_item--fullcart">
+                <a href="#">2 товара</a>
+                <section class="cart-goods">
+                    <table class="cart-goods-table">
+                        <tr class="cart-goods-table-row">
+                            <td><a href="#" class="delete-cart-item"><img src="img/svg-gllacy/cross-small.svg"></a></td>
+                            <td><img class="icecream-pic" src="img/creamy-orange.png" width="30" height="30"
+                         alt="Сливочное с апельсиновым джемом и цитрусовой стружкой"></td>
+                            <td>Пломбир с апельсиновым джемом</td>
+                            <td>1,5 кг x <span class="cost-one-kg">200 руб.</span></td>
+                            <td>300 руб.</td>
+                        </tr>
+                        <tr class="cart-goods-table-row">
+                            <td><a href="#" class="delete-cart-item"><img src="img/svg-gllacy/cross-small.svg"></a></td>
+                            <td><img class="icecream-pic" src="img/creamy-strawberry.png" width="30" height="30"
+                         alt="Сливочно-кофейное с кусочками шоколада"></td>
+                            <td>Клубничный пломбир с присыпкой из белого шоколада</td>
+                            <td>1,5 кг x <span class="cost-one-kg">300 руб.</span></td>
+                            <td>450 руб.</td>
+                        </tr>
+                    </table>
+                    <span class="total-cost">Итого:750 руб.</span><br>
+                    <a class="button order-button" href="#">Оформить заказ</a>
+                </section>
+
+            </li>
     </ul>
         <p class="main-navigation__info">C 10 до 20, ежедневно</p>
         <a class="main-navigation__info main-navigation__info--tel" href="tel:88124502525">8 812 450-25-25</a>
         
-        <!-- -------------------- Форма Входа ---------------------->  
         
-    <section class="login">
-        <p class="login_title hidden-content">Личный Кабинет</p>
-        <form class="login_form" method="post"
-          action="https://echo.htmlacademy.ru">
-            <p class="login_row">
-                <label for="login-form-email"></label>
-                <input id="login-form-email" type="text" name="email" placeholder="Электронная почта">
-            </p>
-            <p class="login_row">
-                <label for="login-form-password"></label>
-                <input id="login-form-password" type="text" name="password" placeholder="Пароль">
-            </p>
-            <div class="login_row">
-                    <button type="submit" class="login-form-submit">Войти</button>
-                <p class="login_column">
-                    <a href="#" class="login_support">Забыли пароль?</a> <br>
-                    <a href="#" class="login_support">новая регистрация</a>
-                </p>
-            </div>
-        </form> 
-    </section>
-        
-    <!-- -------------------- Форма поиска ---------------------->  
-        
-    <section class="search">
-        <p class="search_title hidden-content">Поиск</p>
-        <p class="search_row">
-            <label for="search"></label>
-            <input id="search" type="text" class="search" placeholder="Что ищем?">
-        </p>
-    </section>
+    
     
     
     <!-- -------------------- Корзина ---------------------->

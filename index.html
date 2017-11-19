@@ -28,32 +28,41 @@
             </ul>
         </nav> 
       <ul class="user-navigation">
-            <li class="user-navigation_item user-navigation_item--search"><a href="#"></a></li>
+            <li class="user-navigation_item user-navigation_item--search">
+                <a href="#"></a>
+                <!-- -------------------- Форма поиска ---------------------->  
+                <section class="searching">
+                    <p class="search_title hidden-content">Поиск</p>
+                    <p class="search_row">
+                        <label for="search"></label>
+                        <input id="search" type="text" placeholder="Что ищем?">
+                    </p>
+                </section>
+            </li>
             <li class="user-navigation_item user-navigation_item--login">
                 <a href="#">Вход</a>
                 <!-- -------------------- Форма Входа ---------------------->  
         
                 <section class="login">
-        <p class="login_title hidden-content">Личный Кабинет</p>
-        <form class="login_form" method="post"
-          action="https://echo.htmlacademy.ru">
-            <p class="login_row">
-                <label for="login-form-email"></label>
-                <input id="login-form-email" type="text" name="email" placeholder="Электронная почта">
-            </p>
-            <p class="login_row">
-                <label for="login-form-password"></label>
-                <input id="login-form-password" type="text" name="password" placeholder="Пароль">
-            </p>
-            <div class="login_row">
-                    <button type="submit" class="login-form-submit">Войти</button>
-                <p class="login_column">
-                    <a href="#" class="login_support">Забыли пароль?</a> <br>
-                    <a href="#" class="login_support">Новая регистрация</a>
-                </p>
-            </div>
-        </form> 
-            </section>
+                    <p class="login_title hidden-content">Личный Кабинет</p>
+                    <form class="login_form" method="post" action="https://echo.htmlacademy.ru">
+                    <p class="login_row">
+                        <label for="login-form-email"></label>
+                        <input id="login-form-email" type="text" name="email" placeholder="Электронная почта">
+                    </p>
+                    <p class="login_row">
+                        <label for="login-form-password"></label>
+                        <input id="login-form-password" type="text" name="password" placeholder="Пароль">
+                    </p>
+                    <div class="login_row">
+                        <button type="submit" class="login-form-submit">Войти</button>
+                        <p class="login_column">
+                            <a href="#" class="login_support">Забыли пароль?</a> <br>
+                            <a href="#" class="login_support">Новая регистрация</a>
+                        </p>
+                    </div>
+                    </form> 
+                </section>
                 
             </li>
             <li class="user-navigation_item user-navigation_item--cart"><a href="#">Корзина</a></li>
@@ -61,39 +70,8 @@
         <p class="main-navigation__info">C 10 до 20, ежедневно</p>
         <a class="main-navigation__info main-navigation__info--tel" href="tel:88124502525">8 812 450-25-25</a>
         
-        <!-- -------------------- Форма Входа ---------------------->  
         
-    <section class="login">
-        <p class="login_title hidden-content">Личный Кабинет</p>
-        <form class="login_form" method="post"
-          action="https://echo.htmlacademy.ru">
-            <p class="login_row">
-                <label for="login-form-email"></label>
-                <input id="login-form-email" type="text" name="email" placeholder="Электронная почта">
-            </p>
-            <p class="login_row">
-                <label for="login-form-password"></label>
-                <input id="login-form-password" type="text" name="password" placeholder="Пароль">
-            </p>
-            <div class="login_row">
-                    <button type="submit" class="login-form-submit">Войти</button>
-                <p class="login_column">
-                    <a href="#" class="login_support">Забыли пароль?</a> <br>
-                    <a href="#" class="login_support">Новая регистрация</a>
-                </p>
-            </div>
-        </form> 
-    </section>
-        
-    <!-- -------------------- Форма поиска ---------------------->  
-        
-    <section class="searching">
-        <p class="search_title hidden-content">Поиск</p>
-        <p class="search_row">
-            <label for="search"></label>
-            <input id="search" type="text" placeholder="Что ищем?">
-        </p>
-    </section>
+    
     </header>
     <main class="container">
         <h1 class="hidden-content">Магазин мороженого Глейси</h1>
