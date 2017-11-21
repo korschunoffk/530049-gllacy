@@ -8,11 +8,11 @@
         <link href="css/style.css" rel="stylesheet">
 </head>
 <body>
-    <header class="container">
+    <header class="container header-flex">
+        <a class="main-navigation_logo" href="index.html">
+                <img src="img/svg-gllacy/logo.svg" height="65" width="155" alt="Логотип магазина Глейси">
+        </a>
         <nav class="main-navigation">
-            <a class="main-navigation_logo" href="index.html">
-                <img src="img/svg-gllacy/logo.svg" height="50" width="100" alt="Логотип магазина Глейси">
-            </a>
             <ul class="main-navigation_list">
                 <li class="main-navigation_item"><a href="catalog-creamy.html">Каталог</a>
                      <ul class="main-navigation_sublist">
@@ -65,15 +65,17 @@
                 </section>
                 
             </li>
-            <li class="user-navigation_item user-navigation_item--cart"><a href="#">Корзина</a></li>
+            <li class="user-navigation_item user-navigation_item--cart"><a href="#">Пусто</a></li>
         </ul>
-        <p class="main-navigation__info">C 10 до 20, ежедневно</p>
-        <a class="main-navigation__info main-navigation__info--tel" href="tel:88124502525">8 812 450-25-25</a>
-        
+        <div class="header-contacts">
+            <p class="main-navigation__info">C 10 до 20, ежедневно</p>
+            <a class="main-navigation__info main-navigation__info--tel" href="tel:88124502525">8 812 450-25-25</a>
+        </div>
         
     
     </header>
-    <main class="container">
+    <main class="main-container">
+        <div class="container">
         <h1 class="hidden-content">Магазин мороженого Глейси</h1>
         <section class="slider_wrapper">
              <div class="slider">
@@ -220,6 +222,7 @@
                 <a class="button contacts_button" href="#">Форма обратной связи</a>
             </div>
         </section>
+        </div>
     </main>
     
     <footer class="container footer-flex">

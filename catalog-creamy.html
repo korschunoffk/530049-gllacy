@@ -8,16 +8,16 @@
     <link href="css/style.css" rel="stylesheet">
 </head>
 <body>
-<header class="container">
-    <nav class="main-navigation">
+<header class="container header-flex">
         <a class="main-navigation_logo" href="index.html">
-            <img src="img/svg-gllacy/logo.svg" height="50" width="100" alt="Логотип магазина Глейси">
+                <img src="img/svg-gllacy/logo.svg" height="65" width="155" alt="Логотип магазина Глейси">
         </a>
+        <nav class="main-navigation">
             <ul class="main-navigation_list">
                 <li class="main-navigation_item onpage"><a href="catalog-creamy.html">Каталог</a>
                      <ul class="main-navigation_sublist">
                         <li class="sub-menu_item"><a href="#">Новинки</a></li>
-                        <li class="sub-menu_item onpage"><a href="catalog-creamy.html">Сливочное</a></li>
+                        <li class="sub-menu_item"><a href="catalog-creamy.html">Сливочное</a></li>
                         <li class="sub-menu_item"><a href="#">Щербеты</a></li>
                         <li class="sub-menu_item"><a href="#">Фруктовый лёд</a></li>
                         <li class="sub-menu_item"><a href="#">Мелорин</a></li>
@@ -26,8 +26,8 @@
                 <li class="main-navigation_item"><a href="#">Доставка и оплата</a></li>
                 <li class="main-navigation_item"> <a href="#">О Компании</a></li>
             </ul>
-    </nav> 
-    <ul class="user-navigation">
+        </nav> 
+      <ul class="user-navigation">
             <li class="user-navigation_item user-navigation_item--search">
                 <a href="#"></a>
                 <!-- -------------------- Форма поиска ---------------------->  
@@ -42,27 +42,28 @@
             <li class="user-navigation_item user-navigation_item--login">
                 <a href="#">Вход</a>
                 <!-- -------------------- Форма Входа ---------------------->  
+        
                 <section class="login">
                     <p class="login_title hidden-content">Личный Кабинет</p>
                     <form class="login_form" method="post" action="https://echo.htmlacademy.ru">
-                        <p class="login_row">
-                            <label for="login-form-email"></label>
-                            <input id="login-form-email" type="text" name="email" placeholder="Электронная почта">
+                    <p class="login_row">
+                        <label for="login-form-email"></label>
+                        <input id="login-form-email" type="text" name="email" placeholder="Электронная почта">
+                    </p>
+                    <p class="login_row">
+                        <label for="login-form-password"></label>
+                        <input id="login-form-password" type="text" name="password" placeholder="Пароль">
+                    </p>
+                    <div class="login_row">
+                        <button type="submit" class="login-form-submit">Войти</button>
+                        <p class="login_column">
+                            <a href="#" class="login_support">Забыли пароль?</a> <br>
+                            <a href="#" class="login_support">Новая регистрация</a>
                         </p>
-                        <p class="login_row">
-                            <label for="login-form-password"></label>
-                            <input id="login-form-password" type="text" name="password" placeholder="Пароль">
-                        </p>
-                        <div class="login_row">
-                            <button type="submit" class="login-form-submit">Войти</button>
-                            <p class="login_column">
-                                <a href="#" class="login_support">Забыли пароль?</a> <br>
-                                <a href="#" class="login_support">новая регистрация</a>
-                            </p>
-                        </div>
+                    </div>
                     </form> 
                 </section>
-        
+                
             </li>
             <li class="user-navigation_item user-navigation_item--fullcart">
                 <a href="#">2 товара</a>
@@ -91,9 +92,10 @@
 
             </li>
     </ul>
+    <div class="header-contacts">
         <p class="main-navigation__info">C 10 до 20, ежедневно</p>
         <a class="main-navigation__info main-navigation__info--tel" href="tel:88124502525">8 812 450-25-25</a>
-        
+    </div>
         
     
     
