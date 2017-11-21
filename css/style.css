@@ -39,6 +39,7 @@ body {
     display:flex;
     flex-wrap: wrap;
     padding-top:10px;
+    
 }
 /*--------контейнеры центровщики------------*/
 .main-container{
@@ -47,6 +48,7 @@ body {
 }
 
 .container{
+    padding:0;
     width:1146px;
     margin:0 auto;
 }
@@ -534,8 +536,16 @@ sub-menu_item a{
     margin:0 auto;
     background-color:#e9dcbf;
     background-image:url(../img/wafer-background.jpg);
-    width: 1146px;
     border-radius:10px;
+    height: 308px;
+    margin-bottom: 40px;
+}
+.features_container{
+    width:1110px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap:wrap;
+    justify-content: space-between;
 }
 .features_caption{
     font-family: 'Roboto', Arial , sans-serif;
@@ -543,25 +553,55 @@ sub-menu_item a{
     font-size: 24px;
     line-height:30px;
     color:#323232;
-    padding: 22px;
+    padding-top:17px;
+    padding-left:21px;
 }
 .features_item{
+    padding: 0;
+    margin:0;
+    
     font-family: 'Roboto', Arial , sans-serif;
-    font-weight: 400;
+    font-weight:400;
     font-size: 16px;
     line-height:22px;
     color:#323232;
+    width:483px;
+    padding-left:57px;
+    height: 76px;
+    padding-top: 12px;
+}
+.features_item--modern{
+    background-image: url("../img/svg-gllacy/ice-cream.svg");
+    background-repeat: no-repeat; 
+}
+.features-item--local{
+    background-image: url("../img/svg-gllacy/cow.svg");
+    background-repeat: no-repeat; 
+}
+.features-item--natural{
+    background-image: url("../img/svg-gllacy/eco.svg");
+    background-repeat: no-repeat; 
+}
+.features-item--delivery{
+    background-image: url("../img/svg-gllacy/thermometer.svg");
+    background-repeat: no-repeat; 
 }
 /*-----------промо и подписка--------------*/
 .promo_article--blog{
     height:220px;
     background-image: url(../img/strawberry-background.jpg);
+    margin-bottom: 40px;
 }
 .promo_article--subscribe{
     height: 220px;
     background-image:url(../img/subscribe-background.png);
+    
 }
 .promo_title{
+    margin:0px;
+    margin-top: 24px;
+    margin-bottom:5px;
+    
     font-family: 'Roboto', Arial , sans-serif;
     font-weight: 500;
     font-size: 16px;
@@ -578,7 +618,7 @@ sub-menu_item a{
 .promo_blog-announce:hover{
     color:#e84d37;
 }
-..promo_blog-announce:active{
+.promo_blog-announce:active{
     color:#e84d37;
 }
 .promo-article-align{
@@ -586,11 +626,14 @@ sub-menu_item a{
     width:300px;
 }
 .promo_subscribe-description{
+    margin:0;
     font-family: 'Roboto', Arial , sans-serif;
     font-weight: 400;
-    font-size: 16x;
+    font-size: 16px;
     line-height:22px;
     color:#5a5a5a;
+    padding: 0 26px;
+    padding-top:35px;
 }
 .promo_subscribe-form{
     font-family: 'Roboto', Arial , sans-serif;
@@ -608,6 +651,7 @@ sub-menu_item a{
 }
 /*-----------Контакты-----------------------*/
 .contacts{
+    margin: ;
     height: 430px;
     background-color:#ebe6d0;
     background-image: url(../img/map-background.jpg);
@@ -620,6 +664,7 @@ sub-menu_item a{
     left:700px;
 }
 .contacts_text{
+    margin:0;
     font-family: 'Roboto', Arial , sans-serif;
     font-weight: 400;
     font-size: 14x;
@@ -676,6 +721,14 @@ sub-menu_item a{
     display: flex;
     justify-content: space-between;
 }
+.social{
+    margin-top:36px;
+    display: flex;
+    justify-content: space-between;
+    width:185px;
+    height:38px;
+    
+}
 .social_button{
     font-family: 'Roboto', Arial , sans-serif;
     font-weight: 400;
@@ -683,30 +736,68 @@ sub-menu_item a{
     line-height:18px;
     color:white;
     text-decoration: none;
+    
+    height: 35px;
+    width: 35px;
+    background-image: url(../img/around-social.png);
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    
+    padding-top: 3px;
+    padding-left: 3px;
+}
+.about-us{
+    margin-top:36px;
+    margin-left:55px;
+    display: flex;
+    flex-wrap: wrap;
+    width:332px;
+    height:42px;
+    
 }
 .about-us_link{
+    padding:0;
+    margin:0;
+    
+    
     font-family: 'Roboto', Arial , sans-serif;
     font-weight: 400;
-    font-size: 13x;
+    font-size: 13px;
     line-height:18px;
     color:white;
     text-decoration: none;
+    
+    width:162px;
+    height:21px;
+}
+.about-us_link:nth-child(3){
+    width:141px;
+    padding-left:20px;
 }
 .about-us_link--heart{
-    padding-left:17px;
+    
+    width:141px;
+    padding-left:20px;
+    
     font-weight: 700;
     background-image: url(../img/svg-gllacy/heart.svg) ;
     background-repeat: no-repeat;
-    background-position: 0% 50%;
+    background-position: 0% 40%;
     
 }
 .about-us_link:hover , .developers_link:hover a{
     color:#ffbc9e;
 }
+.developers{
+    margin-top: 20px;
+}
 .developers_link{
+    margin: 0;
+    padding:0;
+    
     font-family: 'Roboto', Arial , sans-serif;
     font-weight: 400;
-    font-size: 12x;
+    font-size: 12px;
     line-height:18px;
     
     }
