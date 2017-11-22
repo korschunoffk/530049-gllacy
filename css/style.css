@@ -421,13 +421,21 @@ sub-menu_item a{
 .promo{
     display: flex;
     justify-content: space-between;
+    margin-bottom:40px;
 }
 .promo_item{
     width:560px;
     height:230px;
     border-radius:20px;
 }
+.promo_item--buy{
+    width:560px;
+    height:230px;
+    border-radius:20px;
+}
 .promo_item--raspberry{
+    padding: 0;
+    margin:0;
     background-color: #610d1d;
     background-image: url("../img/raspberries-background.jpg");
     background-position:center;
@@ -440,6 +448,9 @@ sub-menu_item a{
     background-repeat: no-repeat; 
 }
 .promo_caption{
+    margin:0;
+    padding-left:20px;
+    padding-top: 20px;
     font-family: 'Roboto', Arial , sans-serif;
     font-weight: 700;
     font-size: 35px;
@@ -447,16 +458,43 @@ sub-menu_item a{
    
 }
  .promo_text{
+    margin:0;
+    padding:0 20px;
+    padding-top: 13px;
     font-family: 'Roboto', Arial , sans-serif;
     font-weight: 700;
     font-size: 18px;
     line-height:22px;
 }
-.promo_button{
+.promo_button-buy--right{
+    display: block;
     font-family: 'Roboto', Arial , sans-serif;
-    font-weight: 700;
+    font-weight: 500;
     font-size: 18px;
     line-height:24px;
+    padding-top:11px;
+    padding-left:22px;
+    margin-top:43px;
+    margin-left:374px;
+    height: 36px;
+    width:144px;
+    border-style: none;
+    
+}
+.promo_button-buy--left{
+    display: block;
+    font-family: 'Roboto', Arial , sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+    line-height:24px;
+    padding-top:11px;
+    padding-left:22px;
+    margin-top:43px;
+    margin-left:351px;
+    height: 36px;
+    width:167px;
+    border-style: none;
+    
 }
 
 /*-----------Карточка товара--------------*/
@@ -465,25 +503,18 @@ sub-menu_item a{
     justify-content: space-around;
     margin:0;
     flex-wrap:wrap;
+    margin-bottom:40px;
 }
 
 .icecream-item{
     padding: 0;
     width:267px;
-    height:324px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    height:321px;
     text-align: center;
+    display: block;
     
 }
-.icecream-item:before{
-    width:290px;
-    height:380px;
-    background-color: white;
-    border-radius: 10px;
-    visibility: hidden;
-}
+
 .cost_text{
     font-family: 'Roboto', Arial , sans-serif;
     font-weight: 700;
@@ -511,25 +542,35 @@ sub-menu_item a{
     font-family: 'Roboto', Arial , sans-serif;
     font-weight: 500;
     font-size: 16px;
-    line-height:22x;
+    line-height:22px;
     position: relative;
     bottom: 40px;
 }
 .icecream-item_button{
+    margin:0 auto;
+    display:block;
     visibility:hidden; 
     font-family: 'Roboto', Arial , sans-serif;
     font-weight: 700;
     font-size: 18px;
-    line-height:24x;
+    line-height:24px;
+    width:200px;
+    height:34px;
+    padding-top:11px;
     position: relative;
-    bottom: 40px;
-    
+    bottom:30px;
 }
 
 .icecream-item:hover .icecream-item_button{
-    visibility: visible;
+    visibility:visible; 
     
 }
+.icecream-item:hover::after{
+    height:380px;
+    background-color: white;
+    border-radius: 10px;
+}
+
 /*-----------преимущества------------------*/
 .features{
     
@@ -590,7 +631,6 @@ sub-menu_item a{
 .promo_article--blog{
     height:220px;
     background-image: url(../img/strawberry-background.jpg);
-    margin-bottom: 40px;
 }
 .promo_article--subscribe{
     height: 220px;
@@ -642,12 +682,16 @@ sub-menu_item a{
     line-height:24px;
     color:#999999;
 }
+
+
 .promo_button{
     font-family: 'Roboto', Arial , sans-serif;
     font-weight: 400;
     font-size: 18x;
     line-height:24px;
     color:white;
+    
+    
 }
 /*-----------Контакты-----------------------*/
 .contacts{
@@ -830,6 +874,7 @@ sub-menu_item a{
     font-weight: 700;
     font-size: 18x;
     line-height:24px;
+    
 }
 /*-----------Товары в корзине--------------*/
 
