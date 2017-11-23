@@ -14,7 +14,7 @@
         </a>
         <nav class="main-navigation">
             <ul class="main-navigation_list">
-                <li class="main-navigation_item onpage"><a href="catalog-creamy.html">Каталог</a>
+                <li class="main-navigation_item"><a href="catalog-creamy.html">Каталог</a>
                      <ul class="main-navigation_sublist">
                         <li class="sub-menu_item"><a href="#">Новинки</a></li>
                         <li class="sub-menu_item"><a href="catalog-creamy.html">Сливочное</a></li>
@@ -34,8 +34,9 @@
                 <section class="searching">
                     <p class="search_title hidden-content">Поиск</p>
                     <p class="search_row">
-                        <label for="search"></label>
-                        <input id="search" type="text" placeholder="Что ищем?">
+                        <label >
+                            <input class="search" id="search" type="text" placeholder="Что ищем?">
+                        </label>
                     </p>
                 </section>
             </li>
@@ -44,15 +45,16 @@
                 <!-- -------------------- Форма Входа ---------------------->  
         
                 <section class="login">
+                    <div class="login-container">
                     <p class="login_title hidden-content">Личный Кабинет</p>
                     <form class="login_form" method="post" action="https://echo.htmlacademy.ru">
                     <p class="login_row">
                         <label for="login-form-email"></label>
-                        <input id="login-form-email" type="text" name="email" placeholder="Электронная почта">
+                        <input class="login-form-email" id="login-form-email" type="text" name="email" placeholder="Электронная почта">
                     </p>
                     <p class="login_row">
                         <label for="login-form-password"></label>
-                        <input id="login-form-password" type="text" name="password" placeholder="Пароль">
+                        <input class="login-form-password" id="login-form-password" type="text" name="password" placeholder="Пароль">
                     </p>
                     <div class="login_row">
                         <button type="submit" class="login-form-submit">Войти</button>
@@ -62,6 +64,7 @@
                         </p>
                     </div>
                     </form> 
+                    </div>
                 </section>
                 
             </li>

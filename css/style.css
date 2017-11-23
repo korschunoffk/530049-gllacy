@@ -2,17 +2,13 @@ body {
     margin:0;
     padding:0;
     
-    background-color: gray;
+    
     font-family: 'Roboto', Arial , sans-serif;
     font-weight: 400;
     font-size: 16px;
     line-height:22px;
     color:white;
-    
     background-color: #849d8f;
-    background-image: url("../img/main-backround-1.png");
-    background-position: top center;
-    background-repeat: no-repeat;
     
 }
 .hidden-content{
@@ -93,7 +89,8 @@ body {
 }
 .main-navigation_item a{
     color:white;
-    text-decoration:none;  
+    text-decoration:none; 
+    border-bottom: 1px solid #a7b8ad;
 }
 .main-navigation_sublist{
     position: absolute;
@@ -195,6 +192,8 @@ sub-menu_item a{
     background-position: 50% 50%;
     height: 33px;
     width:33px;
+    
+    position: relative;
 }
 .user-navigation_item--login{ 
     background-image: url(../img/svg-gllacy/entrance-white.svg);
@@ -205,6 +204,8 @@ sub-menu_item a{
     padding-left: 44px;
     padding-top:9px;
     height:24px;
+    
+    position: relative;
 }
 .user-navigation_item--cart {
     background-image: url(../img/svg-gllacy/basket.svg);
@@ -225,6 +226,8 @@ sub-menu_item a{
     padding-left: 44px;
     padding-top:9px;
     height:24px;
+    
+    position: relative;
 }
 .user-navigation_item--search:hover{
     background-image: url(../img/svg-gllacy/loupe-black.svg);
@@ -277,25 +280,48 @@ sub-menu_item a{
 .login{ 
     visibility:hidden;
     position: absolute;
-    top:100px;
-    right:100px;
+    top:37px;
+    right:1px;
+    
     background-color: #f8f7f4;
     width:277px;
+    height:215px;
     border-radius: 5px;
+    
+}
+.login-container{
+    width: 241px;
+    margin: 0 auto;
+}
+.login_row{
+    margin: 0;
+    padding:0;
+    
+    margin-top: 20px;
+}
+.login_row input{
+    border-style: none;
+    border:1px solid #d3d3d2;
+    border-radius:5px;
+    height: 44px;
+    width:226px;
+    padding-left:15px;
 }
 .login_row:nth-child(3){
     padding:0;
-    margin:0;
+    margin-top:20px;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
 }
-#login-form-email,#login-form-password,#search{
+.login-form-email,.login-form-password,.search{
     font-family: 'Roboto', Arial , sans-serif;
     font-weight: 400;
     font-size: 14px;
     line-height:24px;
     color:#999999;
 }
+
+
 .login-form-submit{
     font-family: 'Roboto', Arial , sans-serif;
     font-weight: 700;
@@ -303,10 +329,13 @@ sub-menu_item a{
     line-height:24px;
     color:white;
     background-color:#f27452;
+    border-style: none;
 }
 .login_column{
     padding:0;
     margin:0;
+    text-decoration: underline;
+    text-decoration-color:#323232;
 }
 
 .login_support{
@@ -314,7 +343,11 @@ sub-menu_item a{
     font-weight: 400;
     font-size: 13px;
     line-height:24px;
-    color:black;
+    color:#323232;
+    
+    text-decoration: underline;
+    text-decoration-color:#323232;
+    
     
 }
 .login-form-submit{
@@ -322,7 +355,9 @@ sub-menu_item a{
     width:101px;
     height:44px;
 }
-.user-navigation_item--login:hover .login{visibility: visible;}
+.user-navigation_item--login:hover .login{
+    visibility: visible;
+}
 /*-----------------Форма поиска-------------*/
 .catalog_caption{
     font-family: 'Roboto', Arial , sans-serif;
@@ -337,12 +372,26 @@ sub-menu_item a{
     line-height:41px;
 }
 .searching{
-    width:341px;
+    width:342px;
     background-color:#f8f7f4;
     position: absolute;
-    top:100px;
-    right:200px;
+    top:37px;
+    right:0px;
     visibility: hidden;
+    border-radius:5px;
+}
+.search_row{
+    margin: 0;
+    margin:20px 16px;
+}
+.search_row input{
+    border-style: none;
+    border:1px solid #d3d3d2;
+    border-radius:5px;
+    
+    padding-left:15px;
+    width:295px;
+    height:44px;
 }
 .user-navigation_item--search:hover .searching{
     visibility: visible;
@@ -545,6 +594,7 @@ sub-menu_item a{
     line-height:22px;
     position: relative;
     bottom: 40px;
+    border-bottom: 1px solid #a7b8ad;
 }
 .icecream-item_button{
     margin:0 auto;
@@ -634,8 +684,15 @@ sub-menu_item a{
 }
 .promo_article--subscribe{
     height: 220px;
-    background-image:url(../img/subscribe-background.png);
+    background-image:url(../img/svg-gllacy/post-background.svg);
+    background-size: cover;
     
+}
+.promo_article{
+    background-color:#f8f7f4;
+    border-radius:15px;
+    height: 210px;
+    margin:5px;
 }
 .promo_title{
     margin:0px;
@@ -672,65 +729,115 @@ sub-menu_item a{
     font-size: 16px;
     line-height:22px;
     color:#5a5a5a;
-    padding: 0 26px;
-    padding-top:35px;
+    padding: 0 21px;
+    padding-top:30px;
+    padding-bottom: 18px;
 }
 .promo_subscribe-form{
+    display:flex;
+    justify-content: space-between;
+    padding: 0 21px;
+}
+.promo_subscribe-form input{
     font-family: 'Roboto', Arial , sans-serif;
     font-weight: 400;
-    font-size: 16x;
+    font-size: 16px;
     line-height:24px;
+    
     color:#999999;
+    
+    width:353px;
+    height:44px;
+    padding-left: 15px;
+    
+    border-style: none;
+    border:1px solid #d3d3d2;
+    border-radius:5px;
 }
-
 
 .promo_button{
     font-family: 'Roboto', Arial , sans-serif;
-    font-weight: 400;
-    font-size: 18x;
+    font-weight: 700;
+    font-size: 18px;
     line-height:24px;
     color:white;
     
+    width:129px;
+    height: 44px;
+    
+    border-style: none;
     
 }
 /*-----------Контакты-----------------------*/
 .contacts{
-    margin: ;
+    margin: 0;
     height: 430px;
     background-color:#ebe6d0;
     background-image: url(../img/map-background.jpg);
+    position: relative;
 }
 .contacts_inner{
-    background-color:white;
-    height:306px;
-    width:302px;
-    position: relative;
-    left:700px;
+    margin:0;
+    padding:0;
+    padding-left: 25px;
+    padding-top: 29px;
+    background-color:rgba(255,255,255,0.95);
+    height:277px;
+    width:277px;
+    position: absolute;
+    right:26px;
+    top:63px;
+    
+    border-radius:20px;
+    
 }
 .contacts_text{
     margin:0;
+    padding:0;
+    
     font-family: 'Roboto', Arial , sans-serif;
     font-weight: 400;
-    font-size: 14x;
+    font-size: 14px;
     line-height:20px;
     color:black;
 }
+
 .contacts_address ,.contacts_mobile{
+    margin:0;
+    padding:0;
+    
     font-family: 'Roboto', Arial , sans-serif;
     font-weight: 700;
-    font-size: 18x;
+    font-size: 18px;
     line-height:24px;
     color:black;
+    
+    
+}
+.contacts_address {
+    padding-top: 3px;
+    padding-bottom: 18px;
 }
 .contacts_mobile{
     text-decoration: none;
+    display: block;
+    padding-top: 3px;
+    
 }
 .contacts_button{
+    margin-top: 27px;
     font-family: 'Roboto', Arial , sans-serif;
     font-weight: 700;
-    font-size: 18x;
+    font-size: 18px;
     line-height:24px;
     
+    display: block;
+    
+    width:223px;
+    height: 36px;
+    
+    padding-top: 11px;
+    padding-left: 27px;
 }
 /*-----------Пагинатор------------------------*/
 .pagination_list{
@@ -746,7 +853,7 @@ sub-menu_item a{
 .pagination_item a {
     font-family: 'Roboto', Arial , sans-serif;
     font-weight: 500;
-    font-size: 16x;
+    font-size: 16px;
     line-height:25px;
     color:white;
     text-decoration: none;
@@ -776,7 +883,7 @@ sub-menu_item a{
 .social_button{
     font-family: 'Roboto', Arial , sans-serif;
     font-weight: 400;
-    font-size: 13x;
+    font-size: 13px;
     line-height:18px;
     color:white;
     text-decoration: none;
@@ -858,14 +965,14 @@ sub-menu_item a{
 #feedback-name,#feedback-email,#feedback-text{
     font-family: 'Roboto', Arial , sans-serif;
     font-weight: 400;
-    font-size: 16x;
+    font-size: 16px;
     line-height:24px;
     color: #999999;
 }
 .feedback_caption{
     font-family: 'Roboto', Arial , sans-serif;
     font-weight: 500;
-    font-size: 24x;
+    font-size: 24px;
     line-height:28px;
     color: #323232;
 }
@@ -889,7 +996,7 @@ sub-menu_item a{
 .cart-goods-table-row{
      font-family: 'Roboto', Arial , sans-serif;
     font-weight: 400;
-    font-size: 13x;
+    font-size: 13px;
     line-height:16px;
     color:#323232;
 }
@@ -899,7 +1006,7 @@ sub-menu_item a{
 .total-cost{
     font-family: 'Roboto', Arial , sans-serif;
     font-weight: 700;
-    font-size: 15x;
+    font-size: 15px;
     line-height:18px;
     color:#323232;
 }
