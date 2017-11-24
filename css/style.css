@@ -581,7 +581,8 @@ sub-menu_item a{
     height:321px;
     text-align: center;
     display: block;
-    
+    position: relative;
+    z-index:;
 }
 
 .cost_text{
@@ -633,11 +634,18 @@ sub-menu_item a{
 
 .icecream-item:hover .icecream-item_button{
     visibility:visible; 
+    z-index: 2;
     
 }
-.icecream-item:hover::after{
-    height:380px;
-    background-color: white;
+.icecream-item:hover::before{
+    content:"";
+    position: absolute;
+    left:-14px;
+    top:-10px;
+    z-index: 2;
+    height:405px;
+    width:294px;
+    background-color: rgba(255,255,255,0.2);
     border-radius: 10px;
 }
 
