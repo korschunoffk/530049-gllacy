@@ -39,7 +39,7 @@ body {
 }
 /*--------контейнеры центровщики------------*/
 .main-container{
-    width:1200px;
+    width:100%;
     margin:0 auto;
 }
 
@@ -47,6 +47,7 @@ body {
     padding:0;
     width:1146px;
     margin:0 auto;
+    position:relative;
 }
 /*------------------Основная навигация-----------------*/
 .main-navigation{
@@ -80,6 +81,7 @@ body {
 }
 .main-navigation_item:nth-child(1){
     width:75px;  
+    border-radius: 50px;
 }
 .main-navigation_item:nth-child(2){
     width:155px;  
@@ -96,8 +98,8 @@ body {
     margin: 0;
     padding: 0;
     position: absolute;
-    top:30px;
-    right:10px;
+    top:38px;
+    left:-5px;
     list-style: none;
     font-family: 'Roboto', Arial , sans-serif;
     font-weight: 500;
@@ -128,10 +130,12 @@ body {
 }
 .onpage{
     background-color: #d07058;
-    border-radius: 50px;
-    height: 26px;
-    width:75px; 
-   color:white
+    color:white;
+    
+       
+}
+.onpage a{
+    border-bottom: none;
 }
 sub-menu_item a{
     font-weight: 500;
@@ -162,6 +166,9 @@ sub-menu_item a{
 
 .main-navigation_item:hover .sub-menu_item:hover{
     background-color: #fbded7;
+}
+.main-navigation_item:hover .sub-menu_item:nth-child(2):hover a{
+    color: #000000;
 }
 .main-navigation_item:hover .sub-menu_item:active{
     background-color: #f6b5a5;
@@ -490,7 +497,6 @@ sub-menu_item a{
 .promo{
     display: flex;
     justify-content: space-between;
-    margin-bottom:40px;
 }
 .promo_item{
     width:560px;
@@ -583,6 +589,7 @@ sub-menu_item a{
     display: block;
     position: relative;
     z-index:;
+    margin-top:40px;
 }
 
 .cost_text{
@@ -631,10 +638,14 @@ sub-menu_item a{
     position: relative;
     bottom:30px;
 }
-
+.icecream-item:hover{
+    position: relative;
+    z-index:2;
+}
 .icecream-item:hover .icecream-item_button{
     visibility:visible; 
-    z-index: 2;
+    position: relative;
+    z-index:2;
     
 }
 .icecream-item:hover::before{
@@ -642,13 +653,20 @@ sub-menu_item a{
     position: absolute;
     left:-14px;
     top:-10px;
-    z-index: 2;
+    z-index: 1;
     height:405px;
     width:294px;
     background-color: rgba(255,255,255,0.2);
     border-radius: 10px;
 }
-
+.icecream-item_pic{
+    position:relative;
+    z-index: 1;
+}
+.icecream-item_pic:hover{
+    position:relative;
+    z-index: 2;
+}
 /*-----------преимущества------------------*/
 .features{
     
@@ -799,10 +817,11 @@ sub-menu_item a{
 /*-----------Контакты-----------------------*/
 .contacts{
     margin: 0;
+    margin-top:40px;
     height: 430px;
     background-color:#ebe6d0;
     background-image: url(../img/map-background.jpg);
-    position: relative;
+    background-size: cover;
 }
 .contacts_inner{
     margin:0;
@@ -813,7 +832,7 @@ sub-menu_item a{
     height:277px;
     width:277px;
     position: absolute;
-    right:26px;
+    right:0px;
     top:63px;
     
     border-radius:20px;
@@ -986,30 +1005,73 @@ sub-menu_item a{
 }
 /*-----------обратная связь------------------------*/
 .feedback{
-    width:478px;
-    height:443px;
+    width:451px;
+    height:423px;
     background-color: #f8f7f4;
+    border-radius:10px;
+    position:relative;
+    padding-left: 27px;
+    padding-top: 20px;
 }
-#feedback-name,#feedback-email,#feedback-text{
+.feedback_form--item{
+    margin:0;
+    margin-top:18px;
+}
+.feedback-name,.feedback-email,.feedback-text{
     font-family: 'Roboto', Arial , sans-serif;
     font-weight: 400;
     font-size: 16px;
     line-height:24px;
-    color: #999999;
+    color: #999999; 
+    border-style: none;
+    border:1px solid #d3d3d2;
+}
+.feedback-name,.feedback-email{
+    border-radius: 5px;
+    min-height:44px;
+    min-width:253px;
+    padding-left:14px;
+}
+.feedback_form--item:nth-child(3) {
+  
 }
 .feedback_caption{
+    margin:0;
+    
     font-family: 'Roboto', Arial , sans-serif;
     font-weight: 500;
     font-size: 24px;
     line-height:28px;
     color: #323232;
+    
+    
+}
+.feedback_close{
+    display: block;
+    height: 20px;
+    width: 20px;
+    position:absolute;
+    top:15px;
+    right:15px;
+    background-image: url(../img/svg-gllacy/cross-big.svg);
+    background-position: 50% 50%;
+    background-repeat:no-repeat;
+    background-color: #f8f7f4;
+    border:none;
+}
+.feedback_close:hover{
+    background-image: url(../img/svg-gllacy/cross-small.svg);
 }
 .feedback_button{
     font-family: 'Roboto', Arial , sans-serif;
     font-weight: 700;
-    font-size: 18x;
+    font-size: 18px;
     line-height:24px;
-    
+    border-style: none;
+    width:139px;
+    height:44px;
+    position:absolute;
+    right:27px;
 }
 /*-----------Товары в корзине--------------*/
 

@@ -222,14 +222,16 @@
             
         </div>
         <section class="contacts">
-            <div class="contacts_inner">
-                <p class="contacts_text">Адрес главного офиса <br> и офлайн-магазина</p>
-                <p class="contacts_address">ул. Большая Конюшенная  <br>19/8, Санкт-Петербург</p>
-                <p class="contacts_text">Для заказов по телефону:</p>
-                <a class="contacts_mobile" href="tel:88124502525">8 812 450-25-25</a>
-                <p class="contacts_text">(с 10 до 20 ежедневно)</p>
-                <a class="button contacts_button" href="#">Форма обратной связи</a>
-            </div>
+            <div class="container">
+                <div class="contacts_inner ">
+                    <p class="contacts_text">Адрес главного офиса <br> и офлайн-магазина</p>
+                    <p class="contacts_address">ул. Большая Конюшенная  <br>19/8, Санкт-Петербург</p>
+                    <p class="contacts_text">Для заказов по телефону:</p>
+                    <a class="contacts_mobile" href="tel:88124502525">8 812 450-25-25</a>
+                    <p class="contacts_text">(с 10 до 20 ежедневно)</p>
+                    <a class="button contacts_button" href="#">Форма обратной связи</a>
+                </div>
+            </div>    
         </section>
     </main>
     
@@ -257,20 +259,20 @@
     <section class="feedback">
         <h2 class="feedback_title hidden-content">Форма обратной связи</h2>
         <p class="feedback_caption">Мы обязательно вам ответим!</p>
-        <button class="feedback_close">x</button>
+        <button class="feedback_close"></button>
         <form class="feedback_form" method="post" action="https://echo.htmlacademy.ru">
             <p class="feedback_form--item">
                 <label>
-                    <input id="feedback-name" type="text" name="name" placeholder="Как вас зовут ?" >
+                    <input class="feedback-name" id="feedback-name" type="text" name="name" placeholder="Как вас зовут ?" >
                 </label>
             </p>
             <p class="feedback_form--item">
                 <label>
-                    <input id="feedback-email" type="text" name="email" placeholder="Ваша почта для ответа" >
+                    <input class="feedback-email" id="feedback-email" type="text" name="email" placeholder="Ваша почта для ответа" >
                 </label>
             </p>
             <p class="feedback_form--item">
-                <textarea name="feedback-text" placeholder="Напишите что нибудь..." ></textarea>
+                <textarea class="feedback-text" name="feedback-text" placeholder="Напишите что нибудь..." rows="6" cols="50"></textarea>
             </p>
             <p class="feedback_form--item">
                 <button type="submit"class="button feedback_button">Отправить</button>
