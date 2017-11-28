@@ -6,8 +6,14 @@
         <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=cyrillic" rel="stylesheet">
         <link href="css/normalize.css" rel="stylesheet">
         <link href="css/style.css" rel="stylesheet">
+    
 </head>
 <body>
+    <input class="visually-hidden" type="radio" id="product-1" name="toggle" checked>
+    <input class="visually-hidden" type="radio" id="product-2" name="toggle">
+    <input class="visually-hidden" type="radio" id="product-3" name="toggle">
+    <div class="main-container">
+        <div class="container">
     <header class="container header-flex">
         <a class="main-navigation_logo" href="index.html">
                 <img src="img/svg-gllacy/logo.svg" height="65" width="155" alt="Логотип магазина Глейси">
@@ -57,7 +63,7 @@
                                 <input class="login-form-password" id="login-form-password" type="text" name="password" placeholder="Пароль">
                             </p>
                             <div class="login_row">
-                                <button type="submit" class="login-form-submit">Войти</button>
+                                <button type="submit" class="button login-form-submit">Войти</button>
                                 <p class="login_column">
                                     <a href="#" class="login_support">Забыли пароль?</a> <br>
                                     <a href="#" class="login_support">Новая регистрация</a>
@@ -77,41 +83,37 @@
         
     
     </header>
-    <main class="main-container">
-        <div class="container">
+        
+    <section class="slider">
+          <div class="slider-controls">
+            <label for="product-1">Первый</label>
+            <label for="product-2">Второй</label>
+            <label for="product-3">Третий</label>
+          </div>
+          <ul class="slider-list">
+            <li class="slider-item slide" id="slide1">
+              <h3 class="slide-title">
+                Крем-брюле и пломбир с малиновым джемом
+              </h3>
+              <a class="button slide-button" href="#">Давайте оба!</a>
+            </li>
+            <li class="slider-item slide" id="slide2">
+              <h3 class="slide-title">
+                Шоколадный пломбир и лимонный сорбет
+              </h3>
+              <a class="button slide-button" href="#">Давайте оба!</a>
+            </li>
+            <li class="slider-item slide" id="slide3">
+              <h3 class="slide-title">
+                Пломбир с помадкой и клубничный щербет
+              </h3>
+              <a class="button slide-button" href="#">Давайте оба!</a>
+            </li>
+          </ul>
+    </section>
+        
+    <main>
         <h1 class="hidden-content">Магазин мороженого Глейси</h1>
-        <section class="slider_wrapper">
-                 <div class="slider">
-                   <div class="slider_inner">
-                        <div class="slider_list">
-                            <div class="slide slide--one">
-                                <b class="slide_title">Крем-брюле и пломбир c малиновым джемом</b>
-                                <a class="button slide_button" href="#">Дайте оба!</a>
-                            </div>
-                            <div class="slide slide--two">
-                                <b class="slide_title">Шоколадный пломбир и лимонный сорбет</b>
-                                <a class="button slide_button" href="#">Дайте оба!</a>
-                            </div>
-                            <div class="slide slide--three">
-                                <b class="slide_title">Пломбир с помадкой и клубничный щербет</b>
-                                <a class="button slide_button" href="#">Дайте оба!</a>
-                            </div>
-                        </div>
-                    </div>
-                       <div class="slider_controls">
-                        <input type="radio" id="btn-1" name="toggle" checked>
-                        <input type="radio" id="btn-2" name="toggle">
-                        <input type="radio" id="btn-3" name="toggle">
-
-                        <label for="btn-1"></label>
-                        <label for="btn-2"></label>
-                        <label for="btn-3"></label>
-
-                    </div>
-            </div>
-            
-            
-        </section>
         <section class="promo">
             
                 <article class="promo_item--buy promo_item--raspberry">
@@ -219,9 +221,9 @@
                 </div>
             </article>
         </section>
-            
-        </div>
-        <section class="contacts">
+     </main>
+    </div>
+    <section class="contacts" >
             <div class="container">
                 <div class="contacts_inner ">
                     <p class="contacts_text">Адрес главного офиса <br> и офлайн-магазина</p>
@@ -232,9 +234,7 @@
                     <a class="button contacts_button" href="#">Форма обратной связи</a>
                 </div>
             </div>    
-        </section>
-    </main>
-    
+    </section>
     <footer class="container footer-flex">
         <div class="social">
             <a href="#" class="social_button social_button--twitter"><img src="img/tw.png" alt="Twitter" height="32" width="32"></a>
@@ -279,5 +279,9 @@
             </p>
         </form>
     </section>
-</body>
+        
+    </div>
+    
+    
+    </body>
 </html>
