@@ -22,8 +22,7 @@ ymaps.ready(function () {
             // её "ножки" (точки привязки).
             iconImageOffset: [-35, -130]
         });
-   
     myMap.geoObjects
         .add(myPlacemark);
-    
+    myMap.setCenter([59.939001, 30.329037], 16);
 });
