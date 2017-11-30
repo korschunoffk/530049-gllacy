@@ -8,9 +8,9 @@
     <link href="css/style.css" rel="stylesheet">
 </head>
 <body>
-    <div class="main-container">
+    <div class="catalog-container">
         <div class="container">
-<header class="container header-flex">
+            <header class="container header-flex">
         <a class="main-navigation_logo" href="index.html">
                 <img src="img/svg-gllacy/logo.svg" height="65" width="155" alt="Логотип магазина Глейси">
         </a>
@@ -140,6 +140,8 @@
     </p>
 
     <h2 class="catalog_caption">Сливочное мороженое</h2>
+    
+    <!-- -------------------- Фильтр ---------------------->
     <form class="catalog_filter" method="post" action="https://echo.htmlacademy.ru">
         <div class="catalog_filter-item">
             <p class="catalog_filter-title">Сортировка:</p>
@@ -153,23 +155,23 @@
             </p>
         </div>
 
-        <div class="catalog_filter-item filter-price">
-            <p class="filter-price_row ">
-                <span>Цена:</span>
-                <label>
-                    <input type="text" value="100">
-                    <span>.руб – </span>
-                </label>
-                <label>
-                    <input type="text" value="500">
-                    <span>.руб</span>
-                </label>
-            </p>
-            <p class="filter-price_row filter-item-sub">
-                <span class="filter-price_line"></span>
-                <span class="filter-price_dot filter-price_dot--first" tabindex="0"></span>
-                <span class="filter-price_dot filter-price_dot--second" tabindex="0"></span>
-            </p>
+        <div class="catalog_filter-item range-filter">
+            <div class="price-controls">
+               
+                <label class="min-price">Цена:<input name="min-price" type="text" value="100">руб. - </label>
+                
+                <label class="max-price"> <input name="max-price" type="text" value="500">руб.</label>
+                
+          </div>
+            
+          <div class="range-controls">
+            <div class="scale">
+              <div class="bar" style="margin-left: 20%; width: 30%"></div>
+            </div>
+            <div class="toggle toggle-min"></div>
+            <div class="toggle toggle-max"></div>
+          </div>
+          
         </div>
 
         <div  class="catalog_filter-item">
@@ -177,18 +179,22 @@
             <p class="filter-item-sub">
                 <label >
                     <input type="radio" id="radio-item-1" value="fat-zero" name="fat-radio">
+                    <span class="fat-1 fat"></span>
                     <span>0%</span>
                 </label>
                 <label >
                     <input type="radio" id="radio-item-2" value="fat-ten" name="fat-radio" checked>
+                    <span class="fat-2 fat"></span>
                     <span>10%</span>
                 </label>
                 <label >
                     <input type="radio" id="radio-item-3" value="fat-under-thirty" name="fat-radio">
+                    <span class="fat-3 fat"></span>
                     <span>до 30%</span>
                 </label>
                 <label >
                     <input type="radio" id="radio-item-4" value="fat-over-thirty" name="fat-radio">
+                    <span class="fat-4 fat"></span>
                     <span>выше 30%</span>
                 </label>
             </p>

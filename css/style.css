@@ -15,15 +15,7 @@ body {
   clip: rect(0, 0, 0, 0);
 }
 .main-container {
-  min-width: 1200px;
-  background-color: #849d8f;
-  background-image: url("../img/main-backround-1.png");
-  background-repeat: no-repeat;
-  background-position: top center;
   
-  transition: background-image 0.5s ease, background-color 0.5s ease;
-  
-  min-height: 100vh;
 }
 img {
     max-width: 100%;
@@ -57,8 +49,7 @@ img {
     display:flex;
     flex-wrap: wrap;
     padding-top:10px;
-    min-height:116px;
-    
+    min-height:220px;  
 }
 /*--------контейнеры центровщики------------*/
 .main-container{
@@ -67,7 +58,15 @@ img {
     font-size: 16px;
     line-height:22px;
     color:white;
+    
+    min-width: 1200px;
+    min-height: 100vh;
     background-color: #849d8f;
+    background-image: url("../img/main-backround-1.png");
+    background-repeat: no-repeat;
+    background-position: top center;
+  
+    transition: background-image 0.5s ease, background-color 0.5s ease;
 }
 
 .container{
@@ -75,7 +74,20 @@ img {
     width:1146px;
     margin:0 auto;
     position:relative;
+    
 }
+.catalog-container{
+    font-family: 'Roboto', Arial , sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height:22px;
+    color:white;
+    
+    min-width: 1200px;
+    min-height: 100vh;
+    background-color: #849d8f;
+}
+
 /*------------------Основная навигация-----------------*/
 .main-navigation{
     padding:0;
@@ -182,7 +194,10 @@ sub-menu_item a{
     visibility: visible;
     
 }
-
+.main-navigation_item:nth-child(1):focus .main-navigation_sublist{
+    visibility: visible;
+    
+}
 .main-navigation_item:hover a{
     color:black;
     border: none;
@@ -313,6 +328,9 @@ sub-menu_item a{
     display: flex;
     flex-direction: column;
     align-items: flex-end;
+    height: 43px;
+    position: relative;
+    top: -60px;
 }
 .main-navigation__info{
     padding:0;
@@ -458,7 +476,7 @@ sub-menu_item a{
 /*--------Главный слайдер------------*/
 .slider {
     position: relative;
-    padding-top: 321px;
+    padding-top: 170px;
     text-align: center;
     color: #ffffff;
     margin-bottom:40px;
@@ -466,8 +484,7 @@ sub-menu_item a{
 
 .slider-list {
   margin: 0;
-  padding: 0;
-  
+  padding: 0;  
   list-style: none;
 }
 
@@ -479,15 +496,13 @@ sub-menu_item a{
   width: 700px;
   margin: 0 auto;
   margin-bottom: 27px;
-  
   font-size: 60px;
   line-height: 60px;
   font-weight: 800;
 }
 .slide-button{
-    display: inline-block;
+  display: inline-block;
   padding: 12px 44px;
-
   font-weight: 600;
   font-size: 31px;
   line-height: 41px;
@@ -496,8 +511,6 @@ sub-menu_item a{
   vertical-align: top;
   text-decoration: none;
   text-shadow: 0 2px 5px rgba(160, 32, 11, 0.76);
-
-  background: #f26843;
   background: linear-gradient(to bottom, #f26843 0%, #e74a35 100%);
   border-radius: 50px;
   box-shadow: 0 2px 2px rgba(172, 16, 0, 0.64);
@@ -557,13 +570,18 @@ sub-menu_item a{
 
 /*-----------Фильтр каталога--------*/
 .catalog_filter{
+    margin:0;
+    padding 0;
+    
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    width: 855px;
 }
 .catalog_filter-item{
     margin:0;
     padding 0;
+    min-height: 60px;
 }
 .filter-item-sub{
     margin:0;
@@ -571,18 +589,35 @@ sub-menu_item a{
     color:white;
     background-color: rgba(255,255,255,0.25);
     border-radius: 50px;
+    min-height:36px;
+}
+
+#radio-item-1,#radio-item-2,#radio-item-3,#radio-item-4{
+   height:1px;
+    width:1px;
+    opacity:0;
+}
+.fat{
+    display: inline-block;
+    height: 25px;
+    width:25px;
+    background-image: url(../img/svg-gllacy/radio-off.svg);
+    background-repeat: no-repeat;
+    
 }
 .catalog_filter-title{
+    margin:0;
+    padding-left:  15px;;
     font-family: 'Roboto', Arial , sans-serif;
     font-weight: 500;
     font-size: 14px;
-    line-height:16px;
+    line-height:36px;
 }
 .filter-price_row,#radio-item-1,#radio-item-2,#radio-item-3,#radio-item-4,#checkbox-item-1,#checkbox-item-2,#checkbox-item-3,#checkbox-item-4,.catalog_filter-button{
     font-family: 'Roboto', Arial , sans-serif;
     font-weight: 500;
     font-size: 16px;
-    line-height:18px;
+    line-height:36px;
 }
 .catalog_filter-button{
     color:white;
@@ -590,7 +625,106 @@ sub-menu_item a{
     border:2px solid white;
     border-radius: 50px;
 }
+#radio-item-1:checked ~ .fat-1,#radio-item-2:checked ~ .fat-2,#radio-item-3:checked ~ .fat-3,#radio-item-4:checked ~ .fat-4 {
+    background-image: url(../img/svg-gllacy/radio-on.svg);
+    background-repeat: no-repeat;
+  
+}
+/*-----------два ползунка------------------*/
+.filter-item {
+  margin: 0;
+  padding: 0;
+  width: 260px;
+  margin: 50px auto; 
+}
 
+.range-filter {
+  width: 260px;
+  
+}
+.range-controls {
+  position: relative;
+  
+  height: 18px;
+  width: 219px;
+  padding-top: 18px;
+  padding-right: 20px;
+  padding-left: 20px;
+  
+  background-color: rgba(255,255,255,0.4);
+  border-radius: 50px;
+}
+
+.range-controls .scale {
+  height: 2px;
+
+  background-color: rgba(255,255,255,0.6);
+}
+
+.range-controls .bar {
+  width: 70%;
+  height: 2px;
+
+  background-color: rgba(255,255,255,1);
+}
+
+.range-controls .toggle {
+  position: absolute;
+  top: 9px;
+  left: 0;
+  
+  width: 4px;
+  height: 4px;
+  padding: 0;
+
+  border: 8px solid #ffffff;
+  background-color: #ababab;
+  box-shadow: 0 2px 1px 0 #cfcfcf;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.range-controls .toggle-min {
+  left: 50px;
+}
+
+.range-controls .toggle-max {
+  left: 110px;
+}
+
+.price-controls {
+    font-size: 0;
+    padding-left:15px;
+}
+
+.price-controls label {
+    display: inline-block;
+    width: auto;
+  
+    font-family: 'Roboto', Arial , sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+    line-height:36px;
+}
+
+.price-controls input {
+    width: 35px;
+    
+    font-family: 'Roboto', Arial , sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+    line-height:36px;
+    text-align: center;
+    
+    color:white;
+    background-color: rgba(0,0,0,0);
+    border: none;
+  
+}
+
+.max-price {
+  text-align: right;
+}
 /*-----------Промо------------------*/
 .promo{
     display: flex;
