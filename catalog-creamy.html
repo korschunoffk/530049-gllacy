@@ -10,7 +10,7 @@
 <body>
     <div class="catalog-container">
         <div class="container">
-            <header class="container header-flex">
+        <header class="header-flex">
         <a class="main-navigation_logo" href="index.html">
                 <img src="img/svg-gllacy/logo.svg" height="65" width="155" alt="Логотип магазина Глейси">
         </a>
@@ -72,19 +72,20 @@
             </li>
             <li class="user-navigation_item user-navigation_item--fullcart">
                 <a href="#">2 товара</a>
+                 <!-- -------------------- Корзина ---------------------->
                 <section class="cart-goods">
                     <table class="cart-goods-table">
                         <tr class="cart-goods-table-row">
-                            <td><a href="#" class="delete-cart-item"><img src="img/svg-gllacy/cross-small.svg"></a></td>
-                            <td><img class="icecream-pic" src="img/creamy-orange.png" width="30" height="30"
+                            <td><button class="delete-cart-item"></button></td>
+                            <td><img class="icecream-pic-mini" src="img/creamy-orange.png" width="30" height="30"
                          alt="Сливочное с апельсиновым джемом и цитрусовой стружкой"></td>
                             <td>Пломбир с апельсиновым джемом</td>
                             <td>1,5 кг x <span class="cost-one-kg">200 руб.</span></td>
                             <td>300 руб.</td>
                         </tr>
                         <tr class="cart-goods-table-row">
-                            <td><a href="#" class="delete-cart-item"><img src="img/svg-gllacy/cross-small.svg"></a></td>
-                            <td><img class="icecream-pic" src="img/creamy-strawberry.png" width="30" height="30"
+                            <td><button class="delete-cart-item"></button></td>
+                            <td><img class="icecream-pic-mini" src="img/creamy-strawberry.png" width="30" height="30"
                          alt="Сливочно-кофейное с кусочками шоколада"></td>
                             <td>Клубничный пломбир с присыпкой из белого шоколада</td>
                             <td>1,5 кг x <span class="cost-one-kg">300 руб.</span></td>
@@ -105,34 +106,11 @@
     
     
     
-    <!-- -------------------- Корзина ---------------------->
-    
-    <section class="cart-goods">
-        <table class="cart-goods-table">
-            <tr class="cart-goods-table-row">
-                <td><a href="#" class="delete-cart-item"><img src="img/svg-gllacy/cross-small.svg"></a></td>
-                <td><img class="icecream-pic" src="img/creamy-orange.png" width="30" height="30"
-                         alt="Сливочное с апельсиновым джемом и цитрусовой стружкой"></td>
-                <td>Пломбир с апельсиновым джемом</td>
-                <td>1,5 кг x <span class="cost-one-kg">200 руб.</span></td>
-                <td>300 руб.</td>
-            </tr>
-            <tr class="cart-goods-table-row">
-                <td><a href="#" class="delete-cart-item"><img src="img/svg-gllacy/cross-small.svg"></a></td>
-                <td><img class="icecream-pic" src="img/creamy-strawberry.png" width="30" height="30"
-                         alt="Сливочно-кофейное с кусочками шоколада"></td>
-                <td>Клубничный пломбир с присыпкой из белого шоколада</td>
-                <td>1,5 кг x <span class="cost-one-kg">300 руб.</span></td>
-                <td>450 руб.</td>
-            </tr>
-        </table>
-        <span class="total-cost">Итого:750 руб.</span><br>
-        <a class="button order-button" href="#">Оформить заказ</a>
-    </section>
+   
 
 </header>
     
-<main class="container">
+<main class="container-up">
     <p class="subnav">
         <a class="subnav__item" href="index.html">Главная</a>
         <a class="subnav__item" href="catalog.html">Каталог </a>
@@ -174,54 +152,50 @@
           
         </div>
 
-        <div  class="catalog_filter-item">
+        <div  class="catalog_filter-item fat-filter">
             <p class="catalog_filter-title">Жирность:</p>
             <p class="filter-item-sub">
                 <label >
                     <input type="radio" id="radio-item-1" value="fat-zero" name="fat-radio">
-                    <span class="fat-1 fat"></span>
-                    <span>0%</span>
+                    <span class="fat-1">0%</span>
                 </label>
                 <label >
                     <input type="radio" id="radio-item-2" value="fat-ten" name="fat-radio" checked>
-                    <span class="fat-2 fat"></span>
-                    <span>10%</span>
+                    <span class="fat-2">10%</span>
                 </label>
                 <label >
                     <input type="radio" id="radio-item-3" value="fat-under-thirty" name="fat-radio">
-                    <span class="fat-3 fat"></span>
-                    <span>до 30%</span>
+                    <span class="fat-3">до 30%</span>
                 </label>
                 <label >
                     <input type="radio" id="radio-item-4" value="fat-over-thirty" name="fat-radio">
-                    <span class="fat-4 fat"></span>
-                    <span>выше 30%</span>
+                    <span class="fat-4">выше 30%</span>
                 </label>
             </p>
         </div>
 
-        <div  class="catalog_filter-item">
+        <div  class="catalog_filter-item filler-filter">
             <p class="catalog_filter-title">Наполнители:</p>
             <p class="filter-item-sub">
                 <label>
                     <input type="checkbox" id="checkbox-item-1" name="filler-choco" checked>
-                    <span>шоколадные</span>
+                    <span class="filler-1">шоколадные</span>
                 </label>
                 <label>
                     <input type="checkbox" id="checkbox-item-2" name="filler-sugar" checked>
-                    <span>сахарные присыпки</span>
+                    <span class="filler-2">сахарные присыпки</span>
                 </label>
                 <label>
                     <input type="checkbox" id="checkbox-item-3" name="filler-fruit">
-                    <span>фрукты</span>
+                    <span class="filler-3">фрукты</span>
                 </label>
                 <label>
                     <input type="checkbox" id="checkbox-item-4" name="filler-syrup">
-                    <span>сиропы</span>
+                    <span class="filler-4">сиропы</span>
                 </label>
                 <label>
                     <input type="checkbox" id="checkbox-item-5" name="filler-jam">
-                    <span>джемы</span>
+                    <span class="filler-5">джемы</span>
                 </label>
             </p>
         </div>

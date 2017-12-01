@@ -45,11 +45,11 @@ img {
 /*--------Хедер------------*/
 .header-flex{
     padding:0;
-    margin:0;
+    margin:0 auto;
+    
     display:flex;
     flex-wrap: wrap;
-    padding-top:10px;
-    min-height:220px;  
+   width:1146px;
 }
 /*--------контейнеры центровщики------------*/
 .main-container{
@@ -74,7 +74,7 @@ img {
     width:1146px;
     margin:0 auto;
     position:relative;
-    
+    padding-top:10px;
 }
 .catalog-container{
     font-family: 'Roboto', Arial , sans-serif;
@@ -82,12 +82,13 @@ img {
     font-size: 16px;
     line-height:22px;
     color:white;
-    
     min-width: 1200px;
     min-height: 100vh;
     background-color: #849d8f;
 }
-
+.container-up{
+    margin-top: -35px;
+}
 /*------------------Основная навигация-----------------*/
 .main-navigation{
     padding:0;
@@ -95,8 +96,7 @@ img {
     
     width: 380px;
     margin-left:9px;
-
-    
+    position: relative;
 }
 .main-navigation_list{
     padding:0;
@@ -109,11 +109,12 @@ img {
     line-height:18px;
     
     display: flex;
-    
-    justify-content: space-between;
+   justify-content: space-between;
+    position: absolute;
+    z-index: 20;
 }
 .main-navigation_item{
-    padding-top: 7px;
+    padding-top : 7px;
     height:26px;
     padding-left:15px;
     position: relative;
@@ -149,6 +150,8 @@ img {
     height:171px;
     border-radius:5px;
     background-color: white;
+    
+
 }
 .sub-menu_item{
     background-color: white;
@@ -158,6 +161,8 @@ img {
     margin:0 auto;
     padding-top:9px;
     padding-left: 20px;
+    
+    
     
 }
 .sub-menu_item:nth-child(1){
@@ -192,7 +197,6 @@ sub-menu_item a{
 }
 .main-navigation_item:nth-child(1):hover .main-navigation_sublist{
     visibility: visible;
-    
 }
 .main-navigation_item:nth-child(1):focus .main-navigation_sublist{
     visibility: visible;
@@ -235,6 +239,7 @@ sub-menu_item a{
     justify-content: space-between;
     
     min-width: 260px;
+    position: relative;
     
 }
 .user-navigation_item{
@@ -248,6 +253,10 @@ sub-menu_item a{
 }
 .user-navigation_item:hover a{
     color:black;  
+}
+.subnav{
+    position: relative;
+    z-index: 4;
 }
 .subnav__item{
     font-family: 'Roboto', Arial , sans-serif;
@@ -304,6 +313,9 @@ sub-menu_item a{
     
     position: relative;
 }
+.user-navigation_item--fullcart:hover .cart-goods{
+    visibility: visible;
+}
 .user-navigation_item--search:hover{
     background-image: url(../img/svg-gllacy/loupe-black.svg);
     background-color: white;
@@ -329,8 +341,7 @@ sub-menu_item a{
     flex-direction: column;
     align-items: flex-end;
     height: 43px;
-    position: relative;
-    top: -60px;
+    
 }
 .main-navigation__info{
     padding:0;
@@ -358,6 +369,7 @@ sub-menu_item a{
 .login{ 
     visibility:hidden;
     position: absolute;
+    z-index: 20;
     top:37px;
     right:1px;
     
@@ -456,6 +468,7 @@ sub-menu_item a{
     right:0px;
     visibility: hidden;
     border-radius:5px;
+    z-index: 20;
 }
 .search_row{
     margin: 0;
@@ -473,10 +486,101 @@ sub-menu_item a{
 .user-navigation_item--search:hover .searching{
     visibility: visible;
 }
+
+/*-----------Товары в корзине--------------*/
+
+.cart-goods{
+    background-color: white;
+    visibility: hidden1;
+    position: absolute;
+    z-index: 20;
+    top:37px;
+    right:0px;
+    border-radius:10px;
+    
+    width: 540px;
+    min-height: 191px;
+    
+    box-sizing: border-box;
+    padding: 20px 16px;
+}
+.cart-goods-table-row{
+    margin: 0;
+    padding: 0;
+     font-family: 'Roboto', Arial , sans-serif;
+    font-weight: 400;
+    font-size: 13px;
+    line-height:16px;
+    color:#323232;
+    min-height: 33px;
+    width:510px;
+    box-sizing: border-box;
+}
+.cart-goods-table-row td:nth-child(1){
+    margin: 0;
+    padding: 0;
+    width:25px;
+   
+    
+}
+.cart-goods-table-row td:nth-child(2){
+    margin: 0;
+    padding: 0;
+    width: 33px;
+    padding-right:12px;
+}
+.icecream-pic-mini{
+    height:32px;
+    width: 32px;
+}
+.cart-goods-table-row td:nth-child(3){
+    margin: 0;
+    padding: 0;
+    width: 230px;
+    padding-top:10px;
+     font-family: 'Roboto', Arial , sans-serif;
+    font-weight: 400;
+    font-size: 13px;
+    line-height:16px;
+    color:#323232;
+}
+.cost-one-kg{
+    color:#999999;
+}
+.total-cost{
+    font-family: 'Roboto', Arial , sans-serif;
+    font-weight: 700;
+    font-size: 15px;
+    line-height:33px;
+    color:#323232;
+}
+.order-button{
+    font-family: 'Roboto', Arial , sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+    line-height:24px;
+    
+   
+}
+.user-navigation_item--fullcart:hover .order-button{
+     color:white;
+}
+.delete-cart-item{
+    margin: 0;
+    padding:0;
+    height:33px;
+    width: 25px;
+    border:none;
+    background-image: url(../img/svg-gllacy/cross-small.svg);
+    background-repeat:no-repeat;
+    background-position: 0% 45%;
+    cursor:pointer;
+    background-color: white;
+}
 /*--------Главный слайдер------------*/
 .slider {
     position: relative;
-    padding-top: 170px;
+    padding-top: 270px;
     text-align: center;
     color: #ffffff;
     margin-bottom:40px;
@@ -572,16 +676,24 @@ sub-menu_item a{
 .catalog_filter{
     margin:0;
     padding 0;
-    
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     width: 855px;
+    min-height: 72px;
 }
 .catalog_filter-item{
     margin:0;
     padding 0;
-    min-height: 60px;
+    min-height: 72px;
+    margin-bottom:8px;
+}
+.catalog_filter-item:nth-child(1){
+    width: 193px;
+    cursor: pointer;
+}
+.catalog_filter-item:nth-child(1) .filter-item-sub{
+    
 }
 .filter-item-sub{
     margin:0;
@@ -592,18 +704,33 @@ sub-menu_item a{
     min-height:36px;
 }
 
-#radio-item-1,#radio-item-2,#radio-item-3,#radio-item-4{
+#radio-item-1,#radio-item-2,#radio-item-3,#radio-item-4,#checkbox-item-1,#checkbox-item-2,#checkbox-item-3,#checkbox-item-4,#checkbox-item-5{
    height:1px;
     width:1px;
     opacity:0;
 }
-.fat{
+.fat-1,.fat-2,.fat-3,.fat-4{
+    
     display: inline-block;
-    height: 25px;
-    width:25px;
+    height: 36px;
+    width:auto;
     background-image: url(../img/svg-gllacy/radio-off.svg);
+    background-position: 0% 50%;
     background-repeat: no-repeat;
     
+    padding-left: 33px;
+    margin-left: 12px;
+    font-family: 'Roboto', Arial , sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    line-height:36px; 
+    cursor: pointer;
+}
+.fat-4{
+    margin-right: 17px;
+}
+.fat-1{
+    margin-left: 9px;
 }
 .catalog_filter-title{
     margin:0;
@@ -611,47 +738,90 @@ sub-menu_item a{
     font-family: 'Roboto', Arial , sans-serif;
     font-weight: 500;
     font-size: 14px;
-    line-height:36px;
+    line-height:28px;
 }
-.filter-price_row,#radio-item-1,#radio-item-2,#radio-item-3,#radio-item-4,#checkbox-item-1,#checkbox-item-2,#checkbox-item-3,#checkbox-item-4,.catalog_filter-button{
+
+
+#radio-item-1:checked ~ .fat-1,
+#radio-item-2:checked ~ .fat-2,
+#radio-item-3:checked ~ .fat-3,
+#radio-item-4:checked ~ .fat-4 {
+    background-image: url(../img/svg-gllacy/radio-on.svg);
+    background-repeat: no-repeat;
+    cursor: pointer;
+  
+}
+.filler-1,.filler-2,.filler-3,.filler-4,.filler-5{
+    display: inline-block;
+    height: 36px;
+    width:auto;
+    background-image: url(../img/svg-gllacy/checkbox-off.svg);
+    background-repeat: no-repeat;
+    
+    background-position: 0% 50%;
+    background-repeat: no-repeat;
+    
+    padding-left: 33px;
+    margin-left: 11px;
     font-family: 'Roboto', Arial , sans-serif;
     font-weight: 500;
     font-size: 16px;
-    line-height:36px;
+    line-height:36px; 
+    cursor: pointer;
 }
+.filler-5{
+    margin-right:12px;
+}
+#checkbox-item-1:checked ~ .filler-1,
+#checkbox-item-2:checked ~ .filler-2,
+#checkbox-item-3:checked ~ .filler-3,
+#checkbox-item-4:checked ~ .filler-4,
+#checkbox-item-5:checked ~ .filler-5{
+    background-image: url(../img/svg-gllacy/checkbox-on.svg);
+    background-repeat: no-repeat;
+    cursor: pointer;
+}
+
 .catalog_filter-button{
     color:white;
     background-color: rgba(255,255,255,0.25);
     border:2px solid white;
     border-radius: 50px;
-}
-#radio-item-1:checked ~ .fat-1,#radio-item-2:checked ~ .fat-2,#radio-item-3:checked ~ .fat-3,#radio-item-4:checked ~ .fat-4 {
-    background-image: url(../img/svg-gllacy/radio-on.svg);
-    background-repeat: no-repeat;
-  
+    
+    width:144px;
+    height: 36px;
+    margin-top:27px;
+    
+    font-family: 'Roboto', Arial , sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    line-height:28px; 
+    cursor: pointer;
 }
 /*-----------два ползунка------------------*/
 .filter-item {
   margin: 0;
   padding: 0;
-  width: 260px;
+  width: 220px;
   margin: 50px auto; 
 }
 
 .range-filter {
-  width: 260px;
+    margin:0;
+    padding:0;
+  width: 220px;
   
 }
 .range-controls {
   position: relative;
   
   height: 18px;
-  width: 219px;
-  padding-top: 18px;
+  width: 179px;
+  padding-top: 17px;
   padding-right: 20px;
   padding-left: 20px;
   
-  background-color: rgba(255,255,255,0.4);
+  background-color: rgba(255,255,255,0.25);
   border-radius: 50px;
 }
 
@@ -694,7 +864,7 @@ sub-menu_item a{
 
 .price-controls {
     font-size: 0;
-    padding-left:15px;
+    padding-left:17px;
 }
 
 .price-controls label {
@@ -704,7 +874,7 @@ sub-menu_item a{
     font-family: 'Roboto', Arial , sans-serif;
     font-weight: 500;
     font-size: 14px;
-    line-height:36px;
+    line-height:28px;
 }
 
 .price-controls input {
@@ -713,7 +883,6 @@ sub-menu_item a{
     font-family: 'Roboto', Arial , sans-serif;
     font-weight: 500;
     font-size: 14px;
-    line-height:36px;
     text-align: center;
     
     color:white;
@@ -1305,44 +1474,4 @@ sub-menu_item a{
     height:44px;
     position:absolute;
     right:27px;
-}
-/*-----------Товары в корзине--------------*/
-
-.cart-goods{
-    background-color: white;
-    visibility: hidden;
-    position: absolute;
-    top:100px;
-    right:300px;
-    border-radius:10px;
-}
-.cart-goods-table-row{
-     font-family: 'Roboto', Arial , sans-serif;
-    font-weight: 400;
-    font-size: 13px;
-    line-height:16px;
-    color:#323232;
-}
-.cost-one-kg{
-    color:#999999;
-}
-.total-cost{
-    font-family: 'Roboto', Arial , sans-serif;
-    font-weight: 700;
-    font-size: 15px;
-    line-height:18px;
-    color:#323232;
-}
-.order-button{
-    font-family: 'Roboto', Arial , sans-serif;
-    font-weight: 700;
-    font-size: 18px;
-    line-height:24px;
-   
-}
-.user-navigation_item--fullcart:hover .cart-goods{
-    visibility: visible;
-}
-.user-navigation_item--fullcart:hover .order-button{
-     color:white;
 }
