@@ -257,8 +257,10 @@ sub-menu_item a{
 .subnav{
     position: relative;
     z-index: 4;
+    margin:0;
 }
 .subnav__item{
+    
     font-family: 'Roboto', Arial , sans-serif;
     font-weight: 400;
     font-size: 14px;
@@ -449,10 +451,12 @@ sub-menu_item a{
 }
 /*-----------------Форма поиска-------------*/
 .catalog_caption{
+    margin: 0;
     font-family: 'Roboto', Arial , sans-serif;
     font-weight: 700;
     font-size: 35px;
     line-height:41px;
+    margin-bottom: 18px;
 }
 .catalog_filter-title{
     font-family: 'Roboto', Arial , sans-serif;
@@ -490,8 +494,10 @@ sub-menu_item a{
 /*-----------Товары в корзине--------------*/
 
 .cart-goods{
+    margin: 0;
+    padding: 0;
     background-color: white;
-    visibility: hidden1;
+    visibility: hidden;
     position: absolute;
     z-index: 20;
     top:37px;
@@ -503,18 +509,33 @@ sub-menu_item a{
     
     box-sizing: border-box;
     padding: 20px 16px;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    box-shadow: 0 20px 30px rgba(0,0,0,0.3);
+}
+.cart-goods-table{
+    margin: 0;
+    padding: 0;
 }
 .cart-goods-table-row{
     margin: 0;
     padding: 0;
      font-family: 'Roboto', Arial , sans-serif;
-    font-weight: 400;
+    font-weight: 500;
     font-size: 13px;
     line-height:16px;
     color:#323232;
     min-height: 33px;
     width:510px;
     box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    margin-bottom:10px;
+}
+.cart-goods-table-row:nth-last-child(1){
+    margin-bottom:0;
 }
 .cart-goods-table-row td:nth-child(1){
     margin: 0;
@@ -537,21 +558,33 @@ sub-menu_item a{
     margin: 0;
     padding: 0;
     width: 230px;
-    padding-top:10px;
-     font-family: 'Roboto', Arial , sans-serif;
-    font-weight: 400;
-    font-size: 13px;
-    line-height:16px;
-    color:#323232;
+    padding-top: 8px;
+}
+.cart-goods-table-row td:nth-child(4){
+    margin: 0;
+    padding:0;
+    width: 117px;
+    box-sizing: border-box;
+    padding-left: 20px;
+    padding-top: 8px;
+}
+.cart-goods-table-row td:nth-child(5){
+    margin: 0;
+    padding: 0;
+    padding-left:25px;
+    padding-top: 8px;
+    width: 58px;
 }
 .cost-one-kg{
     color:#999999;
 }
 .total-cost{
+    margin:0;
+    padding:0;
     font-family: 'Roboto', Arial , sans-serif;
     font-weight: 700;
     font-size: 15px;
-    line-height:33px;
+    line-height:47px;
     color:#323232;
 }
 .order-button{
@@ -560,6 +593,11 @@ sub-menu_item a{
     font-size: 18px;
     line-height:24px;
     
+    box-sizing: border-box;
+    width:172px;
+    height: 45px;
+    text-align: center;
+    padding-top:11px;
    
 }
 .user-navigation_item--fullcart:hover .order-button{
@@ -576,6 +614,10 @@ sub-menu_item a{
     background-position: 0% 45%;
     cursor:pointer;
     background-color: white;
+}
+.cart-goods-table-row:nth-last-child(1){
+    padding-bottom:10px;
+    border-bottom: 1px solid #ccccc9;
 }
 /*--------Главный слайдер------------*/
 .slider {
