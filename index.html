@@ -15,9 +15,9 @@
     <div class="main-container">
         <div class="container">
     <header class="header-flex">
-        <a class="main-navigation_logo" href="index.html">
+        <span class="main-navigation_logo">
                 <img src="img/svg-gllacy/logo.svg" height="65" width="155" alt="Логотип магазина Глейси">
-        </a>
+        </span>
         <nav class="main-navigation">
             <ul class="main-navigation_list">
                 <li class="main-navigation_item"><a href="catalog-creamy.html">Каталог</a>
@@ -41,7 +41,7 @@
                     <p class="search_title hidden-content">Поиск</p>
                     <p class="search_row">
                         <label >
-                            <input class="search" id="search" type="text" placeholder="Что ищем?">
+                            <input class="search" id="search" type="text" placeholder="Что ищем?" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Что ищем?'">
                         </label>
                     </p>
                 </section>
@@ -56,16 +56,16 @@
                         <form class="login_form" method="post" action="https://echo.htmlacademy.ru">
                             <p class="login_row">
                                 <label for="login-form-email"></label>
-                                <input class="login-form-email" id="login-form-email" type="text" name="email" placeholder="Электронная почта">
+                                <input class="login-form-email" id="login-form-email" type="text" name="email" placeholder="Электронная почта" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Электронная почта'">
                             </p>
                             <p class="login_row">
                                 <label for="login-form-password"></label>
-                                <input class="login-form-password" id="login-form-password" type="text" name="password" placeholder="Пароль">
+                                <input class="login-form-password" id="login-form-password" type="text" name="password" placeholder="Пароль" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Пароль'">
                             </p>
                             <div class="login_row">
                                 <button type="submit" class="button login-form-submit">Войти</button>
                                 <p class="login_column">
-                                    <a href="#" class="login_support">Забыли пароль?</a> <br>
+                                    <a href="#" class="login_support">Забыли пароль?</a>
                                     <a href="#" class="login_support">Новая регистрация</a>
                                 </p>
                             </div>
@@ -129,7 +129,8 @@
             
         </section>
         <section class="catalog catalog--popular">
-                <article class="icecream-item icecream-item--popular">
+                <article class="icecream-item">
+                    <span class="icecream-item--popular"></span>
                         <div class="icecream-item_pic">
                             <img src="img/creamy-orange.png" width="267" height="267" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой">
                             <p class="icecream-item_cost cost">
@@ -138,7 +139,7 @@
                                 <span class="cost_measure">/кг</span>
                             </p>
                         </div>
-                        <a class="icecream-item_description">
+                        <a class="icecream-item_description" href="#">
                         Сливочное с апельсиновым <br>джемом и цитрусовой стружкой
                         </a>
                        
@@ -146,7 +147,8 @@
                 </article>
 
 
-                <article class="icecream-item icecream-item--popular">
+                <article class="icecream-item">
+                    <span class="icecream-item--popular"></span>
                     <div class="icecream-item_pic">
                             <img  src="img/creamy-coffee.png" width="267" height="267" alt="Сливочно-кофейное с кусочками шоколада">
                             <p class="icecream-item_cost cost">
@@ -155,12 +157,13 @@
                                 <span class="cost_measure">/кг</span>
                             </p>
                         </div>
-                        <a class="icecream-item_description">
+                        <a class="icecream-item_description" href="#">
                             Сливочно-кофейное с кусочками шоколада
                         </a>
                         <a class="button icecream-item_button" href="#">Быстрый просмотр</a>
                 </article>
-                <article class="icecream-item icecream-item--popular">
+                <article class="icecream-item">
+                    <span class="icecream-item--popular"></span>
                         <div class=icecream-item_pic>
                             <img src="img/creamy-strawberry.png" width="267" height="267" alt="Сливочно-клубничное с присыпкой из белого шоколада">
                             <p class="icecream-item_cost cost">
@@ -169,12 +172,13 @@
                                 <span class="cost_measure">/кг</span>
                             </p>
                         </div>
-                        <a class="icecream-item_description">
+                        <a class="icecream-item_description" href="#">
                             Сливочно-клубничное с  присыпкой из белого шоколада
                         </a>
                         <a class="button icecream-item_button" href="#">Быстрый просмотр</a>
                 </article>
-                <article class="icecream-item icecream-item--popular">
+                <article class="icecream-item">
+                    <span class="icecream-item--popular"></span>
                         <div class=icecream-item_pic>
                             <img src="img/creamy-caramel.png" width="267" height="267" alt="Сливочное крем-брюле с карамельной подливкой">
                             <p class="icecream-item_cost cost">
@@ -183,7 +187,7 @@
                                 <span class="cost_measure">/кг</span>
                             </p>
                         </div>
-                        <a class="icecream-item_description">
+                        <a class="icecream-item_description" href="#">
                             Сливочное крем-брюле с карамельной подливкой
                         </a>
                         <a class="button icecream-item_button" href="#">Быстрый просмотр</a>
@@ -212,7 +216,7 @@
                 <p class="promo_subscribe-description">Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного,что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)</p>
                 <form class="promo_subscribe-form" method="post" action="https://echo.htmlacademy.ru">
                     <p>
-                    <input type="text" placeholder="Электронная почта" name="email" alt="введите адрес электронный почты">
+                    <input type="text" placeholder="Электронная почта" name="email" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Электронная почта'">
                     </p>
                     <p>
                         <button type="submit" class="button promo_button">Отправить</button>
@@ -239,10 +243,68 @@
     </section>
     <footer class="container footer-flex">
         <div class="social">
-            <a href="#" class="social_button social_button--twitter"><img src="img/tw.png" alt="Twitter" height="32" width="32"></a>
-            <a href="#" class="social_button social_button--instagram"><img src="img/in.png" alt="Instagram" height="32" width="32"></a>
-            <a href="#" class="social_button social_button--facebook"><img src="img/fb.png" alt="Facebook" height="32" width="32"></a>
-            <a href="#" class="social_button social_button--vkontakte"><img src="img/vk.png" alt="VK" height="32" width="32"></a>
+            <a href="#" class="social_button social_button--twitter">
+            
+                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="32" height="32" viewBox="0 0 32 32">
+                    <metadata><?xpacket begin="﻿" id="W5M0MpCehiHzreSzNTczkc9d"?>
+                        <x:xmpmeta xmlns:x="adobe:ns:meta/" x:xmptk="Adobe XMP Core 5.6-c138 79.159824, 2016/09/14-01:09:01        ">
+                            <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+                                <rdf:Description rdf:about=""/>
+                            </rdf:RDF>
+                        </x:xmpmeta>
+                        <?xpacket end="w"?>
+                    </metadata>
+                  <image id="Твитер" class="cls-1" width="32" height="32" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAQAAADZc7J/AAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QAAKqNIzIAAAAJcEhZcwAACxIAAAsSAdLdfvwAAAAHdElNRQfhDAIPJQJzlLH7AAACLUlEQVRIx62VP2hTURTGf+fyCDStRoqtkBIJlZfJ6BL34GB1UCEdhAqF5+ISWiFQ3AUrgkPBPZMFETK4FTU4OmSLFuGVNrQQwaEQMW/QkOuQP7z73kubqGe73z3fd88599x7hAjTCfLksEkSBzyauNT4KK2wr4TINg7XsSJ0O1Qpi3uCgI6zxnJY1O9ChS3xIgX0Ii9IcbodUZL9kIDO8pLpMegAbYpSNwT0IuWx6T0JpxeF9HN/NVbwZiL3xQMFwNrEdEixDqBA2yxPTAcoaLsXgWNcnI7Id4s73GSDBtDkN4P6OSA6wY6vbQ55zjNmfHSPB7LX1z7LBX7xpp84dFhS5I2ua8gnVvnqQ8oDOsgPcZnl83DPIq/IGeGmQQ5Z5SkHfeSDf1vHuMUVH5CzsA2BizordelSoaLTZDnPkbG/QMFY2xZJA9jlsv4iXQBp0AgVdC6wTiriBnCO1z36CEsH1nEVVOSRVicI5IKAwgsgKzzWM9FsHeNaAPIUzZDfjvwccf5tzgSQpsINuW3o+cjzEzwMga6iFgIv8VY/0fEAPcYmsyHfWrCVDzjmG7u8l2ODPs8mV0P0DkuWtHSVG0Nomm3emTXQKe5yj6mIrKrSEtA228Z77LKHy3cUU8yRYWFESTUr4logrq4YP4IiQ4bTrSLu//rSxKNEeyJ6m1JvOvTbVvYpTiDRpjiYDMO+lzpO4OmODt4ZTIXwaFun8Nejre/xL8N1KDLBeP8DMgmqgz3VFTUAAAAASUVORK5CYII="/>
+                </svg>
+            
+            </a>
+            <a href="#" class="social_button social_button--instagram">
+            
+            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="32" height="32" viewBox="0 0 32 32">
+                  <metadata><?xpacket begin="﻿" id="W5M0MpCehiHzreSzNTczkc9d"?>
+                <x:xmpmeta xmlns:x="adobe:ns:meta/" x:xmptk="Adobe XMP Core 5.6-c138 79.159824, 2016/09/14-01:09:01        ">
+                   <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+                      <rdf:Description rdf:about=""/>
+                   </rdf:RDF>
+                </x:xmpmeta>
+                <?xpacket end="w"?></metadata>
+                  <image id="_" data-name="&apos;=]" class="cls-2" width="32" height="32" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAQAAADZc7J/AAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QAAKqNIzIAAAAJcEhZcwAACxIAAAsSAdLdfvwAAAAHdElNRQfhDAIPJgJYueI4AAACBElEQVRIx62VsWtTURTGf+dxp+cQQadIEKpRVDJYgoNTyCB0UtKtRWgQcQntkMUKRURQlw6ClG6d6mZAiotDyB8Q2kKrUJ4WtBLELZQ8EGKPQ17ie7z7ap72bPec7/veuefe+z7BEpqhRJE8WVzAp4NHm5Z041iJkfNUKWMsun2arIl3jIC6zDMdFw1DaPBSfKuATrBMjr/HAXXZjwlogVecGoMO0KMmOxEBnWBtbPpAojroQoK9r4/VfHQjs+KDA8B8ajrkWAg60DyvQ8P8ylM+JZAu8ZjsaKXMiCegz7gVAs3JbvJn9QYroeV7eWQ0QzmC+WKh3WQO2JYV9iKFsmYMJeuti8YZJoFD4CiSN5QciqnHF46iIX/Mjq9zhyMabPME+G6B5E1oqn+IOX7IT51kFQeY4p5sqMtpi0DWwbWklzgLVIJbYrgNnKNuQbpOUvexzC870MG35q8BjWDmfd4CBSvOd+hYC3fVkU0e8I4N7ssHNcxYcR2Dx0VL4SoP9YVssQWghiUu8M2C8wxtpqzaFa7oOh8RCswmHnbb0GIxdhf3RiIVAA7ZBD4zfL3D6NMy0tVm5DGdZ1eWSYrLkVVTuifxnEEXmSZ9vJHnJ/VLE586vVT0HvWBOwRTlX1qKSR61IbOMDoW2aHKwZjNV4euELe2BSr/bG0B4n/MdSSSwt5/Ay21oFEcZa7pAAAAAElFTkSuQmCC"/>
+            </svg>
+            
+            </a>
+            <a href="#" class="social_button social_button--facebook">
+            
+            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="32" height="32" viewBox="0 0 32 32">
+                  <metadata><?xpacket begin="﻿" id="W5M0MpCehiHzreSzNTczkc9d"?>
+                <x:xmpmeta xmlns:x="adobe:ns:meta/" x:xmptk="Adobe XMP Core 5.6-c138 79.159824, 2016/09/14-01:09:01        ">
+                   <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+                      <rdf:Description rdf:about=""/>
+                   </rdf:RDF>
+                </x:xmpmeta>
+                <?xpacket end="w"?></metadata>
+                  <image id="ФБ" class="cls-3" width="32" height="32" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAQAAADZc7J/AAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QAAKqNIzIAAAAJcEhZcwAACxIAAAsSAdLdfvwAAAAHdElNRQfhDAIPJhs80kr4AAABlElEQVRIx62VsU/CUBCHv3tpYoIQdhIXk45ubA4SZic249SdhIHNOJo4MZi4k5g4OMikK+EPYGNswkJkR2xdSM6hYJC+B4V6Y3/3+3r3XnsnWELL1KjiU6EAxEwJGTKQWTpXUmafgDqehbugT1fCLQAt0KKRhq6n0ONBYitAT+lwwu6Y0JZxCqBnPHKcwQ4Q0ZTRH4Ce0s1sTxBBUoUse392FP/KE58AvG28YMK1xGAAaDns73IvHzKXuczRDe2EFoAB9Wk4Cn3Z2kZDffCAwHlxEwBtA3CUUoWAG0/L1Hcc2JVTqWvZULN+ddnCo+ZRtUoRCsuD+wKgaM2revhW4VLmv63WAHRozfMNlYMbAKgYCrkABdcB3ukCuJVv0M42gkdsreF8qQJcbPHHhmmuFqaGMBcgNAxzAYaGAYuD7QsGRmb0Dwb0ZWaAbupfzxZKFwxISM+RUtSSlpyAnoS7R5o71keaxLSJ9rJHtJPtkMxEZExzD0REc7UZzOqZjAiSEZah+GC1Ff53tS0z8izXX8ge6/0HZDV9CGfd6JYAAAAASUVORK5CYII="/>
+            </svg>
+
+            
+            </a>
+            
+            <a href="#" class="social_button social_button--vkontakte">
+            
+            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="32" height="32" viewBox="0 0 32 32">
+                  <metadata><?xpacket begin="﻿" id="W5M0MpCehiHzreSzNTczkc9d"?>
+                        <x:xmpmeta xmlns:x="adobe:ns:meta/" x:xmptk="Adobe XMP Core 5.6-c138 79.159824, 2016/09/14-01:09:01        ">
+                           <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+                              <rdf:Description rdf:about=""/>
+                           </rdf:RDF>
+                        </x:xmpmeta>
+                        <?xpacket end="w"?>
+                    </metadata>
+                  <image id="ВК" class="cls-4" width="32" height="32" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAQAAADZc7J/AAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QAAKqNIzIAAAAJcEhZcwAACxIAAAsSAdLdfvwAAAAHdElNRQfhDAIPJw3RHc7oAAAB5ElEQVRIx62VwWsTURCHv1keRbeWnA0USmFvDSIGvEZB0/bYFA8VhL2HlJKT/g9VBK9SEdRb7l7SQkt7SXvpoYWFohRy8BZqlgjB6SHb1ORt1t3q3Pa93+9j3uy8N0JMaI4SRTzyuEBIm4AWO9KxtWKZPXweY2K4fZpsSZAAUJcaFRv6p4QGbyWMBeg8m8zy9zinLmcWQAu8YzqFHaBLVY5HADrPVmr7AOEPspDo7J9SJT96kOcSggNALbMdZlkHcEA9KpntACvqgQH8mB/3SC6i6hhuc4c5KpTGNILPK9EcX2PaZgi4Dq3xYmypT9lQiu26gaXAA37xnQNR4IMFMJQMxYRTFqgCsMEu8JPfUdGvo+jgpS7afcsOniGfYDnlCz1O2QO9y8sYRd7gTvbLEUfDjyexneo6JIRO6YzO6BSAfOQZJ7bGIUwgrLLNNvv6Xl2QC95YitChnaJ891iIajIebYcgBaDHNwBy1k5gaLE00XjIa6DHvvwAYNFStLK08kM2uTWy1KdspKNNniblry7TeJRZti5dUzoC6vE58SGdSGZNAgckoHEDOzQk+F9PmoTU6Wayd6kPpkPUynJGNQOiS/VqMgzvghzjc54yef9qKtijbZ2VG4+2SPEvw3UIyTDeLwGOnpP9ZhvEpQAAAABJRU5ErkJggg=="/>
+            </svg>
+            
+            </a>
+            
+            
         </div>
         <div class="about-us">
             <a href="#" class="about-us_link about-us_link--heart">Для поставщиков</a>
@@ -265,16 +327,16 @@
         <form class="feedback_form" method="post" action="https://echo.htmlacademy.ru">
             <p class="feedback_form--item">
                 <label>
-                    <input class="feedback-name" id="feedback-name" type="text" name="name" placeholder="Как вас зовут ?" >
+                    <input class="feedback-name" id="feedback-name" type="text" name="name" placeholder="Как вас зовут ?"  onfocus="this.placeholder = ''" onblur="this.placeholder = 'Как вас зовут ?'">
                 </label>
             </p>
             <p class="feedback_form--item">
                 <label>
-                    <input class="feedback-email" id="feedback-email" type="text" name="email" placeholder="Ваша почта для ответа" >
+                    <input class="feedback-email" id="feedback-email" type="text" name="email" placeholder="Ваша почта для ответа"  onfocus="this.placeholder = ''" onblur="this.placeholder = 'Ваша почта для ответа'">
                 </label>
             </p>
             <p class="feedback_form--item">
-                <textarea class="feedback-text" name="feedback-text" placeholder="Напишите что нибудь..." rows="6" cols="50"></textarea>
+                <textarea class="feedback-text" name="feedback-text" placeholder="Напишите что нибудь..." rows="6" cols="50"  onfocus="this.placeholder = ''" onblur="this.placeholder = 'Напишите что нибудь...'"></textarea>
             </p>
             <p class="feedback_form--item">
                 <button type="submit"class="button feedback_button">Отправить</button>
