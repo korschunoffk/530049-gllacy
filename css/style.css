@@ -47,6 +47,7 @@ img {
     display:flex;
     flex-wrap: wrap;
    width:1146px;
+    padding-top:9px;
 }
 /*--------контейнеры центровщики------------*/
 .main-container{
@@ -71,7 +72,7 @@ img {
     width:1146px;
     margin:0 auto;
     position:relative;
-    padding-top:9px;
+    
 }
 .catalog-container{
     font-family: 'Roboto', Arial , sans-serif;
@@ -119,8 +120,14 @@ img {
     padding: 9px 3px 20px;
     position: relative;
 }
+.main-navigation_item:nth-child(2){
+    padding: 9px 2px 20px;
+    position: relative;
+}
 .main-navigation_item:nth-child(1){
-    padding-left:10px;}
+    padding-left:11px;}
+.main-navigation_item:nth-child(3){
+    padding-left:2px;}
 
 .main-navigation_item > a{
   position: relative;
@@ -1046,13 +1053,14 @@ label[for="product-3"]:active
 .promo_item{
     width:560px;
     height:229px;
-    border-radius:20px;
+    border-radius:17px;
 }
 .promo_item--buy{
     box-sizing: border-box;
     width:560px;
     height:229px;
     border-radius:17px;
+    padding:0 19px;
     
 }
 .promo_item--raspberry{
@@ -1061,18 +1069,18 @@ label[for="product-3"]:active
     background-image: url("../img/raspberries-background.jpg");
     background-position:cover;
     background-repeat: no-repeat; 
-    
+    position: relative;
 }
 .promo_item--chocolate{
     background-color: #43271b;
     background-image: url("../img/chocolate-background.jpg");
     background-position:cover;
     background-repeat: no-repeat; 
-    
+    position: relative;
 }
 .promo_caption{
     margin:0;
-    padding-left:19px;
+    
     font-family: 'Roboto', Arial , sans-serif;
     font-weight: 700;
     font-size: 35px;
@@ -1081,51 +1089,51 @@ label[for="product-3"]:active
 }
  .promo_text{
     margin:0;
-    padding:0 19px;
     font-family: 'Roboto', Arial , sans-serif;
     font-weight: 700;
     font-size: 18px;
     line-height:22px;
 }
 .promo_button-buy--right{
+    box-sizing: border-box;
+    width:165px;
     display: block;
     font-family: 'Roboto', Arial , sans-serif;
     font-weight: 500;
     font-size: 18px;
-    line-height:24px;
-    padding-top:11px;
-    padding-left:22px;
-    margin-top:43px;
-    margin-left:374px;
-    height: 36px;
-    width:144px;
+    line-height:46px;
+    padding: 0 22px;
     border-style: none;
+    position: absolute;
+    bottom:23px;
+    right:21px;
+    
     
 }
 .promo_button-buy--left{
+    box-sizing: border-box;
+    width:189px;
     display: block;
-    
     font-family: 'Roboto', Arial , sans-serif;
     font-weight: 500;
     font-size: 18px;
-    line-height:24px;
-    padding-top:11px;
-    padding-left:22px;
-    margin-top:43px;
-    margin-left:351px;
-    height: 36px;
-    width:167px;
+    line-height:45px;
+    padding: 0 21px;
     border-style: none;
+    position: absolute;
+    bottom:24px;
+    right:21px;
     
 }
 
 /*-----------Карточка товара--------------*/
 .catalog{
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     margin:0;
     flex-wrap:wrap;
     margin-bottom:40px;
+    margin-left: -1px;
 }
 
 .icecream-item{
@@ -1135,7 +1143,7 @@ label[for="product-3"]:active
     text-align: center;
     display: block;
     position: relative;
-    z-index:;
+    
     margin-top:40px;
     
 }
@@ -1147,9 +1155,11 @@ label[for="product-3"]:active
     line-height:45px;
 }
 .cost_measure{
+    margin-left:-1px;
+    display: inline-block;
     font-family: 'Roboto', Arial , sans-serif;
-    font-weight: 700;
-    font-size: 40px;
+    font-weight: 500;
+    font-size: 28px;
     line-height:45px;
 }
 .cost_image{
@@ -1160,8 +1170,8 @@ label[for="product-3"]:active
     padding: 0px;
     margin:0px;
     position: relative;
-    bottom: 65px;
-    right:50px;
+    bottom: 62px;
+    right:58px;
 }
 .icecream-item_description{
     font-family: 'Roboto', Arial , sans-serif;
@@ -1169,7 +1179,7 @@ label[for="product-3"]:active
     font-size: 16px;
     line-height:22px;
     position: relative;
-    bottom: 40px;
+    bottom: 43px;
     z-index: 3;
     color: white;
     text-decoration:none;
@@ -1242,25 +1252,28 @@ label[for="product-3"]:active
     margin:0 auto;
     background-color:#e9dcbf;
     background-image:url(../img/wafer-background.jpg);
-    border-radius:10px;
-    height: 308px;
+    border-radius:15px;
+    
     margin-bottom: 40px;
+    padding:27px 20px;
+    padding-bottom: 35px;
 }
 .features_container{
-    width:1110px;
+    margin-left:-1px;
+    padding-top: 7px;
     margin: 0 auto;
     display: flex;
     flex-wrap:wrap;
     justify-content: space-between;
 }
 .features_caption{
+    margin:0;
+    padding: 0;
     font-family: 'Roboto', Arial , sans-serif;
     font-weight: 500;
     font-size: 24px;
     line-height:30px;
     color:#323232;
-    padding-top:17px;
-    padding-left:21px;
 }
 .features_item{
     padding: 0;
@@ -1271,10 +1284,10 @@ label[for="product-3"]:active
     font-size: 16px;
     line-height:22px;
     color:#323232;
-    width:483px;
-    padding-left:57px;
+    width:486px;
+    padding-left:56px;
     height: 76px;
-    padding-top: 12px;
+    padding-top: 13px;
 }
 .features_item--modern{
     background-image: url("../img/svg-gllacy/ice-cream.svg");
@@ -1294,25 +1307,36 @@ label[for="product-3"]:active
 }
 /*-----------промо и подписка--------------*/
 .promo_article--blog{
+    box-sizing: border-box;
     height:220px;
     background-image: url(../img/strawberry-background.jpg);
+    background-size: cover;
+    padding:24px 20px;
+    
 }
 .promo_article--subscribe{
+    box-sizing: border-box;
     height: 220px;
     background-image:url(../img/svg-gllacy/post-background.svg);
     background-size: cover;
+    border-radius: 2px;
     
 }
 .promo_article{
+    box-sizing: border-box;
     background-color:#f8f7f4;
-    border-radius:15px;
+    border-radius:10px;
     height: 210px;
     margin:5px;
+    margin-left: 6px;
+    padding: 0 20px;
+    padding-top:29px;
+    
 }
 .promo_title{
-    margin:0px;
-    margin-top: 24px;
-    margin-bottom:5px;
+    margin:0;
+    padding: 0;
+    
     
     font-family: 'Roboto', Arial , sans-serif;
     font-weight: 500;
@@ -1321,8 +1345,13 @@ label[for="product-3"]:active
     color:#323232;
 }
 .promo_blog-announce{
+    margin:0;
+    padding-top: 3px;
+    
+    display: block;
+    width:300px;
     font-family: 'Roboto', Arial , sans-serif;
-    font-weight: 500;
+    font-weight: 700;
     font-size: 24px;
     line-height:30px;
     color:#323232;
@@ -1334,7 +1363,6 @@ label[for="product-3"]:active
     color:#e84d37;
 }
 .promo-article-align{
-    padding-left:20px;
     width:300px;
 }
 .promo_subscribe-description{
@@ -1344,14 +1372,15 @@ label[for="product-3"]:active
     font-size: 16px;
     line-height:22px;
     color:#5a5a5a;
-    padding: 0 21px;
-    padding-top:30px;
-    padding-bottom: 18px;
+    padding-bottom: 20px;
+    padding-bottom: 20px;
+    
+    
 }
 .promo_subscribe-form{
     display:flex;
     justify-content: space-between;
-    padding: 0 21px;
+    
 }
 .promo_subscribe-form input{
     font-family: 'Roboto', Arial , sans-serif;
@@ -1387,8 +1416,8 @@ label[for="product-3"]:active
     line-height:24px;
     color:white;
     
-    width:129px;
-    height: 44px;
+    width:128px;
+    height: 43px;
     
     border-style: none;
     
@@ -1414,7 +1443,7 @@ label[for="product-3"]:active
     position: absolute;
     right:0px;
     top:63px;
-    
+    z-index: 2;
     border-radius:20px;
     
 }
@@ -1523,8 +1552,6 @@ label[for="product-3"]:active
 
 /*-----------Подвал------------------------*/
 .footer-flex{
-    margin: 0;
-    padding: 0;
     display: flex;
     justify-content: space-between;
 }
@@ -1640,10 +1667,20 @@ label[for="product-3"]:active
     height:423px;
     background-color: #f8f7f4;
     border-radius:10px;
-    position:relative;
     padding-left: 27px;
     padding-top: 20px;
     box-shadow: 0 20px 30px rgba(0,0,0,0.3);
+    position: absolute;
+    top:18%;
+    left: 29%;
+    display:none;
+}
+.feedback-show{
+    display: block;
+    animation: bounce 0.6s;
+}
+.feedback-error {
+  animation: shake 0.6s;
 }
 .feedback_form--item{
     margin:0;
@@ -1727,7 +1764,45 @@ label[for="product-3"]:active
     position:absolute;
     right:27px;
 }
+@keyframes bounce {
+  0% {
+    transform: translateX(-2000px);
+  }
 
+  70% {
+    transform: translateX(30px);
+  }
+
+  90% {
+    transform: translateX(-10px);
+  }
+
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@keyframes shake {
+  0%,
+  100% {
+    transform: translateX(0);
+  }
+
+  10%,
+  30%,
+  50%,
+  70%,
+  90% {
+    transform: translateX(-10px);
+  }
+
+  20%,
+  40%,
+  60%,
+  80% {
+    transform: translateX(10px);
+  }
+}
 .cls-1 ,.cls-2 ,.cls-3 ,.cls-4 {
         opacity: 0.8;
       }
