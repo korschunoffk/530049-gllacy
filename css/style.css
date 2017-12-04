@@ -14,9 +14,6 @@ body {
 
   clip: rect(0, 0, 0, 0);
 }
-.main-container {
-  
-}
 img {
     max-width: 100%;
     height: auto;
@@ -74,7 +71,7 @@ img {
     width:1146px;
     margin:0 auto;
     position:relative;
-    padding-top:10px;
+    padding-top:9px;
 }
 .catalog-container{
     font-family: 'Roboto', Arial , sans-serif;
@@ -89,7 +86,6 @@ img {
     z-index: -1;
 }
 .container-up{
-    margin-top: 
     border-bottom: 1px solid #a9bbb1;
 }
 /*------------------Основная навигация-----------------*/
@@ -102,7 +98,7 @@ img {
 .main-navigation_list{
     padding:0;
     margin:0;
-    margin-top:14px;
+    margin-top:12px;
     list-style: none;
     font-family: 'Roboto', Arial , sans-serif;
     font-weight: 700;
@@ -114,16 +110,22 @@ img {
     position: relative;
     z-index: 20;
 }
+.main-navigation_logo{
+    padding:0;
+    margin:0;
+    margin-left: -1px;
+}
 .main-navigation_item{
-    padding: 10px 10px 20px;
+    padding: 9px 3px 20px;
     position: relative;
 }
+.main-navigation_item:nth-child(1){
+    padding-left:10px;}
 
 .main-navigation_item > a{
   position: relative;
     color: white;
     text-decoration: none;
-    /* border-bottom: 1px solid #a7b8ad; */
     padding: 6px 12px 7px;
 }
 
@@ -245,15 +247,17 @@ sub-menu_item a{
     margin: 0;
     padding:0;
     position: relative;
-    min-height: 33px;
+}
+.user-navigation_item:nth-last-child(1){
+    margin-right: 1px;
 }
 .user-navigation_item>a{
-  background-color: rgba(255,255,255,0.25);
+  background-color: rgba(255,255,255,0.2);
   border-radius: 50px;
   display: inline-block;
   color:white;
   text-decoration: none;
-    margin: 0 6px;
+    margin: 0 5px;
 }
 .user-navigation_item>a:nth-last-child(1){
     margin-right:0;
@@ -278,21 +282,21 @@ sub-menu_item a{
 .user-navigation_item--search>a {
     background-image: url(../img/svg-gllacy/loupe.svg);
     background-repeat: no-repeat;
-    background-position: 50% 50%;
-    height: 33px;
-    width:33px;
+    background-position: 45% 45%;
+    height: 32px;
+    width:32px;
     position: relative;
 }
 .user-navigation_item--login>a {
     background-image: url(../img/svg-gllacy/entrance-white.svg);
     background-repeat: no-repeat;
     background-size: 21px;
-    background-position: 11px 7px;
+    background-position: 16px 6px;
     padding-left: 44px;
-    padding-right:17px;
+    padding-right:16px;
     
     
-    line-height:33px;
+    line-height:32px;
 
     position: relative;
 }
@@ -300,12 +304,11 @@ sub-menu_item a{
     background-image: url(../img/svg-gllacy/basket.svg);
     background-repeat: no-repeat;
     background-size: 21px;
-    background-position: 11px 7px;
+    background-position: 16px 6px;
     box-sizing: border-box;
-    
     padding-left: 44px;
     padding-right:34px;
-    line-height:33px;
+    line-height:32px;
 }
 .user-navigation_item--fullcart>a {
     margin-right: 0;
@@ -315,8 +318,8 @@ sub-menu_item a{
     background-position: 11px 7px;
     padding-right: 17px;
     padding-left: 44px;
-    
-    line-height:33px;
+    margin-right: 2px;
+    line-height:32px;
 
     position: relative;
     
@@ -351,18 +354,19 @@ sub-menu_item a{
     height: 43px;
 
     position: absolute;
-    top: 80px;
-    right: 0;
+    top: 73px;
+    right: 0px;
 
 }
 .main-navigation__info{
     padding:0;
     margin:0;
-    margin-bottom:6px;
+    margin-bottom:4px;
     font-family: 'Roboto', Arial , sans-serif;
     font-weight: 700;
     font-size: 14px;
-    line-height:16px;
+    line-height:16px; 
+    margin-right: 1px;
 }
 
 .main-navigation__info--tel{
@@ -667,10 +671,10 @@ sub-menu_item a{
 /*--------Главный слайдер------------*/
 .slider {
     position: relative;
-    padding-top: 270px;
+    padding-top: 313px;
     text-align: center;
     color: #ffffff;
-    margin-bottom:40px;
+    margin-bottom:41px;
 }
 
 .slider-list {
@@ -686,17 +690,17 @@ sub-menu_item a{
 .slide-title {
   width: 700px;
   margin: 0 auto;
-  margin-bottom: 27px;
+  margin-bottom: 31px;
   font-size: 60px;
   line-height: 60px;
   font-weight: 800;
 }
 .slide-button{
   display: inline-block;
-  padding: 12px 44px;
+  padding: 0px 41px;
   font-weight: 600;
-  font-size: 31px;
-  line-height: 41px;
+  font-size: 32px;
+  line-height: 63px;
   text-align: center;
   color: #ffffff;
   vertical-align: top;
@@ -711,7 +715,7 @@ sub-menu_item a{
 }
 .slider-controls {
   position: absolute;
-  bottom: 63px;
+  bottom: 21px;
   left: 0;
   z-index: 20;
   
@@ -1031,47 +1035,53 @@ label[for="product-3"]:active
 }
 /*-----------Промо------------------*/
 .promo{
+    margin: 0;
+    padding:0;
     display: flex;
     justify-content: space-between;
+    width:1146px;
+    margin-left: -1px;
+    
 }
 .promo_item{
     width:560px;
-    height:230px;
+    height:229px;
     border-radius:20px;
 }
 .promo_item--buy{
+    box-sizing: border-box;
     width:560px;
-    height:230px;
-    border-radius:20px;
+    height:229px;
+    border-radius:17px;
+    
 }
 .promo_item--raspberry{
-    padding: 0;
-    margin:0;
+   
     background-color: #610d1d;
     background-image: url("../img/raspberries-background.jpg");
-    background-position:center;
+    background-position:cover;
     background-repeat: no-repeat; 
+    
 }
 .promo_item--chocolate{
     background-color: #43271b;
     background-image: url("../img/chocolate-background.jpg");
-    background-position:center;
+    background-position:cover;
     background-repeat: no-repeat; 
+    
 }
 .promo_caption{
     margin:0;
-    padding-left:20px;
-    padding-top: 20px;
+    padding-left:19px;
     font-family: 'Roboto', Arial , sans-serif;
     font-weight: 700;
     font-size: 35px;
-    line-height:41px;
+    line-height:72px;
    
 }
  .promo_text{
     margin:0;
-    padding:0 20px;
-    padding-top: 13px;
+    padding:0 19px;
     font-family: 'Roboto', Arial , sans-serif;
     font-weight: 700;
     font-size: 18px;
@@ -1094,6 +1104,7 @@ label[for="product-3"]:active
 }
 .promo_button-buy--left{
     display: block;
+    
     font-family: 'Roboto', Arial , sans-serif;
     font-weight: 500;
     font-size: 18px;
