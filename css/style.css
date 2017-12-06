@@ -1336,20 +1336,45 @@ label[for="product-3"]:active
     padding-left:56px;
     height: 76px;
     padding-top: 13px;
+    position: relative;
 }
-.features_item--modern{
-    background-image: url("../img/svg-gllacy/ice-cream.svg");
-    background-repeat: no-repeat; 
+.features_item--modern::before {
+content: "";
+width: 49px;
+height: 49px;
+position: absolute;
+left: 0;
+top: 0;
+background-image: url(../img/svg-gllacy/ice-cream.svg);
+background-repeat: no-repeat;
 }
-.features-item--local{
+.features-item--local::before{
+    content: "";
+    width: 49px;
+    height: 49px;
+    position: absolute;
+    left: 0;
+    top: 0;
     background-image: url("../img/svg-gllacy/cow.svg");
     background-repeat: no-repeat; 
 }
-.features-item--natural{
+.features-item--natural::before{
+    content: "";
+    width: 49px;
+    height: 49px;
+    position: absolute;
+    left: 0;
+    top: 0;
     background-image: url("../img/svg-gllacy/eco.svg");
     background-repeat: no-repeat; 
 }
-.features-item--delivery{
+.features-item--delivery::before{
+    content: "";
+    width: 49px;
+    height: 49px;
+    position: absolute;
+    left: 0;
+    top: 0;
     background-image: url("../img/svg-gllacy/thermometer.svg");
     background-repeat: no-repeat; 
 }
