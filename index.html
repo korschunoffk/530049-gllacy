@@ -17,10 +17,10 @@
         <header class="header-flex">
         <span class="main-navigation_logo">
                 <img src="img/svg-gllacy/logo.svg" height="64" width="154" alt="Логотип магазина Глейси">
-        </span>
+        </span>             
         <nav class="main-navigation">
             <ul class="main-navigation_list">
-                <li class="main-navigation_item"><a href="catalog-creamy.html">Каталог</a>
+                <li class="main-navigation_item" tabindex="0"><a href="catalog-creamy.html"tabindex="-1">Каталог</a>
                      <ul class="main-navigation_sublist">
                         <li class="             sub-menu_item"><a href="#">Новинки</a></li>
                         <li class="sub-menu_item"><a href="catalog-creamy.html">Сливочное</a></li>
@@ -34,7 +34,7 @@
             </ul>
         </nav> 
       <ul class="user-navigation">
-            <li class="user-navigation_item user-navigation_item--search">
+            <li class="user-navigation_item user-navigation_item--search" tabindex="0">
                 <a href="#"></a>
                 <!-- -------------------- Форма поиска ---------------------->  
                 <section class="searching">
@@ -46,9 +46,11 @@
                     </p>
                 </section>
             </li>
-            <li class="user-navigation_item user-navigation_item--login">
-                <a href="#">Вход</a>
-                <!-- -------------------- Форма Входа ---------------------->  
+            
+            <!-- -------------------- Форма Входа ---------------------->
+            <li class="user-navigation_item user-navigation_item--login" tabindex="0">
+                <a href="#" >Вход</a>
+                  
         
                 <section class="login">
                     <div class="login-container">
@@ -116,20 +118,20 @@
         <h1 class="hidden-content">Магазин мороженого Глейси</h1>
         <section class="promo">
             
-                <article class="promo_item--buy promo_item--raspberry">
-                    <h3 class="promo_caption">Малинка даром!</h3>
-                    <p class="promo_text">При покупке 2 кг любого фруктового мороженого, добавим в ваш заказ банку малинового варенья бесплатно.</p>
-                    <a class="button promo_button-buy--right" href="#">Хочу варенье!</a>
+                <article class="promo_item--buy promo_item--raspberry" tabindex="0">
+                    <h3 class="promo_caption" tabindex="0">Малинка даром!</h3>
+                    <p class="promo_text" tabindex="0">При покупке 2 кг любого фруктового мороженого, добавим в ваш заказ банку малинового варенья бесплатно.</p>
+                    <a class="button promo_button-buy--right" href="#" tabindex="0">Хочу варенье!</a>
                 </article>
-                <article class="promo_item--buy promo_item--chocolate">
-                    <h3 class="promo_caption">Шоколадки даром!</h3>
-                    <p class="promo_text">При покупке 2 кг пломбира, добавим в ваш заказ упаковку вкуснейшей шоколадной призыпки совершенно бесплатно.</p>
-                    <a class="button promo_button-buy--left" href="#">Хочу шоколадки!</a>
+                <article class="promo_item--buy promo_item--chocolate" tabindex="0">
+                    <h3 class="promo_caption" tabindex="0">Шоколадки даром!</h3>
+                    <p class="promo_text" tabindex="0">При покупке 2 кг пломбира, добавим в ваш заказ упаковку вкуснейшей шоколадной призыпки совершенно бесплатно.</p>
+                    <a class="button promo_button-buy--left" href="#" tabindex="0">Хочу шоколадки!</a>
                 </article>
             
         </section>
         <section class="catalog catalog--popular">
-                <article class="icecream-item">
+                <article class="icecream-item" tabindex="0">
                     <span class="icecream-item--popular"></span>
                         <div class="icecream-item_pic">
                             <img src="img/creamy-orange.png" width="267" height="267" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой">
@@ -147,7 +149,7 @@
                 </article>
 
 
-                <article class="icecream-item">
+                <article class="icecream-item" tabindex="0">
                     <span class="icecream-item--popular"></span>
                     <div class="icecream-item_pic">
                             <img  src="img/creamy-coffee.png" width="267" height="267" alt="Сливочно-кофейное с кусочками шоколада">
@@ -162,7 +164,7 @@
                         </a>
                         <a class="button icecream-item_button" href="#">Быстрый просмотр</a>
                 </article>
-                <article class="icecream-item">
+                <article class="icecream-item" tabindex="0">
                     <span class="icecream-item--popular"></span>
                         <div class=icecream-item_pic>
                             <img src="img/creamy-strawberry.png" width="267" height="267" alt="Сливочно-клубничное с присыпкой из белого шоколада">
@@ -177,7 +179,7 @@
                         </a>
                         <a class="button icecream-item_button" href="#">Быстрый просмотр</a>
                 </article>
-                <article class="icecream-item">
+                <article class="icecream-item" tabindex="0">
                     <span class="icecream-item--popular"></span>
                         <div class=icecream-item_pic>
                             <img src="img/creamy-caramel.png" width="267" height="267" alt="Сливочное крем-брюле с карамельной подливкой">
@@ -194,24 +196,24 @@
                 </article>   
         </section>
         
-        <section class="features">
-            <h2 class="features_caption">Магазин Глэйси — это онлайн- и офлайн-магазин по продаже мороженого собственного производства на развес</h2>
+        <section class="features" tabindex="0">
+            <h2 class="features_caption" tabindex="0">Магазин Глэйси — это онлайн- и офлайн-магазин по продаже мороженого собственного производства на развес</h2>
             <div class="features_container">
-                <p class="features_item features_item--modern">Всё наше мороженое изготавливается на собственном производстве, с использованием современного оборудования и проверенных временем технологий.</p>
-                <p class="features_item features-item--local">Закупка ингредиентов производится только у проверенных фермерских хозяйств и компаний, с которыми нас связывает долговременное сотрудничество.</p>
-                <p class="features_item features-item--natural">Для приготовления мороженого используются настоящие сливки и молоко высочайшего качества. Все дополнительные ингредиенты и добавки произведены из натурального, экологически чистого сырья.</p>
-                <p class="features_item features-item--delivery">Доставка нашего мороженого до заказчиков осуществляется в специальном термопаке, который не дает мороженому растаять и позволяет сохранить превосходный вкус.</p>
+                <p class="features_item features_item--modern" tabindex="0">Всё наше мороженое изготавливается на собственном производстве, с использованием современного оборудования и проверенных временем технологий.</p>
+                <p class="features_item features-item--local" tabindex="0">Закупка ингредиентов производится только у проверенных фермерских хозяйств и компаний, с которыми нас связывает долговременное сотрудничество.</p>
+                <p class="features_item features-item--natural" tabindex="0">Для приготовления мороженого используются настоящие сливки и молоко высочайшего качества. Все дополнительные ингредиенты и добавки произведены из натурального, экологически чистого сырья.</p>
+                <p class="features_item features-item--delivery" tabindex="0">Доставка нашего мороженого до заказчиков осуществляется в специальном термопаке, который не дает мороженому растаять и позволяет сохранить превосходный вкус.</p>
             </div>
         </section>
         <section class="promo">
-            <article class="promo_item promo_article--blog">
-                    <h3 class="promo_title">Новое в нашем блоге</h3>
+            <article class="promo_item promo_article--blog" tabindex="0">
+                    <h3 class="promo_title" tabindex="0">Новое в нашем блоге</h3>
                     <a href="#" class="promo_blog-announce">10 способов сервировки фруктовых щербетов к столу</a>
             </article>
-            <article class="promo_item promo_article--subscribe">
-                <div class="promo_article">
-                <h3 class="hidden-content promo_title">Оформить подписку</h3>
-                <p class="promo_subscribe-description">Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного,что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)</p>
+            <article class="promo_item promo_article--subscribe" tabindex="0">
+                <div class="promo_article" >
+                <h3 class="hidden-content promo_title" >Оформить подписку</h3>
+                <p class="promo_subscribe-description" tabindex="0">Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного,что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)</p>
                 <form class="promo_subscribe-form" method="post" action="https://echo.htmlacademy.ru">
                     <p>
                     <input type="text" placeholder="Электронная почта" name="email" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Электронная почта'">
@@ -224,17 +226,41 @@
             </article>
         </section>
      </main>
+            
+        <section class="feedback" >
+            <h2 class="feedback_title hidden-content">Форма обратной связи</h2>
+            <p class="feedback_caption">Мы обязательно вам ответим!</p>
+            <button class="feedback_close"></button>
+            <form class="feedback_form" method="post" action="https://echo.htmlacademy.ru">
+                <p class="feedback_form--item">
+                    <label>
+                        <input class="feedback-name" id="feedback-name" type="text" name="name" placeholder="Как вас зовут ?"  onfocus="this.placeholder = ''" onblur="this.placeholder = 'Как вас зовут ?'">
+                    </label>
+                </p>
+                <p class="feedback_form--item">
+                    <label>
+                        <input class="feedback-email" id="feedback-email" type="text" name="email" placeholder="Ваша почта для ответа"  onfocus="this.placeholder = ''" onblur="this.placeholder = 'Ваша почта для ответа'">
+                    </label>
+                </p>
+                <p class="feedback_form--item">
+                    <textarea class="feedback-text" name="feedback-text" placeholder="Напишите что нибудь..." rows="6" cols="50"  onfocus="this.placeholder = ''" onblur="this.placeholder = 'Напишите что нибудь...'"></textarea>
+                </p>
+                <p class="feedback_form--item">
+                    <button type="submit"class="button feedback_button">Отправить</button>
+                </p>
+            </form>
+        </section>
     </div>
         
         
-    <section class="contacts" id="map">
+    <section class="contacts" id="map" tabindex="-1">
             <div class="container">
-                <div class="contacts_inner ">
-                    <p class="contacts_text">Адрес главного офиса <br> и офлайн-магазина</p>
-                    <p class="contacts_address">ул. Большая Конюшенная  <br>19/8, Санкт-Петербург</p>
-                    <p class="contacts_text">Для заказов по телефону:</p>
+                <div class="contacts_inner" tabindex="0">
+                    <p class="contacts_text" tabindex="0" >Адрес главного офиса <br> и офлайн-магазина</p>
+                    <p class="contacts_address" tabindex="0">ул. Большая Конюшенная  <br>19/8, Санкт-Петербург</p>
+                    <p class="contacts_text" tabindex="0">Для заказов по телефону:</p>
                     <a class="contacts_mobile" href="tel:88124502525">8 812 450-25-25</a>
-                    <p class="contacts_text-time">(с 10 до 20 ежедневно)</p>
+                    <p class="contacts_text-time" tabindex="0">(с 10 до 20 ежедневно)</p>
                     <a class="button contacts_button" href="#">Форма обратной связи</a>
                 </div>
             </div>    
@@ -312,37 +338,13 @@
         </div>
         <div class="developers">
             <img src="img/svg-gllacy/logo-htmlacademy.svg" alt="Логотип html-academy" height="39" width="108">
-            <p class="developers_link"> Сделано в<a href="#" > HTML Academy</a> с 2017 </p>
+            <p class="developers_link" tabindex="0"> Сделано в<a href="#" > HTML Academy</a> с 2017 </p>
         </div>
     </footer>
     
     
-
-    <section class="feedback">
-        <h2 class="feedback_title hidden-content">Форма обратной связи</h2>
-        <p class="feedback_caption">Мы обязательно вам ответим!</p>
-        <button class="feedback_close"></button>
-        <form class="feedback_form" method="post" action="https://echo.htmlacademy.ru">
-            <p class="feedback_form--item">
-                <label>
-                    <input class="feedback-name" id="feedback-name" type="text" name="name" placeholder="Как вас зовут ?"  onfocus="this.placeholder = ''" onblur="this.placeholder = 'Как вас зовут ?'">
-                </label>
-            </p>
-            <p class="feedback_form--item">
-                <label>
-                    <input class="feedback-email" id="feedback-email" type="text" name="email" placeholder="Ваша почта для ответа"  onfocus="this.placeholder = ''" onblur="this.placeholder = 'Ваша почта для ответа'">
-                </label>
-            </p>
-            <p class="feedback_form--item">
-                <textarea class="feedback-text" name="feedback-text" placeholder="Напишите что нибудь..." rows="6" cols="50"  onfocus="this.placeholder = ''" onblur="this.placeholder = 'Напишите что нибудь...'"></textarea>
-            </p>
-            <p class="feedback_form--item">
-                <button type="submit"class="button feedback_button">Отправить</button>
-            </p>
-        </form>
-    </section>
         
-    </div>
+    </div>    
     <script>
         var link = document.querySelector(".contacts_button");
         

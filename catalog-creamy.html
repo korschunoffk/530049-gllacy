@@ -12,11 +12,11 @@
         <div class="container">
         <header class="header-flex">
         <span class="main-navigation_logo">
-                <img src="img/svg-gllacy/logo.svg" height="65" width="155" alt="Логотип магазина Глейси">
+            <a href="index.html"><img src="img/svg-gllacy/logo.svg" height="65" width="155" alt="Логотип магазина Глейси"></a>
         </span>
         <nav class="main-navigation">
             <ul class="main-navigation_list">
-                <li class="main-navigation_item onpage"><a href="catalog-creamy.html">Каталог</a>
+                <li class="main-navigation_item onpage" tabindex="0"><a href="catalog-creamy.html">Каталог</a>
                      <ul class="main-navigation_sublist">
                         <li class="             sub-menu_item"><a href="#">Новинки</a></li>
                         <li class="sub-menu_item sub-onpage"><a href="catalog-creamy.html">Сливочное</a></li>
@@ -30,7 +30,7 @@
             </ul>
         </nav> 
       <ul class="user-navigation">
-            <li class="user-navigation_item user-navigation_item--search">
+            <li class="user-navigation_item user-navigation_item--search" tabindex="0">
                 <a href="#"></a>
                 <!-- -------------------- Форма поиска ---------------------->  
                 <section class="searching">
@@ -42,7 +42,7 @@
                     </p>
                 </section>
             </li>
-            <li class="user-navigation_item user-navigation_item--login">
+            <li class="user-navigation_item user-navigation_item--login" tabindex="0">
                 <a href="#">Вход</a>
                 <!-- -------------------- Форма Входа ---------------------->  
         
@@ -70,7 +70,7 @@
                 </section>
                 
             </li>
-            <li class="user-navigation_item user-navigation_item--fullcart">
+            <li class="user-navigation_item user-navigation_item--fullcart" tabindex="0">
                 <a href="#">2 товара</a>
                  <!-- -------------------- Корзина ---------------------->
                 <section class="cart-goods">
@@ -120,15 +120,15 @@
     <h2 class="catalog_caption">Сливочное мороженое</h2>
     
     <!-- -------------------- Фильтр ---------------------->
-    <form class="catalog_filter" method="post" action="https://echo.htmlacademy.ru">
-        <div class="catalog_filter-item">
-            <p class="catalog_filter-title">Сортировка:</p>
+    <form class="catalog_filter" method="post" action="https://echo.htmlacademy.ru" tabindex="0">
+        <div class="catalog_filter-item" >
+            <p class="catalog_filter-title" tabindex="0">Сортировка:</p>
             <p class="filter-item-sub">
                 <select name="name">
-                    <option value="popular" selected>По популярности</option>
-                    <option value="budget">Сначала недорогие</option>
-                 <option value="premium">Сначала дорогие</option>
-                    <option value="fat-quantity">По жирности</option>
+                    <option value="popular" selected>по популярности</option>
+                    <option value="budget">cначала недорогие</option>
+                    <option value="premium">cначала дорогие</option>
+                    <option value="fat-quantity">по жирности</option>
                 </select>
             </p>
         </div>
@@ -136,7 +136,7 @@
         <div class="catalog_filter-item range-filter">
             <div class="price-controls">
                
-                <label class="min-price">Цена:<input name="min-price" type="text" value="100">руб. - </label>
+                <label class="min-price" tabindex="0">Цена:<input name="min-price" type="text" value="100">руб. - </label>
                 
                 <label class="max-price"> <input name="max-price" type="text" value="500">руб.</label>
                 
@@ -153,21 +153,21 @@
         </div>
 
         <div  class="catalog_filter-item fat-filter">
-            <p class="catalog_filter-title">Жирность:</p>
-            <p class="filter-item-sub">
-                <label >
-                    <input type="radio" id="radio-item-1" value="fat-zero" name="fat-radio">
+            <p class="catalog_filter-title" tabindex="0">Жирность:</p>
+            <p class="filter-item-sub" tabindex="0">
+                <label>
+                    <input type="radio" id="radio-item-1" value="fat-zero" name="fat-radio" >
                     <span class="fat-1">0%</span>
                 </label>
-                <label >
-                    <input type="radio" id="radio-item-2" value="fat-ten" name="fat-radio" checked>
+                <label>
+                    <input type="radio" id="radio-item-2" value="fat-ten" name="fat-radio" checked >
                     <span class="fat-2"> до 10%</span>
-                </label>
-                <label >
+                </label >
+                <label>
                     <input type="radio" id="radio-item-3" value="fat-under-thirty" name="fat-radio">
                     <span class="fat-3">до 30%</span>
                 </label>
-                <label >
+                <label>
                     <input type="radio" id="radio-item-4" value="fat-over-thirty" name="fat-radio">
                     <span class="fat-4">выше 30%</span>
                 </label>
@@ -175,8 +175,8 @@
         </div>
 
         <div  class="catalog_filter-item filler-filter">
-            <p class="catalog_filter-title">Наполнители:</p>
-            <p class="filter-item-sub">
+            <p class="catalog_filter-title" tabindex="0">Наполнители:</p>
+            <p class="filter-item-sub" tabindex="0">
                 <label>
                     <input type="checkbox" id="checkbox-item-1" name="filler-choco" checked>
                     <span class="filler-1">шоколадные</span>
@@ -393,7 +393,8 @@
         
     </section>
     <div class="pagination">
-            <ul class="pagination_list">
+        <span class="hidden-content">Пагинатор</span>
+            <ul class="pagination_list" tabindex="0">
                 <li class="pagination_item pagination_item--backward" disabled><a href="#" ></a></li>  <!--backward -->
                 <li class="pagination_item pagination_item--onpage"><a href="#">1</a></li>
                 <li class="pagination_item"><a href="#">2</a></li>
@@ -478,7 +479,7 @@
         </div>
         <div class="developers">
             <img src="img/svg-gllacy/logo-htmlacademy.svg" alt="Логотип html-academy" height="40" width="110">
-            <p class="developers_link"> Сделано в<a href="#" > HTML Academy</a> с 2017 </p>
+            <p class="developers_link" tabindex="0"> Сделано в<a href="#" > HTML Academy</a> с 2017 </p>
         </div>
     </footer>
     </div>

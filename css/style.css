@@ -343,6 +343,9 @@ sub-menu_item a{
 .user-navigation_item--fullcart:hover .cart-goods{
     visibility: visible;
 }
+.user-navigation_item--fullcart:focus .cart-goods{
+    visibility: visible;
+}
 .user-navigation_item--search>a:hover{
    background-image: url(../img/svg-gllacy/loupe-black.svg);  
 }
@@ -351,9 +354,6 @@ sub-menu_item a{
 }
 .user-navigation_item--cart>a:hover{
   background-image: url(../img/svg-gllacy/basket-black.svg);  
-}
-.user-navigation_item--fullcart>a:hover{
-    
 }
 /*-------------время работы и телефон---------------*/
 .header-contacts{
@@ -497,6 +497,9 @@ sub-menu_item a{
 .user-navigation_item--login:hover .login{
     visibility: visible;
 }
+.user-navigation_item--login:focus .login{
+    visibility: visible;
+}
 .user-navigation_item--login:hover .login_support:hover{
     text-decoration-color:#e84d37;
     color: #e84d37;
@@ -539,7 +542,9 @@ sub-menu_item a{
 .user-navigation_item--search:hover .searching{
     visibility: visible;
 }
-
+.user-navigation_item--search:focus .searching{
+    visibility: visible;
+}
 /*-----------Товары в корзине--------------*/
 
 .cart-goods{
@@ -807,7 +812,14 @@ label[for="product-3"]:active
 }
 .catalog_filter-item:nth-child(1){
     width: 193px;
-    cursor: pointer;
+    box-sizing: border-box;
+    cursor: pointer;  
+}
+.catalog_filter-item:nth-child(1) .filter-item-sub{
+    width: 193px;
+    box-sizing: border-box;
+    padding: 0 10px;
+    padding-top: 8px;
 }
 .catalog_filter-item:nth-child(3) {
     margin-right: -3px;
@@ -819,6 +831,25 @@ label[for="product-3"]:active
     background-color: rgba(255,255,255,0.2);
     border-radius: 50px;
     min-height:36px;
+}
+.filter-item-sub>select{
+    min-width: 160px;
+    background-color: transparent;
+    border: none;
+    font-size: 16px;
+    line-height: 18px;
+    font-weight: 500;
+    color: #fff;
+    cursor: pointer;
+}
+.filter-item-sub>select:hover{
+    color:black;
+}
+.filter-item-sub>select:active{
+    color:black;
+}
+.filter-item-sub>select:focus{
+    color:black;
 }
 #radio-item-1,#radio-item-2,#radio-item-3,#radio-item-4,#checkbox-item-1,#checkbox-item-2,#checkbox-item-3,#checkbox-item-4,#checkbox-item-5{
    height:1px;
