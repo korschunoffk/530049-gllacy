@@ -299,6 +299,10 @@ img {
     line-height:16px;
     color:white;
 }
+.subnav__item:hover{color:#ffbc9e}
+.subnav__item:active{color:#ffbc9e}
+.subnav__item--onpage:hover{color:white;}
+.subnav__item--onpage:active{color:white;}
 .user-navigation_item--search>a {
     background-image: url(../img/svg-gllacy/loupe.svg);
     background-repeat: no-repeat;
@@ -515,6 +519,7 @@ img {
 
 .searching{
     width:342px;
+    box-sizing: border-box;
     background-color:#f8f7f4;
     position: absolute;
     top:37px;
@@ -527,12 +532,13 @@ img {
 .search_row{
     margin: 0;
     margin:20px 16px;
+    
 }
 .search_row input{
     border-style: none;
     border:1px solid #d3d3d2;
     border-radius:5px;
-    
+    box-sizing:border-box;
     padding-left:15px;
     width:295px;
     height:44px;
