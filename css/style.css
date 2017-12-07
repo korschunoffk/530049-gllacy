@@ -65,6 +65,7 @@ img {
     background-position: top center;
   
     transition: background-image 0.5s ease, background-color 0.5s ease;
+    
 }
 
 .container{
@@ -166,7 +167,6 @@ img {
 .sub-menu_item {
     background-color: white;
     border:none;
-    
 }
 
 .sub-menu_item>a {
@@ -175,17 +175,14 @@ img {
     text-decoration: none;
     padding:9px 20px;
 }
-
-
 .sub-menu_item:nth-child(1){
     border-radius: 5px 5px 0 0;
-    border-bottom: 1px solid #a7b8ad;
 }
 .sub-menu_item:nth-child(5){
     border-radius: 0 0 05px 5px;
 }
 .sub-onpage{
-
+    background-color: #d07058;
 }
 .onpage>a{
      background-color: #d07058;
@@ -198,13 +195,23 @@ img {
     content: "";
     height: 0px;
 }
-sub-menu_item a{
+.sub-menu_item a{
     font-weight: 500;
     color:black;
 }
-.sub-menu_item:nth-child(1) a{
+.sub-menu_item:nth-child(1)>a{
     font-weight: 700;
     color:black;
+    position: relative;
+}
+.sub-menu_item:nth-child(1)>a::before {
+  content: "";
+  position: absolute;
+  bottom: 0px;
+  left: 15px;
+  right: 15px;
+  height: 1px;
+  background-color: rgba(1,1,1,0.2);
 }
 
 .main-navigation_item:hover > a{
@@ -219,24 +226,24 @@ sub-menu_item a{
     visibility: visible;
 
 }
-.main-navigation_item:hover a{
+.main-navigation_item:hover>a{
     color:black;
     border: none;
-}
-.main-navigation_item:nth-child(1):hover .onpage a{
-    color:white;
 }
 
 .main-navigation_item:hover .sub-menu_item:hover{
     background-color: #fbded7;
 }
-.main-navigation_item:hover .sub-menu_item:nth-child(2):hover a{
-    color: #000000;
-}
+
 .main-navigation_item:hover .sub-menu_item:active{
     background-color: #f6b5a5;
 }
-                        
+.sub-onpage>a{
+    color:white;
+}
+.sub-menu_item:nth-child(2):hover a{
+    color: #000;
+}
 /*------------------Пользовательская навигация-----------------*/
 
 .user-navigation{
@@ -916,7 +923,23 @@ label[for="product-3"]:active
     background-image: url(../img/svg-gllacy/radio-on-hover.svg);
     background-repeat: no-repeat;
     cursor: pointer;
+}
+#radio-item-1:focus  ~ .fat-1,
+#radio-item-2:focus  ~ .fat-2,
+#radio-item-3:focus  ~ .fat-3,
+#radio-item-4:focus  ~ .fat-4 {
+    background-image: url(../img/svg-gllacy/radio-on.svg);
+    background-repeat: no-repeat;
+    cursor: pointer;
   
+}
+#radio-item-1:checked:focus  ~ .fat-1,
+#radio-item-2:checked:focus  ~ .fat-2,
+#radio-item-3:checked:focus  ~ .fat-3,
+#radio-item-4:checked:focus  ~ .fat-4{
+    background-image: url(../img/svg-gllacy/radio-on-hover.svg);
+    background-repeat: no-repeat;
+    cursor: pointer;
 }
 .filler-1,.filler-2,.filler-3,.filler-4,.filler-5{
     display: inline-block;
@@ -943,9 +966,7 @@ label[for="product-3"]:active
     margin-left: 13px;
 }
 .filler-1:hover,.filler-2:hover,.filler-3:hover,.filler-4:hover,.filler-5:hover{
-    background-image: url(../img/svg-gllacy/checkbox-off-hover.svg);
-
-    
+    background-image: url(../img/svg-gllacy/checkbox-off-hover.svg);  
 }
 #checkbox-item-1:checked ~ .filler-1,
 #checkbox-item-2:checked ~ .filler-2,
@@ -966,7 +987,20 @@ label[for="product-3"]:active
     background-repeat: no-repeat;
     cursor: pointer;
 }
-
+#checkbox-item-1:focus ~ .filler-1,
+#checkbox-item-2:focus ~ .filler-2,
+#checkbox-item-3:focus ~ .filler-3,
+#checkbox-item-4:focus ~ .filler-4,
+#checkbox-item-5:focus ~ .filler-5{
+     background-image: url(../img/svg-gllacy/checkbox-off-hover.svg);  
+}
+#checkbox-item-1:checked:focus ~ .filler-1,
+#checkbox-item-2:checked:focus ~ .filler-2,
+#checkbox-item-3:checked:focus ~ .filler-3,
+#checkbox-item-4:checked:focus ~ .filler-4,
+#checkbox-item-5:checked:focus ~ .filler-5{
+     background-image: url(../img/svg-gllacy/checkbox-on-hover.svg);  
+}
 .catalog_filter-button{
     color:white;
     background-color: rgba(255,255,255,0.20);
@@ -992,6 +1026,10 @@ label[for="product-3"]:active
     background-color: #eaeaea;
     box-shadow: inset 0 2px 2px #6a6b6a;
     border:none;
+}
+.catalog_filter-button:focus{
+    color:black;
+    background-color: rgba(255,255,255,1);
 }
 /*-----------два ползунка------------------*/
 .filter-item {
@@ -1220,6 +1258,7 @@ label[for="product-3"]:active
     position: relative;
     bottom: 63px;
     right:58px;
+    text-shadow: 2px 2px 3px rgba(0,0,0,0.3);
 }
 .icecream-item_description{
     font-family: 'Roboto', Arial , sans-serif;
@@ -1265,6 +1304,28 @@ label[for="product-3"]:active
     
 }
 .icecream-item:hover::before{
+    content:"";
+    position: absolute;
+    left:-14px;
+    top:-10px;
+    z-index: 1;
+    height:405px;
+    width:294px;
+    background-color: rgba(255,255,255,0.2);
+    border-radius: 10px;
+    box-shadow: 0 20px 30px rgba(0,0,0,0.3);
+}
+.icecream-item:focus{
+    position: relative;
+    z-index:2;
+}
+.icecream-item:focus .icecream-item_button{
+    visibility:visible; 
+    position: relative;
+    z-index:2;
+    
+}
+.icecream-item:focus::before{
     content:"";
     position: absolute;
     left:-14px;
@@ -1650,6 +1711,7 @@ background-repeat: no-repeat;
 .footer-flex{
     display: flex;
     justify-content: space-between;
+    padding-bottom: 25px;
 }
 .social{
     margin-top:36px;
@@ -1907,3 +1969,7 @@ background-repeat: no-repeat;
 .cls-1 ,.cls-2 ,.cls-3 ,.cls-4 {
         opacity: 0.8;
       }
+.dark{
+    z-index: 20;
+    background-color: rgba(1,1,1,0.4);
+}
