@@ -1834,7 +1834,7 @@ background-repeat: no-repeat;
     padding-top: 20px;
     box-shadow: 0 20px 30px rgba(0,0,0,0.3);
     position: absolute;
-    top:102%;
+    top:185vh;
     left: 29%;
     display:none;
     z-index: 25;
@@ -1970,12 +1970,13 @@ background-repeat: no-repeat;
 .cls-1 ,.cls-2 ,.cls-3 ,.cls-4 {
         opacity: 0.8;
       }
+
 .black{
     position: fixed;
     background-color: rgba(1,1,1,0.2);
     width:100vw;
     height: 100vh;
     z-index:21;
-    
+    transition: background-color 0.5s ease;
    
 }
