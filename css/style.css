@@ -797,27 +797,28 @@ label[for="product-3"]:active
 .catalog_filter{
     margin:0;
     padding: 0;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
     
-    width: 855px;
     min-height: 72px;
     margin-bottom:30px;
     
 }
-.catalog_filter-item{
+.catalog_filter-item,.filler-filter{
     margin:0;
     padding:0;
     min-height: 74px;
-   -moz-margin:0;
-    -moz-padding:0;
-    -moz-min-height: 74px;
+    margin-right: 16px;
+    position: relative;
+   }
+.filler-filter{
+    margin:0;
+    padding:0;
+    min-height: 74px;
+    margin-right: 12px;
+   }
+.filter-row1, .filter-row2{
+    display:flex;
+    flex-direction: row;
+    align-items: flex-start;
 }
 .catalog_caption{
     margin: 0;
@@ -833,19 +834,11 @@ label[for="product-3"]:active
     font-size: 35px;
     line-height:41px;
 }
-.catalog_filter-item:nth-child(1){
-    width: 193px;
-    box-sizing: border-box;
-    cursor: pointer;  
-}
 .catalog_filter-item:nth-child(1) .filter-item-sub{
     width: 193px;
     box-sizing: border-box;
     padding: 0 10px;
     padding-top: 8px;
-}
-.catalog_filter-item:nth-child(3) {
-    margin-right: -3px;
 }
 .filter-item-sub{
     margin:0;
@@ -855,7 +848,7 @@ label[for="product-3"]:active
     border-radius: 50px;
     min-height:36px;
 }
-.filter-item-sub>select{
+.filter-item-sub select{
     min-width: 160px;
     background-color: transparent;
     border: none;
@@ -864,6 +857,33 @@ label[for="product-3"]:active
     font-weight: 500;
     color: #fff;
     cursor: pointer;
+      -moz-appearance: none;
+    -webkit-appearance: none;
+    -ms-appearance: none;
+    position: relative;
+}
+.filter-item-sub:hover select{
+    color:black;
+}
+.catalog_filter-item:nth-child(1) .filter-item-sub::after {
+content: "";
+position: absolute;
+top: 43px;
+right: 22px;
+border: 5px solid #fff;
+border-bottom-width: 0;
+border-right-color: transparent;
+border-left-color: transparent;
+}
+.catalog_filter-item:nth-child(1) .filter-item-sub:hover::after {
+content: "";
+position: absolute;
+top: 43px;
+right: 22px;
+border: 5px solid #111;
+border-bottom-width: 0;
+border-right-color: transparent;
+border-left-color: transparent;
 }
 .filter-item-sub>select:hover{
     color:black;
@@ -908,9 +928,9 @@ label[for="product-3"]:active
     margin:0;
     padding:0;
     background-position: 0% 47%;
-    padding-left:33px;
-    margin-left: 10px;
-    
+    padding-left:27px;
+    margin-left: 8px;
+    padding-right: 11px;
 }
 .fat-1:hover,.fat-2:hover,.fat-3:hover,.fat-4:hover{
     background-image: url(../img/svg-gllacy/radio-off-hover.svg);
@@ -984,7 +1004,7 @@ label[for="product-3"]:active
     padding:0;
     display: inline-block;
     height: 36px;
-    width:auto;
+    
     background-image: url(../img/svg-gllacy/checkbox-off.svg);
     background-repeat: no-repeat;
     
@@ -1104,6 +1124,7 @@ label[for="product-3"]:active
     margin:0;
     padding:0;
   width: 220px;
+    margin-right: 16px;
   
 }
 .range-controls {

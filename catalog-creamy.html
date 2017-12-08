@@ -121,38 +121,39 @@
     
     <!-- -------------------- Фильтр ---------------------->
     <form class="catalog_filter" method="post" action="https://echo.htmlacademy.ru" >
-        <div class="catalog_filter-item" >
-            <p class="catalog_filter-title">Сортировка:</p>
-            <p class="filter-item-sub">
-                <select name="name">
-                    <option value="popular" selected>по популярности</option>
-                    <option value="budget">cначала недорогие</option>
-                    <option value="premium">cначала дорогие</option>
-                    <option value="fat-quantity">по жирности</option>
-                </select>
-            </p>
-        </div>
-
-        <div class="catalog_filter-item range-filter">
-            <div class="price-controls">
-               
-                <label class="min-price" >Цена:<input name="min-price" type="text" value="100" disabled>руб. - </label>
-                
-                <label class="max-price"> <input name="max-price" type="text" value="500" disabled>руб.</label>
-                
-          </div>
-            
-          <div class="range-controls">
-            <div class="scale">
-              <div class="bar" style="margin-left: 20%; width: 30%"></div>
+        <div class="filter-row1">
+            <div class="catalog_filter-item" >
+                <p class="catalog_filter-title">Сортировка:</p>
+                <p class="filter-item-sub">
+                    <select name="name">
+                        <option value="popular" selected>по популярности</option>
+                        <option value="budget">cначала недорогие</option>
+                        <option value="premium">cначала дорогие</option>
+                        <option value="fat-quantity">по жирности</option>
+                    </select>
+                </p>
             </div>
-            <div class="toggle toggle-min" tabindex="0"></div>
-            <div class="toggle toggle-max" tabindex="0"></div>
-          </div>
-          
-        </div>
 
-        <div  class="catalog_filter-item fat-filter">
+            <div class="catalog_filter-item range-filter">
+                <div class="price-controls">
+
+                    <label class="min-price" >Цена:<input name="min-price" type="text" value="100" disabled>руб. - </label>
+
+                    <label class="max-price"> <input name="max-price" type="text" value="500" disabled>руб.</label>
+
+              </div>
+
+              <div class="range-controls">
+                <div class="scale">
+                  <div class="bar" style="margin-left: 20%; width: 30%"></div>
+                </div>
+                <div class="toggle toggle-min" tabindex="0"></div>
+                <div class="toggle toggle-max" tabindex="0"></div>
+              </div>
+
+            </div>
+
+            <div  class="catalog_filter-item fat-filter">
             <p class="catalog_filter-title">Жирность:</p>
             <p class="filter-item-sub">
                 <label>
@@ -173,36 +174,35 @@
                 </label>
             </p>
         </div>
-
-        <div  class="catalog_filter-item filler-filter">
-            <p class="catalog_filter-title">Наполнители:</p>
-            <p class="filter-item-sub">
-                <label>
-                    <input type="checkbox" id="checkbox-item-1" name="filler-choco" checked>
-                    <span class="filler-1">шоколадные</span>
-                </label>
-                <label>
-                    <input type="checkbox" id="checkbox-item-2" name="filler-sugar" checked>
-                    <span class="filler-2">сахарные присыпки</span>
-                </label>
-                <label>
-                    <input type="checkbox" id="checkbox-item-3" name="filler-fruit" disabled>
-                    <span class="filler-3">фрукты</span>
-                </label>
-                <label>
-                    <input type="checkbox" id="checkbox-item-4" name="filler-syrup">
-                    <span class="filler-4">сиропы</span>
-                </label>
-                <label>
-                    <input type="checkbox" id="checkbox-item-5" name="filler-jam">
-                    <span class="filler-5">джемы</span>
-                </label>
-            </p>
         </div>
-
-
-        <button type="submit" class="catalog_filter-button">Применить</button>
-
+        <div class="filter-row2">
+            <div  class="filler-filter">
+                <p class="catalog_filter-title">Наполнители:</p>
+                <p class="filter-item-sub">
+                    <label>
+                        <input type="checkbox" id="checkbox-item-1" name="filler-choco" checked>
+                        <span class="filler-1">шоколадные</span>
+                    </label>
+                    <label>
+                        <input type="checkbox" id="checkbox-item-2" name="filler-sugar" checked>
+                        <span class="filler-2">сахарные присыпки</span>
+                    </label>
+                    <label>
+                        <input type="checkbox" id="checkbox-item-3" name="filler-fruit" disabled>
+                        <span class="filler-3">фрукты</span>
+                    </label>
+                    <label>
+                        <input type="checkbox" id="checkbox-item-4" name="filler-syrup">
+                        <span class="filler-4">сиропы</span>
+                    </label>
+                    <label>
+                        <input type="checkbox" id="checkbox-item-5" name="filler-jam">
+                        <span class="filler-5">джемы</span>
+                    </label>
+                </p>
+            </div>
+            <button type="submit" class="catalog_filter-button">Применить</button>
+        </div>
 
     </form>
 
