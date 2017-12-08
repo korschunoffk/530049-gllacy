@@ -796,19 +796,28 @@ label[for="product-3"]:active
 /*-----------Фильтр каталога--------*/
 .catalog_filter{
     margin:0;
-    padding 0;
+    padding: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    
     width: 855px;
     min-height: 72px;
     margin-bottom:30px;
+    
 }
 .catalog_filter-item{
     margin:0;
-    padding 0;
+    padding:0;
     min-height: 74px;
- 
+   -moz-margin:0;
+    -moz-padding:0;
+    -moz-min-height: 74px;
 }
 .catalog_caption{
     margin: 0;
@@ -840,7 +849,7 @@ label[for="product-3"]:active
 }
 .filter-item-sub{
     margin:0;
-    padding 0;
+    padding:0;
     color:white;
     background-color: rgba(255,255,255,0.2);
     border-radius: 50px;
@@ -871,10 +880,12 @@ label[for="product-3"]:active
     opacity:0;
 }
 .fat-1,.fat-2,.fat-3,.fat-4{
+    margin:0;
+    padding:0;
     box-sizing: border-box;
     display: inline-block;
     height: 36px;
-    width:auto;
+    
     background-image: url(../img/svg-gllacy/radio-off.svg);
     background-size:22px;
     background-position: 0% 50%;
@@ -889,11 +900,13 @@ label[for="product-3"]:active
     cursor: pointer;
 }
 .fat-4{
+    
     padding-right: 17px;
     
 }
 .fat-1{
-    
+    margin:0;
+    padding:0;
     background-position: 0% 47%;
     padding-left:33px;
     margin-left: 10px;
@@ -906,7 +919,7 @@ label[for="product-3"]:active
 }
 .catalog_filter-title{
     margin:0;
-    padding-left:  15px;;
+    padding-left:  15px;
     font-family: 'Roboto', Arial , sans-serif;
     font-weight: 500;
     font-size: 14px;
@@ -967,6 +980,8 @@ label[for="product-3"]:active
     cursor:not-allowed;
 }
 .filler-1,.filler-2,.filler-3,.filler-4,.filler-5{
+    margin:0;
+    padding:0;
     display: inline-block;
     height: 36px;
     width:auto;
@@ -1051,6 +1066,8 @@ label[for="product-3"]:active
      background-image: url(../img/svg-gllacy/checkbox-on-hover.svg);  
 }
 .catalog_filter-button{
+    margin:0;
+    padding:0;
     color:white;
     background-color: rgba(255,255,255,0.20);
     border:2px solid white;
@@ -1081,12 +1098,7 @@ label[for="product-3"]:active
     background-color: rgba(255,255,255,1);
 }
 /*-----------два ползунка------------------*/
-.filter-item {
-  margin: 0;
-  padding: 0;
-  width: 220px;
-  margin: 50px auto; 
-}
+
 
 .range-filter {
     margin:0;
@@ -1095,6 +1107,8 @@ label[for="product-3"]:active
   
 }
 .range-controls {
+    margin:0;
+    padding:0;
   position: relative;
   
   height: 18px;
