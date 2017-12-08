@@ -51,7 +51,7 @@ img {
 }
 /*--------контейнеры центровщики------------*/
 .main-container{
-    font-family: 'Roboto', Arial , sans-serif;
+    font-family: "Roboto", "Arial" , sans-serif;
     font-weight: 400;
     font-size: 16px;
     line-height:22px;
@@ -76,7 +76,7 @@ img {
     
 }
 .catalog-container{
-    font-family: 'Roboto', Arial , sans-serif;
+    font-family: "Roboto", "Arial" , sans-serif;
     font-weight: 400;
     font-size: 16px;
     line-height:22px;
@@ -102,7 +102,7 @@ img {
     margin:0;
     margin-top:12px;
     list-style: none;
-    font-family: 'Roboto', Arial , sans-serif;
+    font-family: "Roboto", "Arial" , sans-serif;
     font-weight: 700;
     font-size: 16px;
     line-height:18px;
@@ -154,7 +154,7 @@ img {
     top:38px;
     left:-5px;
     list-style: none;
-    font-family: 'Roboto', Arial , sans-serif;
+    font-family: "Roboto", "Arial" , sans-serif;
     font-weight: 500;
     font-size: 14px;
     line-height:16px;
@@ -188,7 +188,7 @@ img {
      background-color: #d07058;
     border-bottom: none;
     border-radius: 50px;
-    height: 26px;
+    min-height: 26px;
     border-bottom: none;
 }
 .onpage>a::before{
@@ -217,7 +217,7 @@ img {
 .main-navigation_item:hover > a{
    background-color: white;
     border-radius: 50px;
-    height: 26px;
+    min-height:26px;
 }
 .main-navigation_item:nth-child(1):hover .main-navigation_sublist{
     visibility: visible;
@@ -251,7 +251,7 @@ img {
     margin:0;
     margin-top:14px;
     list-style: none;
-    font-family: 'Roboto', Arial , sans-serif;
+    font-family: "Roboto", "Arial" , sans-serif;
     font-weight: 500;
     font-size: 14px;
     line-height:16px;
@@ -293,13 +293,16 @@ img {
 }
 .subnav__item{
 
-    font-family: 'Roboto', Arial , sans-serif;
+    font-family: "Roboto", "Arial" , sans-serif;
     font-weight: 400;
     font-size: 14px;
     line-height:16px;
     color:white;
+    text-decoration-color: rgba(255,255,255,0.6);
 }
-.subnav__item:hover{color:#ffbc9e}
+.subnav__item:hover{color:#ffbc9e;
+    text-decoration-color: #ffbc9e;
+}
 .subnav__item:active{color:#ffbc9e}
 .subnav__item--onpage:hover{color:white;}
 .subnav__item--onpage:active{color:white;}
@@ -307,7 +310,7 @@ img {
     background-image: url(../img/svg-gllacy/loupe.svg);
     background-repeat: no-repeat;
     background-position: 45% 45%;
-    height: 32px;
+    min-height:32px;
     width:32px;
     position: relative;
 }
@@ -375,7 +378,7 @@ img {
     display: flex;
     flex-direction: column;
     align-items: flex-end;
-    height: 43px;
+    min-height: 43px;
 
     position: absolute;
     top: 73px;
@@ -386,7 +389,7 @@ img {
     padding:0;
     margin:0;
     margin-bottom:4px;
-    font-family: 'Roboto', Arial , sans-serif;
+    font-family: "Roboto", "Arial" , sans-serif;
     font-weight: 700;
     font-size: 14px;
     line-height:16px; 
@@ -397,7 +400,7 @@ img {
     padding:0;
     margin:0;
 
-    font-family: 'Roboto', Arial , sans-serif;
+    font-family: "Roboto", "Arial" , sans-serif;
     font-weight: 700;
     font-size: 22px;
     line-height:24px;
@@ -416,7 +419,7 @@ img {
     
     background-color: #f8f7f4;
     width:277px;
-    height:215px;
+    min-height:215px;
     border-radius: 5px;
     
     box-shadow: 0 20px 30px rgba(0,0,0,0.3);
@@ -460,7 +463,7 @@ img {
     
 }
 .login-form-email,.login-form-password,.search{
-    font-family: 'Roboto', Arial , sans-serif;
+    font-family: "Roboto", "Arial" , sans-serif;
     font-weight: 400;
     font-size: 14px;
     line-height:24px;
@@ -469,7 +472,7 @@ img {
 
 
 .login-form-submit{
-    font-family: 'Roboto', Arial , sans-serif;
+    font-family: "Roboto", "Arial" , sans-serif;
     font-weight: 700;
     font-size: 18px;
     line-height:24px;
@@ -491,7 +494,7 @@ img {
 }
 .login_support{
     
-    font-family: 'Roboto', Arial , sans-serif;
+    font-family: "Roboto", "Arial" , sans-serif;
     font-weight: 400;
     font-size: 13px;
     line-height:24px;
@@ -503,8 +506,8 @@ img {
 }
 .login-form-submit{
     border-radius: 50px;
-    width:101px;
-    height:44px;
+    min-width:101px;
+    min-height:44px;
 }
 .user-navigation_item--login:hover .login{
     visibility: visible;
@@ -590,7 +593,7 @@ img {
 .cart-goods-table-row{
     margin: 0;
     padding: 0;
-     font-family: 'Roboto', Arial , sans-serif;
+     font-family: "Roboto", "Arial" , sans-serif;
     font-weight: 500;
     font-size: 13px;
     line-height:16px;
@@ -649,21 +652,21 @@ img {
 .total-cost{
     margin:0;
     padding:0;
-    font-family: 'Roboto', Arial , sans-serif;
+    font-family: "Roboto", "Arial" , sans-serif;
     font-weight: 700;
     font-size: 15px;
     line-height:47px;
     color:#323232;
 }
 .order-button{
-    font-family: 'Roboto', Arial , sans-serif;
+    font-family: "Roboto", "Arial" , sans-serif;
     font-weight: 700;
     font-size: 18px;
     line-height:24px;
     
     box-sizing: border-box;
     width:172px;
-    height: 45px;
+    min-height: 45px;
     text-align: center;
     padding-top:11px;
    
@@ -862,6 +865,7 @@ label[for="product-3"]:active
       -moz-appearance: none;
     -webkit-appearance: none;
     -ms-appearance: none;
+    appearance: none;
     position: relative;
 }
 .filter-item-sub:hover select{
@@ -1225,15 +1229,16 @@ border-left-color: transparent;
 }
 .promo_item{
     width:560px;
-    height:229px;
+    min-height:220px;
     border-radius:17px;
 }
 .promo_item--buy{
     box-sizing: border-box;
     width:560px;
-    height:229px;
+    min-height:229px;
     border-radius:17px;
     padding:0 19px;
+    padding-bottom: 70px;
     
 }
 .promo_item--raspberry{
@@ -1254,7 +1259,7 @@ border-left-color: transparent;
 .promo_caption{
     margin:0;
     
-    font-family: 'Roboto', Arial , sans-serif;
+    font-family: "Roboto", "Arial" , sans-serif;
     font-weight: 700;
     font-size: 35px;
     line-height:72px;
@@ -1262,7 +1267,7 @@ border-left-color: transparent;
 }
  .promo_text{
     margin:0;
-    font-family: 'Roboto', Arial , sans-serif;
+    font-family: "Roboto", "Arial" , sans-serif;
     font-weight: 700;
     font-size: 18px;
     line-height:22px;
@@ -1271,7 +1276,7 @@ border-left-color: transparent;
     box-sizing: border-box;
     width:165px;
     display: block;
-    font-family: 'Roboto', Arial , sans-serif;
+    font-family: "Roboto", "Arial" , sans-serif;
     font-weight: 500;
     font-size: 18px;
     line-height:46px;
@@ -1287,7 +1292,7 @@ border-left-color: transparent;
     box-sizing: border-box;
     width:189px;
     display: block;
-    font-family: 'Roboto', Arial , sans-serif;
+    font-family: "Roboto", "Arial" , sans-serif;
     font-weight: 500;
     font-size: 18px;
     line-height:45px;
@@ -1304,6 +1309,7 @@ border-left-color: transparent;
     display: flex;
     justify-content: space-between;
     margin:0;
+    align-items: flex-start;
     flex-wrap:wrap;
     margin-left: -1px;
 }
@@ -1311,17 +1317,17 @@ border-left-color: transparent;
 .icecream-item{
     padding: 0;
     width:267px;
-    height:321px;
+    min-height:321px;
     text-align: center;
     display: block;
     position: relative;
-    margin-bottom: 41px;
+    margin-bottom: -52px;
    
     
 }
 
 .cost_text{
-    font-family: 'Roboto', Arial , sans-serif;
+    font-family: "Roboto", "Arial" , sans-serif;
     font-weight: 700;
     font-size: 45px;
     line-height:45px;
@@ -1329,7 +1335,7 @@ border-left-color: transparent;
 .cost_measure{
     margin-left:-1px;
     display: inline-block;
-    font-family: 'Roboto', Arial , sans-serif;
+    font-family: "Roboto", "Arial" , sans-serif;
     font-weight: 500;
     font-size: 28px;
     line-height:45px;
@@ -1347,7 +1353,7 @@ border-left-color: transparent;
     text-shadow: 2px 2px 3px rgba(0,0,0,0.3);
 }
 .icecream-item_description{
-    font-family: 'Roboto', Arial , sans-serif;
+    font-family: "Roboto", "Arial" , sans-serif;
     font-weight: 500;
     font-size: 16px;
     line-height:22px;
@@ -1369,12 +1375,12 @@ border-left-color: transparent;
     margin:0 auto;
     display:block;
     visibility:hidden; 
-    font-family: 'Roboto', Arial , sans-serif;
+    font-family: "Roboto", "Arial" , sans-serif;
     font-weight: 700;
     font-size: 18px;
     line-height:24px;
     width:200px;
-    height:34px;
+    min-height:34px;
     padding-top:11px;
     position: relative;
     bottom:30px;
@@ -1395,7 +1401,7 @@ border-left-color: transparent;
     left:-14px;
     top:-10px;
     z-index: 1;
-    height:405px;
+    height:100%;
     width:294px;
     background-color: rgba(255,255,255,0.2);
     border-radius: 10px;
@@ -1417,7 +1423,7 @@ border-left-color: transparent;
     left:-14px;
     top:-10px;
     z-index: 1;
-    height:405px;
+    height:100%;
     width:294px;
     background-color: rgba(255,255,255,0.2);
     border-radius: 10px;
@@ -1448,10 +1454,10 @@ border-left-color: transparent;
     background-color:#e9dcbf;
     background-image:url(../img/wafer-background.jpg);
     border-radius:15px;
-    
+    margin-top: 5px;
     margin-bottom: 40px;
     padding:27px 20px;
-    padding-bottom: 35px;
+    padding-bottom: 26px;
 }
 .features_container{
     margin-left:-1px;
@@ -1464,7 +1470,7 @@ border-left-color: transparent;
 .features_caption{
     margin:0;
     padding: 0;
-    font-family: 'Roboto', Arial , sans-serif;
+    font-family: "Roboto", "Arial" , sans-serif;
     font-weight: 500;
     font-size: 24px;
     line-height:30px;
@@ -1474,14 +1480,14 @@ border-left-color: transparent;
     padding: 0;
     margin:0;
     
-    font-family: 'Roboto', Arial , sans-serif;
+    font-family: "Roboto", "Arial" , sans-serif;
     font-weight:400;
     font-size: 16px;
     line-height:22px;
     color:#323232;
     width:486px;
     padding-left:56px;
-    height: 76px;
+    min-height: 76px;
     padding-top: 13px;
     position: relative;
 }
@@ -1528,7 +1534,6 @@ background-repeat: no-repeat;
 /*-----------промо и подписка--------------*/
 .promo_article--blog{
     box-sizing: border-box;
-    height:220px;
     background-image: url(../img/strawberry-background.jpg);
     background-size: cover;
     padding:24px 20px;
@@ -1536,7 +1541,6 @@ background-repeat: no-repeat;
 }
 .promo_article--subscribe{
     box-sizing: border-box;
-    height: 220px;
     background-image:url(../img/svg-gllacy/post-background.svg);
     background-size: cover;
     border-radius: 2px;
@@ -1546,7 +1550,7 @@ background-repeat: no-repeat;
     box-sizing: border-box;
     background-color:#f8f7f4;
     border-radius:10px;
-    height: 210px;
+    min-height: 210px;
     margin:5px;
     margin-left: 6px;
     padding: 0 20px;
@@ -1558,7 +1562,7 @@ background-repeat: no-repeat;
     padding: 0;
     
     
-    font-family: 'Roboto', Arial , sans-serif;
+    font-family: "Roboto", "Arial" , sans-serif;
     font-weight: 500;
     font-size: 16px;
     line-height:22px;
@@ -1570,7 +1574,7 @@ background-repeat: no-repeat;
     
     display: block;
     width:300px;
-    font-family: 'Roboto', Arial , sans-serif;
+    font-family: "Roboto", "Arial" , sans-serif;
     font-weight: 700;
     font-size: 24px;
     line-height:30px;
@@ -1587,7 +1591,7 @@ background-repeat: no-repeat;
 }
 .promo_subscribe-description{
     margin:0;
-    font-family: 'Roboto', Arial , sans-serif;
+    font-family: "Roboto", "Arial" , sans-serif;
     font-weight: 400;
     font-size: 16px;
     line-height:22px;
@@ -1600,10 +1604,10 @@ background-repeat: no-repeat;
 .promo_subscribe-form{
     display:flex;
     justify-content: space-between;
-    
+    margin-top: 2px;
 }
 .promo_subscribe-form input{
-    font-family: 'Roboto', Arial , sans-serif;
+    font-family: "Roboto", "Arial" , sans-serif;
     font-weight: 400;
     font-size: 16px;
     line-height:24px;
@@ -1611,7 +1615,7 @@ background-repeat: no-repeat;
     color:#999999;
     
     width:368px;
-    height:44px;
+    min-height:44px;
     padding-left: 15px;
     
     border-style: none;
@@ -1630,14 +1634,14 @@ background-repeat: no-repeat;
 }
 
 .promo_button{
-    font-family: 'Roboto', Arial , sans-serif;
+    font-family: "Roboto", "Arial" , sans-serif;
     font-weight: 700;
     font-size: 18px;
     line-height:24px;
     color:white;
     
     width:128px;
-    height: 43px;
+    min-height: 43px;
     
     border-style: none;
     
@@ -1646,7 +1650,7 @@ background-repeat: no-repeat;
 .contacts{
     margin: 0;
     margin-top:40px;
-    height: 430px;
+    min-height: 430px;
     background-color:#ebe6d0;
     background-image: url(../img/map-background.jpg);
     background-size: cover;
@@ -1654,11 +1658,11 @@ background-repeat: no-repeat;
 .contacts_inner{
     box-sizing: border-box;
     margin:0;
-    padding:0;
-    padding: 0 25px;
+    padding: 0 23px;
     padding-top: 29px;
+    padding-right:28px; 
     background-color:rgba(255,255,255,0.95);
-    height:305px;
+    min-height:305px;
     width:302px;
     position: absolute;
     right:0px;
@@ -1666,12 +1670,13 @@ background-repeat: no-repeat;
     z-index: 2;
     border-radius:20px;
     
+    
 }
 .contacts_text{
     margin:0;
     padding:0;
     
-    font-family: 'Roboto', Arial , sans-serif;
+    font-family: "Roboto", "Arial" , sans-serif;
     font-weight: 400;
     font-size: 14px;
     line-height:20px;
@@ -1681,17 +1686,18 @@ background-repeat: no-repeat;
      margin:0;
     padding:0;
     
-    font-family: 'Roboto', Arial , sans-serif;
+    font-family: "Roboto", "Arial" , sans-serif;
     font-weight: 400;
     font-size: 14px;
     line-height:14px;
     color:black;
+    margin-top: 3px;
 }
 .contacts_address {
     margin:0;
     padding:0;
     
-    font-family: 'Roboto', Arial , sans-serif;
+    font-family: "Roboto", "Arial" , sans-serif;
     font-weight: 700;
     font-size: 18px;
     line-height:23px;
@@ -1701,7 +1707,7 @@ background-repeat: no-repeat;
      margin:0;
     padding:0;
     
-    font-family: 'Roboto', Arial , sans-serif;
+    font-family: "Roboto", "Arial" , sans-serif;
     font-weight: 700;
     font-size: 18px;
     line-height:33px;
@@ -1719,13 +1725,13 @@ background-repeat: no-repeat;
 }
 .contacts_button{
     margin-top: 26px;
-    font-family: 'Roboto', Arial , sans-serif;
+    font-family: "Roboto", "Arial" , sans-serif;
     font-weight: 700;
     font-size: 18px;
     line-height:44px;
-    
     display: block;
     padding: 0px 27px;
+    padding-bottom:20px;
 }
 /*-----------Пагинатор------------------------*/
 .pagination{
@@ -1733,7 +1739,7 @@ background-repeat: no-repeat;
     padding: 0;
     width: 195px;
     margin-left: auto;
-    margin-top:43px;
+    margin-top:47px;
     margin-bottom:30px;
 }
 .pagination_list{
@@ -1765,7 +1771,7 @@ background-repeat: no-repeat;
 }
 
 .pagination_item a {
-    font-family: 'Roboto', Arial , sans-serif;
+    font-family: "Roboto", "Arial" , sans-serif;
     font-weight: 500;
     font-size: 16px;
     line-height:25px;
@@ -1811,11 +1817,11 @@ background-repeat: no-repeat;
     display: flex;
     justify-content: space-between;
     width:185px;
-    height:38px;
+    min-height:38px;
     
 }
 .social_button{
-    font-family: 'Roboto', Arial , sans-serif;
+    font-family: "Roboto", "Arial" , sans-serif;
     font-weight: 400;
     font-size: 13px;
     line-height:18px;
@@ -1859,7 +1865,7 @@ background-repeat: no-repeat;
     display: flex;
     flex-wrap: wrap;
     width:332px;
-    height:42px;
+    min-height:42px;
     position: relative;
 }
 .about-us_link{
@@ -1867,7 +1873,7 @@ background-repeat: no-repeat;
     margin:0;
     
     
-    font-family: 'Roboto', Arial , sans-serif;
+    font-family: "Roboto", "Arial" , sans-serif;
     font-weight: 400;
     font-size: 13px;
     line-height:19px;
@@ -1875,8 +1881,8 @@ background-repeat: no-repeat;
     text-decoration: underline;
     
     width:163px;
-    height:21px;
-    
+    min-height:21px;
+    text-decoration-color: rgba(255,255,255,0.5);
 }
 .about-us_link:nth-child(3){
     width:143px;
@@ -1897,6 +1903,7 @@ background-repeat: no-repeat;
 }
 .about-us_link:hover , .developers_link:hover a{
     color:#ffbc9e;
+     text-decoration-color: #ffbc9e;
 }
 .developers{
     margin-top: 18px;
@@ -1907,8 +1914,8 @@ background-repeat: no-repeat;
     display:block;
     margin: 0;
     padding:0;
-    margin-right: 
-    font-family: 'Roboto', Arial , sans-serif;
+    
+    font-family: "Roboto", "Arial" , sans-serif;
     font-weight: 400;
     font-size: 12px;
     line-height:18px;
@@ -1921,7 +1928,7 @@ background-repeat: no-repeat;
 /*-----------обратная связь------------------------*/
 .feedback{
     width:451px;
-    height:423px;
+    min-height:423px;
     background-color: #f8f7f4;
     border-radius:10px;
     padding-left: 27px;
@@ -1955,7 +1962,7 @@ background-repeat: no-repeat;
     outline:none;
 }
 .feedback-name,.feedback-email,.feedback-text{
-    font-family: 'Roboto', Arial , sans-serif;
+    font-family: "Roboto", "Arial" , sans-serif;
     font-weight: 400;
     font-size: 16px;
     line-height:24px;
@@ -1972,7 +1979,7 @@ background-repeat: no-repeat;
 }
 .feedback-text{
     width:428px;
-    height:155px;
+    min-height:155px;
     box-sizing: border-box;
 }
 .feedback-text:hover{
@@ -1987,7 +1994,7 @@ background-repeat: no-repeat;
 .feedback_caption{
     margin:0;
     
-    font-family: 'Roboto', Arial , sans-serif;
+    font-family: "Roboto", "Arial" , sans-serif;
     font-weight: 500;
     font-size: 24px;
     line-height:28px;
@@ -2012,13 +2019,13 @@ background-repeat: no-repeat;
     background-image: url(../img/svg-gllacy/cross-small.svg);
 }
 .feedback_button{
-    font-family: 'Roboto', Arial , sans-serif;
+    font-family:"Roboto", "Arial" , sans-serif;
     font-weight: 700;
     font-size: 18px;
     line-height:24px;
     border-style: none;
-    width:139px;
-    height:44px;
+    min-width:139px;
+    min-height:44px;
     position:absolute;
     right:27px;
 }
