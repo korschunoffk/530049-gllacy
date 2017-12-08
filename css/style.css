@@ -838,7 +838,8 @@ label[for="product-3"]:active
     width: 193px;
     box-sizing: border-box;
     padding: 0 10px;
-    padding-top: 8px;
+    padding-top:6px;
+   
 }
 .filter-item-sub{
     margin:0;
@@ -849,6 +850,7 @@ label[for="product-3"]:active
     min-height:36px;
 }
 .filter-item-sub select{
+    padding: 0;
     min-width: 160px;
     background-color: transparent;
     border: none;
