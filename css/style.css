@@ -418,12 +418,10 @@ img {
     box-sizing: border-box;
 }
 .login_row input:hover {
-    border: 2px solid #c7c6c5;
-    border-radius: 5px;
+   box-shadow: 0 0 0 1px #c7c6c5;
 }
 .login_row input:focus {
-    border: 2px solid #8fbdec;
-    border-radius: 5px;
+    box-shadow: 0 0 0 1px #c7c6c5;
     outline: none;
 }
 .login_row:nth-child(3) {
@@ -511,12 +509,11 @@ img {
     height: 44px;
 }
 .search_row input:hover {
-    border: 2px solid #c7c6c5;
+    box-shadow: 0 0 0 1px #c7c6c5;
     border-radius: 5px;
 }
 .search_row input:focus {
-    border: 2px solid #8fbdec;
-    border-radius: 5px;
+    box-shadow: 0 0 0 1px #c7c6c5;
     outline: none;
 }
 .user-navigation_item--search:hover .searching {
@@ -710,15 +707,15 @@ img {
     cursor: pointer;
 }
 #product-1:checked ~ .main-container {
-    background-color: #849d8f;
+    background-color: rgb(132,157,143);
     background-image: url("../img/main-backround-1.png");
 }
 #product-2:checked ~ .main-container {
-    background-color: #8996a6;
+    background-color: rgb(137,150,166);
     background-image: url("../img/main-background-2.png");
 }
-#product-3:chec.ked ~ .main-container {
-    background-color: #9d8b84;
+#product-3:checked ~ .main-container {
+    background-color: rgb(157,139,132);
     background-image: url("../img/main-background-3.png");
 }
 #product-1:checked ~ .main-container #slide1,
@@ -771,14 +768,14 @@ label[for="product-3"]:active {
 }
 .catalog_caption {
     margin: 0;
-    font-family: 'Roboto', Arial, sans-serif;
+    font-family: "Roboto", "Arial", sans-serif;
     font-weight: 700;
     font-size: 35px;
     line-height: 45px;
     margin-bottom: 18px;
 }
 .catalog_filter-title {
-    font-family: 'Roboto', Arial, sans-serif;
+    font-family: "Roboto", "Arial", sans-serif;
     font-weight: 700;
     font-size: 35px;
     line-height: 41px;
@@ -875,7 +872,7 @@ label[for="product-3"]:active {
     background-repeat: no-repeat;
     padding-left: 32px;
     padding-right: 8px;
-    font-family: 'Roboto', Arial, sans-serif;
+    font-family: "Roboto", "Arial", sans-serif;
     font-weight: 500;
     font-size: 16px;
     line-height: 36px;
@@ -903,7 +900,7 @@ label[for="product-3"]:active {
 .catalog_filter-title {
     margin: 0;
     padding-left: 15px;
-    font-family: 'Roboto', Arial, sans-serif;
+    font-family: "Roboto", "Arial", sans-serif;
     font-weight: 500;
     font-size: 14px;
     line-height: 28px;
@@ -973,7 +970,7 @@ label[for="product-3"]:active {
     background-size: 20px;
     padding-left: 31px;
     margin-left: 11px;
-    font-family: 'Roboto', Arial, sans-serif;
+    font-family: "Roboto", "Arial", sans-serif;
     font-weight: 500;
     font-size: 16px;
     line-height: 36px;
@@ -1057,7 +1054,7 @@ label[for="product-3"]:active {
     height: 36px;
     margin-right: -5px;
     margin-top: 28px;
-    font-family: 'Roboto', Arial, sans-serif;
+    font-family: "Roboto", "Arial", sans-serif;
     font-weight: 500;
     font-size: 16px;
     line-height: 28px;
@@ -1136,7 +1133,7 @@ label[for="product-3"]:active {
     display: inline-block;
     width: auto;
     padding-top: 2px;
-    font-family: 'Roboto', Arial, sans-serif;
+    font-family: "Roboto", "Arial", sans-serif;
     font-weight: 500;
     font-size: 14px;
     line-height: 26px;
@@ -1147,7 +1144,7 @@ label[for="product-3"]:active {
     
     padding:0;
     width: 32px;
-    font-family: 'Roboto', Arial, sans-serif;
+    font-family: "Roboto", "Arial", sans-serif;
     font-weight: 500;
     font-size: 14px;
     text-align: center;
@@ -1246,10 +1243,10 @@ label[for="product-3"]:active {
 
 .catalog {
     display: flex;
-    justify-content: space-between;
     margin: 0;
     flex-wrap: wrap;
     margin-left: -1px;
+    align-items: flex-start
 }
 .icecream-item {
     padding: 0;
@@ -1259,6 +1256,13 @@ label[for="product-3"]:active {
     display: block;
     position: relative;
     margin-bottom: -52px;
+    margin-left: 26px;
+}
+.icecream-item:nth-child(1){
+    margin-left: 0px;
+}
+.icecream-item:nth-child(5n){
+    margin-left: 0px;
 }
 .cost_text {
     font-family: "Roboto", "Arial", sans-serif;
@@ -1544,12 +1548,10 @@ label[for="product-3"]:active {
     box-sizing: border-box;
 }
 .promo_subscribe-form input:hover {
-    border: 2px solid #c7c6c5;
-    border-radius: 5px;
+    box-shadow: 0 0 0 1px #c7c6c5;
 }
 .promo_subscribe-form input:focus {
-    border: 2px solid #8fbdec;
-    border-radius: 5px;
+    box-shadow: 0 0 0 1px #c7c6c5;
     outline: none;
 }
 .promo_button {
@@ -1863,12 +1865,10 @@ label[for="product-3"]:active {
     margin-top: 18px;
 }
 .feedback_form--item input:hover {
-    border: 2px solid #c7c6c5;
-    border-radius: 5px;
+   box-shadow: 0 0 0 1px #c7c6c5;
 }
 .feedback_form--item input:focus {
-    border: 2px solid #8fbdec;
-    border-radius: 5px;
+    box-shadow: 0 0 0 1px #c7c6c5;
     outline: none;
 }
 .feedback-name,
@@ -1896,12 +1896,10 @@ label[for="product-3"]:active {
     box-sizing: border-box;
 }
 .feedback-text:hover {
-    border: 2px solid #c7c6c5;
-    border-radius: 5px;
+    box-shadow: 0 0 0 1px #c7c6c5;
 }
 .feedback-text:focus {
-    border: 2px solid #8fbdec;
-    border-radius: 5px;
+    box-shadow: 0 0 0 1px #c7c6c5;
     outline: none;
 }
 .feedback_caption {
