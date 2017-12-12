@@ -1261,7 +1261,7 @@ label[for="product-3"]:active {
 .icecream-item:nth-child(1){
     margin-left: 0px;
 }
-.icecream-item:nth-child(5n){
+.icecream-item:nth-child(4n+1){
     margin-left: 0px;
 }
 .cost_text {
