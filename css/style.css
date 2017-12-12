@@ -909,6 +909,7 @@ label[for="product-3"]:active {
 #radio-item-2:checked ~ .fat-2,
 #radio-item-3:checked ~ .fat-3,
 #radio-item-4:checked ~ .fat-4 {
+    -ms-background-image: url(../img/svg-gllacy/radio-on.svg);
     background-image: url(../img/svg-gllacy/radio-on.svg);
     background-repeat: no-repeat;
     cursor: pointer;
@@ -925,6 +926,7 @@ label[for="product-3"]:active {
 #radio-item-2:checked ~ .fat-2:hover,
 #radio-item-3:checked ~ .fat-3:hover,
 #radio-item-4:checked ~ .fat-4:hover {
+    -ms-background-image: url(../img/svg-gllacy/radio-on-hover.svg);
     background-image: url(../img/svg-gllacy/radio-on-hover.svg);
     background-repeat: no-repeat;
     cursor: pointer;
@@ -1470,12 +1472,14 @@ label[for="product-3"]:active {
     background-image: url(../img/strawberry-background.jpg);
     background-size: cover;
     padding: 24px 20px;
+    border-radius: 15px;
 }
 .promo_article--subscribe {
     box-sizing: border-box;
     background-image: url(../img/svg-gllacy/post-background.svg);
     background-size: cover;
     border-radius: 2px;
+    border-radius: 15px;
 }
 .promo_article {
     background-color: #f8f7f4;
