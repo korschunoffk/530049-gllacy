@@ -785,15 +785,15 @@ img {
     border-radius: 50%;
     cursor: pointer;
 }
-#product-1:checked ~ .main-container {
+.slider-input_first:checked ~ .main-container {
     background-color: rgb(132, 157, 143);
     background-image: url("../img/main-backround-1.png");
 }
-#product-2:checked ~ .main-container {
+.slider-input_second:checked ~ .main-container {
     background-color: rgb(137, 150, 166);
     background-image: url("../img/main-background-2.png");
 }
-#product-3:checked ~ .main-container {
+.slider-input_third:checked ~ .main-container {
     background-color: rgb(157, 139, 132);
     background-image: url("../img/main-background-3.png");
 }
@@ -1701,6 +1701,10 @@ label[for="product-3"]:active {
     margin-top: 40px;
     min-height: 430px;
     position: relative;
+    background-image: url(../img/map-background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
 }
 .contacts-flex {
     padding-top: 62px;
@@ -2000,9 +2004,10 @@ label[for="product-3"]:active {
     padding-top: 20px;
     -webkit-box-shadow: 0 20px 30px rgba(0, 0, 0, 0.3);
     box-shadow: 0 20px 30px rgba(0, 0, 0, 0.3);
-    position: absolute;
-    top: 185vh;
-    left: 29%;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    margin-left: -225px;
     display: none;
     z-index: 25;
 }
@@ -2196,11 +2201,14 @@ label[for="product-3"]:active {
 .cls-4 {
     opacity: 0.8;
 }
+.modal-error {
+  animation: shake 0.6s;
+}
 .black {
     position: fixed;
     background-color: rgba(1, 1, 1, 0.2);
-    width: 100vw;
-    height: 100vh;
+    width: 100%;
+    height: 100%;
     z-index: 21;
     -webkit-transition: background-color 0.5s ease;
     -o-transition: background-color 0.5s ease;
